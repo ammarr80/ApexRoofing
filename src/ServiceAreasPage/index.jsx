@@ -1,7 +1,9 @@
 import ServiceAreasHero from "./Hero";
 import AreasGrid from "./AreasGrid";
 import AreaServices from "./AreasServices";
-// Next: WhyLocal, Map, CTA
+import WhyLocal from "./Local";
+import AreasMap from "./AreasMap";
+import AreasCTA from "./CTA";
 
 export default function ServiceAreasPage() {
   return (
@@ -9,6 +11,9 @@ export default function ServiceAreasPage() {
       <ServiceAreasHero />
       <AreasGrid />
       <AreaServices />
+      <WhyLocal />
+      <AreasMap />
+      <AreasCTA />
     </main>
   );
 }
