@@ -40,7 +40,7 @@ export default function Navbar() {
           </div>
           <div className="flex flex-col leading-none">
             <span className="font-display font-bold text-white text-[1rem] tracking-tight">
-              [Company Name]
+              Apex Roofing Co.
             </span>
             <span className="text-[0.62rem] text-white/50 tracking-widest uppercase font-medium">
               Roofing Co.
