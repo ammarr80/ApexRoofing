@@ -34,7 +34,7 @@ export default function Hero() {
 
         {/* Headline */}
         <h1 className="anim-2 font-display font-extrabold text-white leading-[1.08]
-          text-[clamp(2.6rem,5vw,4rem)] mb-5">
+          text-[clamp(2.2rem,5vw,4rem)] mb-5">
           Your Roof.<br />
           Our <span className="text-[#F97316]">Responsibility.</span>
         </h1>
@@ -72,7 +72,7 @@ export default function Hero() {
         </div>
 
         {/* Stats row */}
-        <div className="anim-5 grid grid-cols-4 gap-4 pt-8 border-t border-white/10">
+        <div className="anim-5 grid grid-cols-2 sm:grid-cols-4 gap-4 pt-8 border-t border-white/10">
           {STATS.map((s) => (
             <div key={s.num}>
               <p className="font-display font-extrabold text-white text-[1.6rem] leading-none mb-0.5">{s.num}</p>
@@ -93,7 +93,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#1A3C6E] via-transparent to-transparent" />
 
         {/* Floating rating card */}
-        <div className="absolute bottom-10 right-8 bg-white rounded-2xl px-5 py-4 shadow-2xl">
+        <div className="absolute bottom-48 right-32 bg-white rounded-2xl px-5 py-5 shadow-2xl">
           <div className="flex items-center gap-1 mb-1">
             {[...Array(5)].map((_, i) => (
               <Star key={i} size={13} fill="#F97316" color="#F97316" />
@@ -104,7 +104,7 @@ export default function Hero() {
         </div>
 
         {/* Floating emergency card */}
-        <div className="absolute top-12 right-8 bg-[#1A3C6E] text-white rounded-2xl px-5 py-4 shadow-2xl">
+        <div className="absolute bottom-64 right-8 bg-[#1A3C6E] text-white rounded-2xl px-6 py-5 shadow-2xl">
           <div className="flex items-center gap-2 mb-1">
             <Clock size={14} color="#F97316" />
             <p className="text-[0.65rem] font-semibold uppercase tracking-widest text-white/60">Emergency</p>

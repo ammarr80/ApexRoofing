@@ -1,7 +1,8 @@
+import {Link} from "react-router-dom"
 import { MapPin, ArrowRight } from "lucide-react";
 
 const AREAS = [
-  { name: "Austin",       tag: "Main Office",    primary: true,  desc: "Our home base. Full roofing services across all Austin zip codes." },
+  { name: "Houston",       tag: "Main Office",    primary: true,  desc: "Our home base. Full roofing services across all Houston zip codes." },
   { name: "Round Rock",   tag: "Full Coverage",  primary: false, desc: "Residential and commercial roofing with same-day availability." },
   { name: "Cedar Park",   tag: "Full Coverage",  primary: false, desc: "Repairs, replacements, and inspections for Cedar Park homeowners." },
   { name: "Pflugerville", tag: "Full Coverage",  primary: false, desc: "Fast response roofing services for the Pflugerville area." },
@@ -35,7 +36,7 @@ export default function AreasGrid() {
             Cities & Communities We Cover
           </h2>
           <p className="text-[#6B7280] text-[0.95rem] leading-relaxed max-w-xl">
-            Apex Roofing serves Austin and the greater metro area. Every area below
+            Apex Roofing serves Houston and the greater metro area. Every area below
             receives the same quality of work and response time — no second-class service.
           </p>
         </div>
@@ -81,16 +82,19 @@ export default function AreasGrid() {
                 {a.desc}
               </p>
 
-              <div className="flex items-center gap-1.5 text-[#1A3C6E] text-[0.8rem] font-semibold
-                group-hover:gap-2.5 transition-all">
-                View Services <ArrowRight size={13} />
-              </div>
+              <Link
+  to="/services#services-grid"
+  className="flex items-center gap-1.5 text-[#1A3C6E] text-[0.8rem] font-semibold
+    group-hover:gap-2.5 transition-all"
+>
+  View Services <ArrowRight size={13} />
+</Link>
             </div>
           ))}
         </div>
 
         <p className="text-[#9CA3AF] text-[0.8rem] mt-6">
-          Don't see your area? Call us — we cover up to 40 miles from downtown Austin.
+          Don't see your area? Call us — we cover up to 40 miles from downtown Houston.
         </p>
 
       </div>

@@ -12,9 +12,9 @@ const INFO = [
   {
     icon: <Mail size={22} />,
     label: "Email",
-    value: "info@apexroofingaustin.com",
+    value: "info@apexroofingHouston.com",
     sub: "We reply within a few hours",
-    href: "mailto:info@apexroofingaustin.com",
+    href: "mailto:info@apexroofingHouston.com",
     highlight: false,
   },
   {

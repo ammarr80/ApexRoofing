@@ -53,7 +53,7 @@ export default function OurApproach() {
           <div className="rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.1)]">
             <img
               src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop&q=80"
-              alt="Apex Roofing crew performing a professional roof installation in Austin"
+              alt="Apex Roofing crew performing a professional roof installation in Houston"
               className="w-full h-[480px] object-cover"
               loading="lazy"
             />

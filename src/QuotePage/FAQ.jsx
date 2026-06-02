@@ -24,7 +24,7 @@ const FAQS = [
   },
   {
     q: "What areas do you serve?",
-    a: "We cover Austin and all surrounding areas including Round Rock, Cedar Park, Pflugerville, Buda, Kyle, Georgetown, Leander, Manor, and Bee Cave. If you're not sure whether we cover your zip code, just call and we'll tell you straight.",
+    a: "We cover Houston and all surrounding areas including Round Rock, Cedar Park, Pflugerville, Buda, Kyle, Georgetown, Leander, Manor, and Bee Cave. If you're not sure whether we cover your zip code, just call and we'll tell you straight.",
   },
   {
     q: "What warranty do you offer?",

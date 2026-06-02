@@ -14,10 +14,10 @@ export default function Emergency() {
       <div className="absolute -right-10 -bottom-24 w-80 h-80 rounded-full bg-white/8" />
 
       <div className="relative z-10 max-w-6xl mx-auto px-6
-        flex flex-col md:flex-row items-center justify-between gap-10">
+        flex flex-col md:flex-row md:items-center gap-10">
 
         {/* Left */}
-        <div className="flex items-start gap-6">
+        <div className="flex flex-col md:flex-row items-start gap-6">
           <div className="shrink-0 w-16 h-16 bg-white/20 border border-white/30
             rounded-2xl flex items-center justify-center">
             <Zap size={30} color="white" strokeWidth={2.5} />
@@ -31,7 +31,7 @@ export default function Emergency() {
             </div>
             <h2 className="font-display font-extrabold text-white leading-tight
               text-[clamp(1.6rem,3.5vw,2.3rem)] mb-2">
-              24/7 Emergency Roof Repair in Austin
+              24/7 Emergency Roof Repair in Houston
             </h2>
             <p className="text-white/75 text-[0.92rem] leading-relaxed max-w-lg">
               Leak coming through your ceiling at 2am? Hail just tore through your neighborhood?
@@ -41,7 +41,7 @@ export default function Emergency() {
         </div>
 
         {/* Right CTA */}
-        <div className="shrink-0 flex flex-col items-center gap-3">
+        <div className="shrink-0 flex flex-col items-start md:items-center gap-3">
           <a
             href="tel:+15120000000"
             className="flex items-center gap-3 bg-white hover:bg-white/90
@@ -49,10 +49,10 @@ export default function Emergency() {
               shadow-[0_8px_28px_rgba(0,0,0,0.15)] transition-all hover:-translate-y-0.5 whitespace-nowrap"
           >
             <Phone size={18} strokeWidth={2.5} />
-            Call (512) 000-0000
+            Call (912) 167-6642
           </a>
           <p className="text-white/60 text-[0.72rem] font-medium tracking-wide">
-            Average Austin response time: under 60 min
+            Average Houston response time: under 60 min
           </p>
         </div>
 

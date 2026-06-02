@@ -8,15 +8,15 @@ const FAQS = [
   },
   {
     q: "Do you work with homeowner insurance for storm damage?",
-    a: "Yes — and we're experienced at it. We document all storm damage thoroughly, communicate directly with your adjuster if needed, and make sure nothing gets missed in the claim. Austin homeowners have seen a lot of hail the past few years. We know the process and we'll walk you through every step.",
+    a: "Yes — and we're experienced at it. We document all storm damage thoroughly, communicate directly with your adjuster if needed, and make sure nothing gets missed in the claim. Houston homeowners have seen a lot of hail the past few years. We know the process and we'll walk you through every step.",
   },
   {
     q: "How long does a full roof replacement take?",
-    a: "Most standard Austin homes are done in a single day. Larger properties or complex roof lines may take two days. We show up on time, work clean, and don't leave a job half-finished.",
+    a: "Most standard Houston homes are done in a single day. Larger properties or complex roof lines may take two days. We show up on time, work clean, and don't leave a job half-finished.",
   },
   {
     q: "What roofing materials do you use?",
-    a: "We install architectural shingles, metal roofing, flat TPO membranes, and more. For most Austin homes, we recommend GAF or Owens Corning architectural shingles — they handle Texas heat well and carry strong manufacturer warranties. We'll recommend the right material for your home's style, budget, and long-term needs.",
+    a: "We install architectural shingles, metal roofing, flat TPO membranes, and more. For most Houston homes, we recommend GAF or Owens Corning architectural shingles — they handle Texas heat well and carry strong manufacturer warranties. We'll recommend the right material for your home's style, budget, and long-term needs.",
   },
   {
     q: "Do you offer financing?",
@@ -27,8 +27,8 @@ const FAQS = [
     a: "Absolutely. We're fully licensed as a roofing contractor in Texas, carry general liability insurance, and all our crews are covered under workers' compensation. Never hire a roofer without verifying this — it protects you as the homeowner.",
   },
   {
-    q: "What areas around Austin do you serve?",
-    a: "We serve all of Austin and the surrounding areas including Round Rock, Cedar Park, Pflugerville, Buda, Kyle, Georgetown, Leander, and Manor. If you're within 40 miles of downtown Austin, we've got you covered.",
+    q: "What areas around Houston do you serve?",
+    a: "We serve all of Houston and the surrounding areas including Round Rock, Cedar Park, Pflugerville, Buda, Kyle, Georgetown, Leander, and Manor. If you're within 40 miles of downtown Houston, we've got you covered.",
   },
 ];
 
@@ -66,10 +66,10 @@ function FAQItem({ q, a }) {
 export default function FAQ() {
   return (
     <section className="bg-[#F9FAFB] py-24" id="faq">
-      <div className="max-w-4xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6">
 
         {/* Header */}
-        <div className="text-center mb-12">
+        <div className="mb-12">
           <div className="inline-flex items-center gap-2 bg-[#F97316]/10 border border-[#F97316]/20
             text-[#F97316] text-[0.7rem] font-semibold tracking-widest uppercase
             px-3.5 py-1.5 rounded-full mb-4">
@@ -78,8 +78,8 @@ export default function FAQ() {
           <h2 className="font-display font-extrabold text-[#111827] text-[clamp(1.9rem,4vw,2.8rem)] leading-tight">
             What People Ask
           </h2>
-          <p className="text-[#6B7280] mt-3 text-[0.95rem] leading-relaxed max-w-lg mx-auto">
-            Austin homeowners ask us these questions every day. Straight answers — no fluff.
+          <p className="text-[#6B7280] mt-3 text-[0.95rem] leading-relaxed max-w-3xl">
+            Houston homeowners ask us these questions every single day — from roofing and repairs to pricing, timelines, and what to expect before getting started. We keep it simple: clear answers, honest advice, and no fluff or sales pressure.
           </p>
         </div>
 

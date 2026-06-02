@@ -1,40 +1,35 @@
-import { Link } from "react-router-dom";
-import { Phone, ArrowRight } from "lucide-react";
+import { Phone } from "lucide-react";
 
-export default function ContactCTA() {
+export default function QuoteCTA() {
   return (
-    <section className="bg-[#F9FAFB] border-t border-[#E5E7EB] py-16">
-      <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
+    <section className="bg-white border-t border-[#E5E7EB] py-14">
+      <div className="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
 
-        <div>
-          <h2 className="font-display font-extrabold text-[#111827]
-            text-[clamp(1.5rem,3vw,2rem)] leading-tight mb-2">
-            Still Have Questions?
-          </h2>
-          <p className="text-[#6B7280] text-[0.92rem]">
-            Call us directly or request a free estimate — no obligation.
-          </p>
+        <div className="flex items-start gap-4">
+          <div className="w-px self-stretch bg-[#F97316] shrink-0 mt-1" />
+          <div>
+            <p className="text-[#9CA3AF] text-[0.68rem] font-semibold uppercase tracking-widest mb-1.5">
+              Prefer to Talk?
+            </p>
+            <h2 className="font-display font-extrabold text-[#111827]
+              text-[clamp(1.2rem,2.5vw,1.6rem)] leading-tight mb-1.5">
+              We're One Call Away.
+            </h2>
+            <p className="text-[#6B7280] text-[0.85rem]">
+              Most people hear back within the hour — same-day inspections available.
+            </p>
+          </div>
         </div>
 
-        <div className="flex flex-wrap gap-3 shrink-0">
-          <a
-            href="tel:+15120000000"
-            className="flex items-center gap-2.5 bg-[#F97316] hover:bg-[#EA6C0A]
-              text-white font-bold text-[0.88rem] px-6 py-3 rounded-xl
-              shadow-[0_4px_14px_rgba(249,115,22,0.35)] transition-all hover:-translate-y-0.5"
-          >
-            <Phone size={15} strokeWidth={2.5} />
-            Call (512) 000-0000
-          </a>
-          <Link
-            to="/quote"
-            className="flex items-center gap-2 border border-[#E5E7EB] hover:border-[#1A3C6E]/30
-              text-[#111827] font-semibold text-[0.88rem] px-6 py-3 rounded-xl
-              transition-all hover:bg-white"
-          >
-            Free Estimate <ArrowRight size={14} />
-          </Link>
-        </div>
+        <a
+          href="tel:+15120000000"
+          className="flex items-center gap-2.5 bg-[#F97316] hover:bg-[#EA6C0A]
+            text-white font-bold text-[0.88rem] px-6 py-3 rounded-xl shrink-0
+            shadow-[0_4px_14px_rgba(249,115,22,0.3)] transition-all hover:-translate-y-0.5"
+        >
+          <Phone size={14} strokeWidth={2.5} />
+          Call (512) 000-0000
+        </a>
 
       </div>
     </section>

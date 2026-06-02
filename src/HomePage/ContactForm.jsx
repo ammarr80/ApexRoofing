@@ -32,7 +32,7 @@ export default function ContactForm() {
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Header */}
-        <div className="text-center mb-14">
+        <div className="mb-14">
           <div className="inline-flex items-center gap-2 bg-[#1A3C6E]/8 border border-[#1A3C6E]/15
             text-[#1A3C6E] text-[0.7rem] font-semibold tracking-widest uppercase
             px-3.5 py-1.5 rounded-full mb-4">
@@ -41,9 +41,8 @@ export default function ContactForm() {
           <h2 className="font-display font-extrabold text-[#111827] text-[clamp(1.9rem,4vw,2.8rem)] leading-tight">
             Request Your Free Estimate
           </h2>
-          <p className="text-[#6B7280] mt-3 text-[0.95rem] max-w-md mx-auto leading-relaxed">
-            Fill out the form and an Apex crew member will call you back within the hour.
-            No pressure, no obligation.
+          <p className="text-[#6B7280] mt-3 text-[0.95rem] max-w-3xl leading-relaxed">
+            Fill out the form and an Apex crew member will call you back within the hour to answer your questions and help you get started. No pressure, no obligation — just straightforward help from a local team.
           </p>
         </div>
 
@@ -53,7 +52,7 @@ export default function ContactForm() {
           <div className="lg:col-span-2 flex flex-col gap-6">
 
             <div className="bg-[#1A3C6E] rounded-2xl p-8 text-white">
-              <h3 className="font-display font-bold text-[1.2rem] mb-6">
+              <h3 className="font-display font-bold text-white text-[1.2rem] mb-6">
                 Contact Apex Roofing
               </h3>
 
@@ -72,7 +71,7 @@ export default function ContactForm() {
                   </div>
                 </a>
 
-                <a href="mailto:info@apexroofingaustin.com"
+                <a href="mailto:info@apexroofingHouston.com"
                   className="flex items-center gap-4 group">
                   <div className="w-10 h-10 bg-white/10 border border-white/15
                     rounded-xl flex items-center justify-center shrink-0">
@@ -81,7 +80,7 @@ export default function ContactForm() {
                   <div>
                     <p className="text-white/50 text-[0.68rem] font-semibold uppercase tracking-widest mb-0.5">Email</p>
                     <p className="font-display font-bold text-[0.9rem] group-hover:text-[#F97316] transition-colors">
-                      info@apexroofingaustin.com
+                      info@apexroofingHouston.com
                     </p>
                   </div>
                 </a>
@@ -94,7 +93,7 @@ export default function ContactForm() {
                   <div>
                     <p className="text-white/50 text-[0.68rem] font-semibold uppercase tracking-widest mb-0.5">Service Area</p>
                     <p className="font-display font-bold text-[0.9rem]">
-                      Austin &amp; surrounding areas
+                      Houston &amp; surrounding areas
                     </p>
                   </div>
                 </div>
@@ -173,7 +172,7 @@ export default function ContactForm() {
                       Property Address
                     </label>
                     <input name="address" value={form.address} onChange={handle}
-                      placeholder="123 Main St, Austin, TX"
+                      placeholder="123 Main St, Houston, TX"
                       className="bg-white border border-[#E5E7EB] rounded-lg px-4 py-3
                         text-[0.9rem] text-[#111827] placeholder:text-[#9CA3AF]
                         focus:outline-none focus:border-[#1A3C6E] focus:ring-2 focus:ring-[#1A3C6E]/10
@@ -231,7 +230,7 @@ export default function ContactForm() {
                     py-4 rounded-xl transition-all hover:-translate-y-0.5
                     shadow-[0_4px_16px_rgba(249,115,22,0.35)] mt-1">
                   <Send size={16} />
-                  Send Request — We'll Call Within the Hour
+                  Send Request
                 </button>
 
                 <p className="text-[#9CA3AF] text-[0.72rem] text-center">

@@ -63,7 +63,7 @@ function Stars({ count }) {
 
 export default function Testimonials() {
   return (
-    <section className="bg-[#111827] py-24" id="testimonials">
+    <section className="bg-[#111827] py-24" id="reviews">
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Header */}

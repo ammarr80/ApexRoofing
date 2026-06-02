@@ -2,72 +2,68 @@ import { Link } from "react-router-dom";
 import { Phone, ArrowRight, ShieldCheck, BadgeCheck, Clock } from "lucide-react";
 
 const TRUST = [
-  { icon: <ShieldCheck size={15} />, text: "Licensed & Insured" },
-  { icon: <BadgeCheck  size={15} />, text: "GAF Certified" },
-  { icon: <Clock       size={15} />, text: "Same-Day Available" },
+  { icon: <ShieldCheck size={14} />, text: "Licensed & Insured" },
+  { icon: <BadgeCheck  size={14} />, text: "GAF Certified" },
+  { icon: <Clock       size={14} />, text: "Same-Day Available" },
 ];
 
 export default function AreasCTA() {
   return (
-    <section className="bg-[#1A3C6E] py-24 relative overflow-hidden">
+    <section className="bg-[#1A3C6E] py-16">
+      <div className="max-w-5xl mx-auto px-6">
 
-      <div className="absolute inset-0 opacity-5"
-        style={{
-          backgroundImage: "repeating-linear-gradient(-45deg, transparent, transparent 40px, rgba(255,255,255,0.8) 40px, rgba(255,255,255,0.8) 42px)"
-        }}
-      />
-      <div className="absolute -right-32 -bottom-32 w-[500px] h-[500px]
-        rounded-full bg-white/4 border border-white/8" />
-      <div className="absolute -left-20 -top-20 w-64 h-64 rounded-full bg-[#F97316]/10" />
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-10">
 
-      <div className="relative z-10 max-w-4xl mx-auto px-6">
-
-        <div className="inline-flex items-center gap-2 bg-white/10 border border-white/15
-          text-white/80 text-[0.7rem] font-semibold tracking-widest uppercase
-          px-3.5 py-1.5 rounded-full mb-6">
-          Get Started
-        </div>
-
-        <h2 className="font-display font-extrabold text-white
-          text-[clamp(2rem,5vw,3.2rem)] leading-tight mb-5">
-          Serving Your Area —<br />
-          <span className="text-[#F97316]">Request a Free Estimate.</span>
-        </h2>
-
-        <p className="text-white/55 text-[0.95rem] leading-relaxed mb-10 max-w-lg">
-          Call Apex Roofing or fill out our quote form. We'll confirm your area,
-          schedule an inspection, and get you a written estimate — same day in most cases.
-        </p>
-
-        <div className="flex flex-wrap gap-4 mb-10">
-          <a
-            href="tel:+15120000000"
-            className="flex items-center gap-2.5 bg-[#F97316] hover:bg-[#EA6C0A]
-              text-white font-bold text-[0.95rem] px-8 py-4 rounded-xl
-              shadow-[0_6px_24px_rgba(249,115,22,0.4)] transition-all hover:-translate-y-0.5"
-          >
-            <Phone size={17} strokeWidth={2.5} />
-            Call (512) 000-0000
-          </a>
-          <Link
-            to="/quote"
-            className="flex items-center gap-2 border border-white/25 hover:border-white/50
-              text-white font-semibold text-[0.95rem] px-8 py-4 rounded-xl
-              transition-all hover:bg-white/8 hover:-translate-y-0.5"
-          >
-            Request Free Estimate <ArrowRight size={15} />
-          </Link>
-        </div>
-
-        <div className="flex flex-wrap gap-6">
-          {TRUST.map((t) => (
-            <div key={t.text} className="flex items-center gap-2 text-white/50 text-[0.82rem] font-medium">
-              <span className="text-[#F97316]">{t.icon}</span>
-              {t.text}
+          {/* Left */}
+          <div className="max-w-xl">
+            <div className="inline-flex items-center gap-2 bg-white/8 border border-white/12
+              text-white/60 text-[0.68rem] font-semibold tracking-widest uppercase
+              px-3 py-1 rounded-full mb-5">
+              Your Area
             </div>
-          ))}
-        </div>
+            <h2 className="font-display font-extrabold text-white
+              text-[clamp(1.6rem,3.5vw,2.4rem)] leading-tight mb-4">
+              Local Crew, Local Knowledge,<br />
+              <span className="text-[#F97316]">Same-Day Response.</span>
+            </h2>
+            <p className="text-white/45 text-[0.88rem] leading-relaxed mb-6">
+              We know your neighborhood's weather, your roof types, and your insurance
+              adjusters by name. Call us to confirm your area and get a written estimate — fast.
+            </p>
 
+            <div className="flex flex-wrap gap-5">
+              {TRUST.map((t) => (
+                <div key={t.text} className="flex items-center gap-1.5 text-white/40 text-[0.75rem] font-medium">
+                  <span className="text-[#F97316]/70">{t.icon}</span>
+                  {t.text}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Right */}
+          <div className="flex flex-col gap-3 shrink-0 lg:min-w-[220px]">
+            <a
+              href="tel:+15120000000"
+              className="flex items-center justify-center gap-2.5 bg-[#F97316] hover:bg-[#EA6C0A]
+                text-white font-bold text-[0.9rem] px-7 py-3.5 rounded-xl
+                shadow-[0_4px_18px_rgba(249,115,22,0.35)] transition-all hover:-translate-y-0.5"
+            >
+              <Phone size={15} strokeWidth={2.5} />
+              Call (512) 000-0000
+            </a>
+            <Link
+              to="/quote"
+              className="flex items-center justify-center gap-1.5
+                border border-white/15 hover:border-white/30
+                text-white/55 hover:text-white/80 font-semibold text-[0.88rem]
+                px-7 py-3 rounded-xl transition-all"
+            >
+              Request Free Estimate <ArrowRight size={13} />
+            </Link>
+          </div>
+
+        </div>
       </div>
     </section>
   );

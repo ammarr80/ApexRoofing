@@ -49,12 +49,12 @@ export default function Gallery() {
             px-3 py-1.5 rounded-full mb-4">
             Our Work
           </div>
-          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+          <div className="flex flex-col justify-between gap-4">
             <h2 className="font-display font-extrabold text-white text-[clamp(1.9rem,4vw,2.8rem)] leading-tight">
               Recent Projects
             </h2>
-            <p className="text-white/40 text-[0.85rem] max-w-xs leading-relaxed">
-              Every job completed to the same standard — whether it's a single repair or a full replacement.
+            <p className="text-white/40 text-[0.95rem] max-w-3xl leading-relaxed">
+              Every job is completed to the same consistent standard, whether it’s a small repair or a full replacement, ensuring reliable quality and attention to detail in every case.
             </p>
           </div>
         </div>

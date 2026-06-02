@@ -11,7 +11,7 @@ const STEPS = [
     num: "02",
     title: "We Schedule Your Inspection",
     desc: "One of our team members calls you back within 24 hours to book a free on-site visit at a time that works for you.",
-    detail: "Same-day appointments available in most Austin zip codes.",
+    detail: "Same-day appointments available in most Houston zip codes.",
   },
   {
     num: "03",
@@ -54,7 +54,7 @@ export default function QuoteProcess() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-14">
           {STEPS.map((s, i) => (
             <div key={s.num}
-              className="group relative flex gap-6 p-7
+              className="group relative flex flex-col lg:flex-row gap-6 p-7
                 border border-[#E5E7EB] rounded-2xl bg-white
                 hover:border-[#1A3C6E]/20 hover:shadow-[0_8px_32px_rgba(26,60,110,0.07)]
                 transition-all duration-200 overflow-hidden">

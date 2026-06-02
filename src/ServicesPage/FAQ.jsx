@@ -4,7 +4,7 @@ import { Plus, Minus } from "lucide-react";
 const FAQS = [
   {
     q: "How quickly can Apex respond to an emergency?",
-    a: "For active leaks or storm damage, we dispatch same-day — often within the hour in the Austin metro. We keep crews on call specifically for emergencies, no extra charge for after-hours response.",
+    a: "For active leaks or storm damage, we dispatch same-day — often within the hour in the Houston metro. We keep crews on call specifically for emergencies, no extra charge for after-hours response.",
   },
   {
     q: "Do you offer free estimates?",
@@ -12,23 +12,23 @@ const FAQS = [
   },
   {
     q: "How long does a full roof replacement take?",
-    a: "Most Austin homes are completed in a single day. Larger properties or complex roof lines may take two days. We show up at 7am, work straight through, and don't leave a job half-finished.",
+    a: "Most Houston homes are completed in a single day. Larger properties or complex roof lines may take two days. We show up at 7am, work straight through, and don't leave a job half-finished.",
   },
   {
     q: "What roofing materials do you install?",
-    a: "We install GAF and Owens Corning architectural shingles, standing seam metal, TPO flat membranes, and more. For most Austin homes, we recommend GAF Timberline HDZ — it handles Texas heat and hail exceptionally well and carries a Lifetime limited warranty.",
+    a: "We install GAF and Owens Corning architectural shingles, standing seam metal, TPO flat membranes, and more. For most Houston homes, we recommend GAF Timberline HDZ — it handles Texas heat and hail exceptionally well and carries a Lifetime limited warranty.",
   },
   {
     q: "Will you work directly with my insurance company?",
-    a: "Yes — and we're experienced at it. We document all storm damage with photos, write detailed reports, and communicate directly with your adjuster if needed. We've helped hundreds of Austin homeowners get their full claim covered.",
+    a: "Yes — and we're experienced at it. We document all storm damage with photos, write detailed reports, and communicate directly with your adjuster if needed. We've helped hundreds of Houston homeowners get their full claim covered.",
   },
   {
     q: "What does your 10-year warranty actually cover?",
     a: "Our workmanship warranty covers any defect in our installation — if something fails because of how we installed it, we come back and fix it at no cost. This is separate from the manufacturer's material warranty, which can extend up to Lifetime depending on the product.",
   },
   {
-    q: "Do you service areas outside Austin?",
-    a: "Yes. We cover Round Rock, Cedar Park, Pflugerville, Buda, Kyle, Georgetown, Leander, and Manor. If you're within 40 miles of downtown Austin, call us — we likely cover your area.",
+    q: "Do you service areas outside Houston?",
+    a: "Yes. We cover Round Rock, Cedar Park, Pflugerville, Buda, Kyle, Georgetown, Leander, and Manor. If you're within 40 miles of downtown Houston, call us — we likely cover your area.",
   },
   {
     q: "Is Apex licensed and insured in Texas?",

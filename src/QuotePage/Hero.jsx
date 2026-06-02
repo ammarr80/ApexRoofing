@@ -7,12 +7,6 @@ const HERO_PILLS = [
   { icon: <Clock       size={13} />, text: "Response in 24 hrs" },
 ];
 
-const STATS = [
-  { num: "1,200+", label: "Roofs completed" },
-  { num: "10yr",   label: "Workmanship warranty" },
-  { num: "4.9★",   label: "Google rating" },
-];
-
 const SERVICES = [
   "Roof Repair",
   "Roof Replacement",
@@ -82,7 +76,7 @@ export default function QuoteHero() {
             </h1>
 
             <p className="text-white/55 text-[1rem] leading-relaxed mb-9 max-w-[460px]">
-              Austin's most trusted roofing crew. We show up, inspect your roof, and hand
+              Houston's most trusted roofing crew. We show up, inspect your roof, and hand
               you a written quote — with zero pressure and zero cost. Most estimates
               are scheduled within one business day.
             </p>
@@ -114,20 +108,6 @@ export default function QuoteHero() {
                 <div key={p.text} className="flex items-center gap-2 text-white/48 text-[0.8rem] font-medium">
                   <span className="text-[#F97316]">{p.icon}</span>
                   {p.text}
-                </div>
-              ))}
-            </div>
-
-            {/* Stats row */}
-            <div className="flex gap-8 mt-10 pt-8 border-t border-white/[0.09]">
-              {STATS.map((s) => (
-                <div key={s.label}>
-                  <p className="font-display font-black text-white text-[1.75rem] leading-none mb-1">
-                    {s.num}
-                  </p>
-                  <p className="text-[0.72rem] text-white/38 font-medium uppercase tracking-wide">
-                    {s.label}
-                  </p>
                 </div>
               ))}
             </div>

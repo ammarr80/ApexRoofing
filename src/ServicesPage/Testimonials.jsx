@@ -3,7 +3,7 @@ import { Star, Quote } from "lucide-react";
 const REVIEWS = [
   {
     name: "Marcus T.",
-    location: "South Austin, TX",
+    location: "South Houston, TX",
     rating: 5,
     date: "March 2024",
     text: "Apex showed up within 2 hours after the hail storm. Had my roof patched that same evening and fully replaced by Friday. Professional, fast, and completely honest about what needed to be done — exactly what you want when your ceiling is leaking.",
@@ -61,7 +61,7 @@ export default function Testimonials() {
             <div>
               <h2 className="font-display font-extrabold text-[#111827]
                 text-[clamp(1.9rem,4vw,2.8rem)] leading-tight mb-2">
-                What Austin Homeowners Say
+                What Houston Homeowners Say
               </h2>
               <p className="text-[#6B7280] text-[0.95rem]">
                 200+ five-star reviews on Google. Here's what a few of them said.

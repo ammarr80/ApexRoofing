@@ -5,7 +5,7 @@ const PROJECTS = [
   {
     img: "https://images.unsplash.com/photo-1632759145351-1d592919f522?w=800&auto=format&fit=crop&q=80",
     type: "Full Replacement",
-    location: "South Austin, TX",
+    location: "South Houston, TX",
     material: "GAF Timberline HDZ",
   },
   {
@@ -56,10 +56,10 @@ export default function Gallery() {
           </div>
           <h2 className="font-display font-extrabold text-[#111827]
             text-[clamp(1.9rem,4vw,2.8rem)] leading-tight mb-3">
-            Recent Projects Across Austin
+            Recent Projects Across Houston
           </h2>
           <p className="text-[#6B7280] text-[0.95rem] leading-relaxed max-w-xl">
-            Every project below was completed by our Austin crew. Click any image to see the details.
+            Every project below was completed by our Houston crew. Click any image to see the details.
           </p>
         </div>
 

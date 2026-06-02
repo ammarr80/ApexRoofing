@@ -2,7 +2,7 @@ import { Phone, Zap, Clock } from "lucide-react";
 
 export default function ContactEmergency() {
   return (
-    <section className="relative bg-[#F97316] overflow-hidden py-14">
+    <section className="relative bg-[#F97316] overflow-hidden py-28">
 
       <div className="absolute inset-0 opacity-10"
         style={{
@@ -49,7 +49,7 @@ export default function ContactEmergency() {
             Call (512) 000-0000
           </a>
           <p className="text-white/60 text-[0.72rem] font-medium tracking-wide">
-            Average Austin response: under 60 minutes
+            Average Houston response: under 60 minutes
           </p>
         </div>
 

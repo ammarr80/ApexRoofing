@@ -7,7 +7,7 @@ const STEPS = [
     icon: <ClipboardList size={24} />,
     title: "Free Roof Inspection",
     tag: "Same day available",
-    desc: "We come out to your Austin property, assess the full roof — not just the obvious damage. You get a written report with photos, no pressure, no obligation.",
+    desc: "We come out to your Houston property, assess the full roof — not just the obvious damage. You get a written report with photos, no pressure, no obligation.",
     detail: "Takes 30–45 minutes on-site.",
   },
   {
@@ -23,7 +23,7 @@ const STEPS = [
     icon: <HardHat size={24} />,
     title: "Professional Installation",
     tag: "GAF certified crew",
-    desc: "Our certified crew arrives on time, works efficiently, and keeps your property clean throughout. Most Austin repairs are finished same-day. Replacements typically take 1–2 days.",
+    desc: "Our certified crew arrives on time, works efficiently, and keeps your property clean throughout. Most Houston repairs are finished same-day. Replacements typically take 1–2 days.",
     detail: "Full cleanup included, always.",
   },
   {
@@ -68,7 +68,7 @@ export default function ServicesProcess() {
               </a>
               <Link to="/quote"
                 className="flex items-center gap-2 border border-[#E5E7EB] hover:border-[#1A3C6E]/30
-                  text-[#111827] font-semibold text-[0.85rem] px-5 py-2.5 rounded-xl
+                  text-[#111827] font-semibold text-[0.85rem] px-4 py-2.5 rounded-xl
                   transition-all hover:bg-white">
                 Get Estimate <ArrowRight size={14} />
               </Link>

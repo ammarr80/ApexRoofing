@@ -1,13 +1,6 @@
 import { ShieldCheck, Users, Award, ThumbsUp } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const STATS = [
-  { num: "15+",  label: "Years in Austin" },
-  { num: "500+", label: "Roofs Completed" },
-  { num: "4.9★", label: "Google Rating" },
-  { num: "100%", label: "Licensed & Insured" },
-];
-
 const VALUES = [
   {
     icon: <ShieldCheck size={20} />,
@@ -17,7 +10,7 @@ const VALUES = [
   {
     icon: <Users size={20} />,
     title: "Local, Not Corporate",
-    desc: "Apex is Austin-based and Austin-focused. You're not talking to a call center — you're talking to the people doing the work.",
+    desc: "Apex is Houston-based and Houston-focused. You're not talking to a call center — you're talking to the people doing the work.",
   },
   {
     icon: <Award size={20} />,
@@ -36,14 +29,14 @@ export default function About() {
     <section className="bg-white py-24" id="about">
       <div className="max-w-6xl mx-auto px-6">
 
-        <div className="flex flex-col lg:flex-row gap-16 items-center">
+        <div className="flex flex-col lg:flex-row lg:flex-row-reverse gap-16 items-center">
 
           {/* Left: image stack */}
           <div className="w-full lg:w-[45%] relative shrink-0">
             <div className="rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.1)]">
               <img
                 src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&auto=format&fit=crop&q=80"
-                alt="Apex Roofing crew working on an Austin home"
+                alt="Apex Roofing crew working on an Houston home"
                 className="w-full h-[420px] object-cover"
                 loading="lazy"
               />
@@ -54,7 +47,7 @@ export default function About() {
               rounded-2xl px-6 py-5 shadow-2xl">
               <p className="font-display font-black text-[2.2rem] leading-none text-[#F97316]">15+</p>
               <p className="text-white/70 text-[0.75rem] font-semibold uppercase tracking-widest mt-1">
-                Years Roofing Austin
+                Years Roofing Houston
               </p>
             </div>
 
@@ -77,13 +70,13 @@ export default function About() {
 
             <h2 className="font-display font-extrabold text-[#111827]
               text-[clamp(1.9rem,4vw,2.8rem)] leading-tight mb-5">
-              Austin's Roofing Crew.<br />
+              Houston's Roofing Crew.<br />
               <span className="text-[#1A3C6E]">Built on Trust.</span>
             </h2>
 
             <p className="text-[#6B7280] text-[0.95rem] leading-relaxed mb-4 max-w-lg">
-              Apex Roofing has been protecting Austin homes since 2009. We started as a two-man crew
-              doing repairs in South Austin — today we're one of the most reviewed roofing companies
+              Apex Roofing has been protecting Houston homes since 2009. We started as a two-man crew
+              doing repairs in South Houston — today we're one of the most reviewed roofing companies
               in the city, with a team of 20+ certified installers across the metro area.
             </p>
 
@@ -93,20 +86,6 @@ export default function About() {
               $400 repair to a full replacement — gets the same level of attention.
             </p>
 
-            {/* Stats row */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-5 mb-10 py-7
-              border-y border-[#E5E7EB]">
-              {STATS.map((s) => (
-                <div key={s.num}>
-                  <p className="font-display font-extrabold text-[#111827] text-[1.8rem] leading-none mb-1">
-                    {s.num}
-                  </p>
-                  <p className="text-[#6B7280] text-[0.72rem] font-medium uppercase tracking-wide">
-                    {s.label}
-                  </p>
-                </div>
-              ))}
-            </div>
 
             {/* Values grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">

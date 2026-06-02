@@ -34,7 +34,7 @@ export default function Process() {
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+        <div className="flex flex-col justify-between gap-6 mb-16">
           <div>
             <div className="inline-flex items-center gap-2 bg-white/10 border border-white/15
               text-white/80 text-[0.7rem] font-semibold tracking-widest uppercase
@@ -44,8 +44,8 @@ export default function Process() {
             <h2 className="font-display font-extrabold text-white text-[clamp(1.9rem,4vw,2.8rem)] leading-tight">
               Simple Steps,<br />From Call to Completion
             </h2>
-            <p className="text-white/55 mt-3 max-w-md text-[0.95rem] leading-relaxed">
-              A clear, straightforward process from your first contact to the final inspection — so you always know what to expect.
+            <p className="text-white/55 mt-3 max-w-3xl text-[0.95rem] leading-relaxed">
+             A clear, straightforward process from your first contact all the way through to the final inspection, with each step handled in a structured and transparent way so you always know what’s happening, what comes next, and exactly what to expect at every stage.
             </p>
           </div>
           <Link to="/quote"

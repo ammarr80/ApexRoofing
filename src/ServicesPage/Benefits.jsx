@@ -7,7 +7,7 @@ const BENEFITS = [
   {
     icon: <Clock size={22} />,
     title: "Same-Day Response",
-    desc: "Call before noon and we're on-site the same day in most Austin zip codes. Emergencies dispatched within the hour.",
+    desc: "Call before noon and we're on-site the same day in most Houston zip codes. Emergencies dispatched within the hour.",
   },
   {
     icon: <DollarSign size={22} />,
@@ -27,7 +27,7 @@ const BENEFITS = [
   {
     icon: <FileText size={22} />,
     title: "Insurance Claim Assistance",
-    desc: "We've helped hundreds of Austin homeowners navigate hail and storm claims. We document everything and work directly with your adjuster.",
+    desc: "We've helped hundreds of Houston homeowners navigate hail and storm claims. We document everything and work directly with your adjuster.",
   },
   {
     icon: <Wrench size={22} />,

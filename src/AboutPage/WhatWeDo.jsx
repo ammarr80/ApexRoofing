@@ -22,7 +22,7 @@ const SERVICES = [
   {
     icon: <Zap size={22} />,
     title: "Emergency Roofing",
-    desc: "Active leak or sudden storm damage? We dispatch fast — same day across Austin, after-hours included, no emergency surcharge.",
+    desc: "Active leak or sudden storm damage? We dispatch fast — same day across Houston, after-hours included, no emergency surcharge.",
   },
   {
     icon: <Settings size={22} />,
@@ -47,7 +47,7 @@ export default function WhatWeDo() {
             <div>
               <h2 className="font-display font-extrabold text-[#111827]
                 text-[clamp(1.9rem,4vw,2.8rem)] leading-tight mb-3">
-                Full-Service Roofing<br />for Austin Homes & Businesses
+                Full-Service Roofing<br />for Houston Homes & Businesses
               </h2>
               <p className="text-[#6B7280] text-[0.95rem] leading-relaxed max-w-xl">
                 Apex handles every aspect of residential and commercial roofing — from a single
@@ -99,8 +99,8 @@ export default function WhatWeDo() {
 
               {/* CTA */}
               <Link to="/services"
-                className={`flex items-center gap-1.5 font-semibold text-[0.82rem]
-                  shrink-0 hover:gap-3 transition-all self-center
+                className={`flex gap-1.5 font-semibold text-[0.82rem]
+                  shrink-0 hover:gap-3 transition-all md:items-center md:self-top
                   ${i % 2 === 0 ? "text-[#1A3C6E]" : "text-[#F97316]"}`}>
                 Learn More <ArrowRight size={14} />
               </Link>

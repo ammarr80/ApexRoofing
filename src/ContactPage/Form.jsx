@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Send, CheckCircle2 } from "lucide-react";
+import { Send, CheckCircle2, Check, CheckCircle } from "lucide-react";
 
 const SERVICES = [
   "Roof Repair",
@@ -50,10 +50,10 @@ export default function ContactForm() {
               No pressure, no obligation — just a straight answer from a real roofer.
             </p>
             <div className="flex flex-col gap-3 text-[0.85rem] text-[#6B7280]">
-              <p>✅ Free estimate — no commitment</p>
-              <p>✅ Same-day inspection available</p>
-              <p>✅ Response within 60 minutes</p>
-              <p>✅ Licensed & insured crew</p>
+              <p className="flex items-center gap-2"> <CheckCircle className="text-[#F97316] w-5 h-5" /> Free estimate — no commitment</p>
+              <p className="flex items-center gap-2"> <CheckCircle className="text-[#F97316] w-5 h-5" /> Same-day inspection available</p>
+              <p className="flex items-center gap-2"> <CheckCircle className="text-[#F97316] w-5 h-5" /> Response within 60 minutes</p>
+              <p className="flex items-center gap-2"> <CheckCircle className="text-[#F97316] w-5 h-5" /> Licensed & insured crew</p>
             </div>
           </div>
 

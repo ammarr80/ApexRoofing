@@ -93,7 +93,7 @@ export default function BeforeAfter() {
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Header */}
-        <div className="text-center mb-14">
+        <div className="mb-14">
           <div className="inline-flex items-center gap-2 bg-[#F97316]/10 border border-[#F97316]/20
             text-[#F97316] text-[0.7rem] font-semibold tracking-widest uppercase
             px-3.5 py-1.5 rounded-full mb-4">
@@ -102,8 +102,8 @@ export default function BeforeAfter() {
           <h2 className="font-display font-extrabold text-[#111827] text-[clamp(1.9rem,4vw,2.8rem)] leading-tight">
             Before &amp; After
           </h2>
-          <p className="text-[#6B7280] mt-3 max-w-md mx-auto text-[0.95rem] leading-relaxed">
-            Drag the slider to see the transformation. Real jobs, real results — right here in [City Name].
+          <p className="text-[#6B7280] mt-3 max-w-3xl text-[0.95rem] leading-relaxed">
+            Drag the slider to see the transformation. Real jobs, real results — right here in [City Name], with clear, visible outcomes you can trust.
           </p>
         </div>
 

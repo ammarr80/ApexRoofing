@@ -196,7 +196,7 @@ export default function QuoteForm() {
                       Property Address <span className="text-[#F97316]">*</span>
                     </label>
                     <input
-                      type="text" required placeholder="1234 Barton Springs Rd, Austin TX"
+                      type="text" required placeholder="1234 Barton Springs Rd, Houston TX"
                       className="w-full px-3.5 py-2.5 rounded-lg border border-[#E5E7EB] text-[0.88rem]
                         text-[#111827] placeholder-[#9CA3AF] focus:outline-none
                         focus:border-[#1A3C6E] focus:ring-2 focus:ring-[#1A3C6E]/10 transition-all"
@@ -274,7 +274,7 @@ export default function QuoteForm() {
                       shadow-[0_6px_20px_rgba(249,115,22,0.38)]
                       hover:shadow-[0_8px_26px_rgba(249,115,22,0.46)]
                       hover:-translate-y-0.5">
-                    Send My Free Estimate Request
+                    Get My Request
                     <ArrowRight size={16} />
                   </button>
 

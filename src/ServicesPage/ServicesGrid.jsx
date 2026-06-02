@@ -20,7 +20,7 @@ const SERVICES = [
     slug: "roof-replacement",
     price: "From $6,500",
     time: "1–2 days",
-    desc: "Full tear-off and installation of a new roof system using GAF or Owens Corning materials. Built to handle Austin summers, hail seasons, and everything in between.",
+    desc: "Full tear-off and installation of a new roof system using GAF or Owens Corning materials. Built to handle Houston summers, hail seasons, and everything in between.",
     points: ["Full tear-off & disposal", "Decking inspection", "GAF/OC shingles", "10-year warranty"],
   },
   {
@@ -38,7 +38,7 @@ const SERVICES = [
     slug: "storm-damage",
     price: "Insurance covered",
     time: "Emergency dispatch",
-    desc: "Austin gets hit hard every hail season. We document all damage thoroughly, communicate with your insurance adjuster, and restore your roof to pre-storm condition.",
+    desc: "Houston gets hit hard every hail season. We document all damage thoroughly, communicate with your insurance adjuster, and restore your roof to pre-storm condition.",
     points: ["Insurance documentation", "Adjuster coordination", "Emergency tarping", "Full restoration"],
   },
   {

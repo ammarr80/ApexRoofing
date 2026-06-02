@@ -7,7 +7,7 @@ const REASONS = [
   {
     icon: <Clock size={20} />,
     title: "Fast Response Times",
-    desc: "Same-day service in most Austin zip codes. Emergency calls dispatched within the hour.",
+    desc: "Same-day service in most Houston zip codes. Emergency calls dispatched within the hour.",
   },
   {
     icon: <DollarSign size={20} />,
@@ -60,10 +60,10 @@ export default function WhyChooseUs() {
           </div>
           <h2 className="font-display font-extrabold text-white
             text-[clamp(1.9rem,4vw,2.8rem)] leading-tight mb-3">
-            Why Austin Homeowners<br />Choose Apex Roofing
+            Why Houston Homeowners<br />Choose Apex Roofing
           </h2>
           <p className="text-white/50 text-[0.95rem] leading-relaxed max-w-xl">
-            There's no shortage of roofing companies in Austin. Here's what makes the difference
+            There's no shortage of roofing companies in Houston. Here's what makes the difference
             when you hire Apex — and why most of our new customers come from referrals.
           </p>
         </div>

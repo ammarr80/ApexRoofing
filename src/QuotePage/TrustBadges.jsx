@@ -4,18 +4,18 @@ import {
 } from "lucide-react";
 
 const TRUST_BADGES = [
-  { icon: <ShieldCheck size={22} />, label: "Licensed & Insured",  sub: "State of Texas" },
-  { icon: <BadgeCheck  size={22} />, label: "GAF Certified",        sub: "Master Elite Contractor" },
-  { icon: <Star        size={22} />, label: "4.9 / 5.0 Rating",     sub: "180+ Google Reviews" },
-  { icon: <Clock       size={22} />, label: "Same-Day Response",    sub: "Mon–Sat 7am–7pm" },
-  { icon: <Zap         size={22} />, label: "10-Year Warranty",     sub: "Workmanship guaranteed" },
-  { icon: <DollarSign  size={22} />, label: "Financing Available",  sub: "0% for 12 months" },
+  { icon: <ShieldCheck size={20} />, label: "Licensed & Insured",  sub: "State of Texas" },
+  { icon: <BadgeCheck  size={20} />, label: "GAF Certified",        sub: "Master Elite Contractor" },
+  { icon: <Star        size={20} />, label: "4.9 / 5.0 Rating",     sub: "180+ Google Reviews" },
+  { icon: <Clock       size={20} />, label: "Same-Day Response",    sub: "Mon–Sat 7am–7pm" },
+  { icon: <Zap         size={20} />, label: "10-Year Warranty",     sub: "Workmanship guaranteed" },
+  { icon: <DollarSign  size={20} />, label: "Financing Available",  sub: "0% for 12 months" },
 ];
 
 const REVIEWS = [
   {
     name: "Marcus T.",
-    location: "South Austin",
+    location: "South Houston",
     rating: 5,
     text: "Apex came out within two hours of my call after the hail storm. Had everything documented for my insurance claim the same day. Roof was done in 48 hours. Unbelievable service.",
   },
@@ -52,42 +52,47 @@ export default function TrustSection() {
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Header */}
-        <div className="text-center mb-14">
+        <div className="mb-14">
           <div className="inline-flex items-center gap-2 bg-[#F97316]/8 border border-[#F97316]/18
             text-[#F97316] text-[0.7rem] font-bold tracking-widest uppercase
             px-3.5 py-1.5 rounded-full mb-4">
-            Why Austin Trusts Apex
+            Why Houston Trusts Apex
           </div>
           <h2 className="font-display font-extrabold text-[#111827]
             text-[clamp(1.85rem,3.5vw,2.6rem)] leading-tight mb-3">
             Every Promise. Every Job. Backed in Writing.
           </h2>
-          <p className="text-[#6B7280] text-[0.95rem] leading-relaxed max-w-xl mx-auto">
-            Roofing is expensive and trust is hard to earn. Here's why over 1,200 Austin
+          <p className="text-[#6B7280] text-[0.95rem] leading-relaxed max-w-xl">
+            Roofing is expensive and trust is hard to earn. Here's why over 1,200 Houston
             homeowners chose Apex — and why most refer us to their neighbors.
           </p>
         </div>
 
         {/* Trust badge grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-16">
           {TRUST_BADGES.map((b) => (
             <div key={b.label}
-              className="group flex items-center gap-4 p-5
+              className="group flex items-center gap-4 px-5 py-4
                 border border-[#E5E7EB] rounded-2xl bg-[#F9FAFB]
-                hover:border-[#1A3C6E]/22 hover:bg-white
-                hover:shadow-[0_8px_28px_rgba(26,60,110,0.07)]
+                hover:border-[#1A3C6E]/20 hover:bg-white
+                hover:shadow-[0_6px_20px_rgba(26,60,110,0.06)]
                 transition-all duration-200">
-              <div className="w-11 h-11 rounded-xl bg-[#1A3C6E]/7 border border-[#1A3C6E]/10
-                flex items-center justify-center text-[#1A3C6E] flex-shrink-0
-                group-hover:bg-[#1A3C6E]/12 transition-colors">
+
+              {/* Icon */}
+              <div className="w-10 h-10 rounded-xl
+                bg-[#1A3C6E] flex items-center justify-center
+                text-white flex-shrink-0">
                 {b.icon}
               </div>
-              <div>
-                <p className="font-bold text-[#111827] text-[0.88rem] leading-tight mb-0.5">
+
+              {/* Text */}
+              <div className="min-w-0">
+                <p className="font-bold text-[#111827] text-[0.85rem] leading-snug truncate">
                   {b.label}
                 </p>
-                <p className="text-[#9CA3AF] text-[0.72rem] font-medium">{b.sub}</p>
+                <p className="text-[#9CA3AF] text-[0.72rem] font-medium truncate">{b.sub}</p>
               </div>
+
             </div>
           ))}
         </div>
@@ -98,7 +103,7 @@ export default function TrustSection() {
         <div className="mb-10">
           <div className="flex items-center justify-between mb-7 flex-wrap gap-3">
             <h3 className="font-display font-bold text-[#111827] text-[1.3rem]">
-              What Austin Homeowners Say
+              What Houston Homeowners Say
             </h3>
             <a
               href="https://google.com"

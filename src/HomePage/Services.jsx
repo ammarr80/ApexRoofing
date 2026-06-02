@@ -26,7 +26,7 @@ export default function Services() {
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Top header row */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-14">
+        <div className="flex flex-col justify-between gap-8 mb-14">
           <div>
             <div className="inline-flex items-center gap-2 bg-[#F97316]/15 border border-[#F97316]/25
               text-[#F97316] text-[0.7rem] font-semibold tracking-widest uppercase
@@ -36,8 +36,8 @@ export default function Services() {
             <h2 className="font-display font-extrabold text-white text-[clamp(1.9rem,4vw,2.8rem)] leading-tight">
               Services We Offer
             </h2>
-            <p className="text-white/50 mt-3 max-w-md text-[0.95rem] leading-relaxed">
-              Urgent or routine — we focus on fast response, honest pricing, and getting it right the first time.
+            <p className="text-white/50 mt-3 max-w-4xl text-[0.95rem] leading-relaxed">
+              Whether it’s urgent or routine, our priority stays the same — fast response times, transparent and honest pricing, and doing the job right the first time so you don’t have to deal with repeat issues or delays.
             </p>
           </div>
 
@@ -61,17 +61,7 @@ export default function Services() {
         {/* Body: checklist left + cards right */}
         <div className="flex flex-col lg:flex-row gap-10">
 
-          {/* Left checklist */}
-          <div className="lg:w-52 shrink-0 flex flex-col gap-5 justify-center
-            bg-white/4 border border-white/8 rounded-2xl p-7">
-            <p className="font-display font-bold text-white text-[1rem] mb-1">Why Choose Us</p>
-            {CHECKS.map((c) => (
-              <div key={c} className="flex items-start gap-3">
-                <CheckCircle2 size={16} className="text-[#F97316] mt-0.5 shrink-0" />
-                <p className="text-white/65 text-[0.82rem] leading-snug">{c}</p>
-              </div>
-            ))}
-          </div>
+        
 
           {/* Cards grid */}
           <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

@@ -4,12 +4,12 @@ const REASONS = [
   {
     icon: <Clock size={22} />,
     title: "Fast Response Times",
-    desc: "We're based in Austin — not dispatched from out of state. When you call, a local crew is on the way fast.",
+    desc: "We're based in Houston — not dispatched from out of state. When you call, a local crew is on the way fast.",
   },
   {
     icon: <Map size={22} />,
     title: "Local Roofing Knowledge",
-    desc: "We know Austin weather — the hail seasons, the summer heat, the storm patterns. That knowledge shows in every job we do.",
+    desc: "We know Houston weather — the hail seasons, the summer heat, the storm patterns. That knowledge shows in every job we do.",
   },
   {
     icon: <CalendarCheck size={22} />,
@@ -44,7 +44,7 @@ export default function WhyLocal() {
             </h2>
             <p className="text-[#6B7280] text-[0.95rem] leading-relaxed mb-10">
               Apex isn't a national chain routing calls through a call center. We're an
-              Austin-based crew that knows these neighborhoods, these streets, and what
+              Houston-based crew that knows these neighborhoods, these streets, and what
               Texas roofs go through every year.
             </p>
 
@@ -72,7 +72,7 @@ export default function WhyLocal() {
           <div className="rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.1)]">
             <img
               src="https://images.unsplash.com/photo-1632759145351-1d592919f522?w=800&auto=format&fit=crop&q=80"
-              alt="Apex Roofing crew serving Austin area homeowners"
+              alt="Apex Roofing crew serving Houston area homeowners"
               className="w-full h-[500px] object-cover"
               loading="lazy"
             />

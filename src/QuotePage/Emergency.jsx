@@ -52,7 +52,7 @@ export default function EmergencyCTA() {
 
                 <p className="text-white/55 text-[0.92rem] leading-relaxed mb-6 max-w-lg">
                   Don't wait. Water damage compounds fast. Our emergency crew covers all
-                  of Austin and surrounding areas 24/7 — including weekends and holidays.
+                  of Houston and surrounding areas 24/7 — including weekends and holidays.
                 </p>
 
                 {/* Signals */}
@@ -75,7 +75,7 @@ export default function EmergencyCTA() {
                   </p>
                   <a
                     href="tel:+15120000000"
-                    className="font-display font-black text-white text-[1.8rem] leading-none
+                    className="font-display font-black text-white text-[1.4rem] leading-none
                       hover:text-[#F97316] transition-colors">
                     (512) 000-0000
                   </a>
@@ -91,7 +91,7 @@ export default function EmergencyCTA() {
                     hover:shadow-[0_8px_26px_rgba(249,115,22,0.5)]
                     hover:-translate-y-0.5">
                   <Phone size={15} strokeWidth={2.5} />
-                  Call Now — We Answer
+                  Call Now
                 </a>
 
                 <div className="flex items-center gap-2 text-white/30 text-[0.72rem]">
