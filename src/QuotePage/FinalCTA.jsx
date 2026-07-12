@@ -3,7 +3,7 @@ import { Phone } from "lucide-react";
 export default function QuoteCTA() {
   return (
     <section className="bg-white border-t border-[#E5E7EB] py-14">
-      <div className="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
+      <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
 
         <div className="flex items-start gap-4">
           <div className="w-px self-stretch bg-[#F97316] shrink-0 mt-1" />

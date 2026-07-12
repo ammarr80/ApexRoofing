@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function FinalCTA() {
   return (
     <section className="bg-[#1A3C6E] py-14" id="contact">
-      <div className="max-w-5xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6">
 
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-8">
           <div className="flex items-start gap-4">

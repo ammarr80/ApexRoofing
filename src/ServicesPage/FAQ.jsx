@@ -70,7 +70,7 @@ function FAQItem({ q, a }) {
 export default function ServicesFAQ() {
   return (
     <section className="bg-[#F9FAFB] py-24" id="faq">
-      <div className="max-w-4xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6">
 
         <div className="mb-12">
           <div className="inline-flex items-center gap-2 bg-[#F97316]/10 border border-[#F97316]/20

@@ -3,108 +3,94 @@ import { Phone, ArrowRight, ShieldCheck, Clock, BadgeCheck, Star } from "lucide-
 
 const PILLS = [
   { icon: <ShieldCheck size={13} />, text: "Fully Licensed & Insured" },
-  { icon: <BadgeCheck  size={13} />, text: "Workmanship Warranty Included" },
-  { icon: <Clock       size={13} />, text: "Fast Response Times" },
+  { icon: <BadgeCheck size={13} />, text: "Workmanship Warranty Included" },
+  { icon: <Clock size={13} />, text: "Fast Response Times" },
 ];
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex overflow-hidden pt-[72px]">
+    <section className="relative overflow-hidden bg-[#1A3C6E] pt-[104px] pb-24">
 
-      {/* LEFT — blue panel */}
-      <div className="relative z-10 flex flex-col justify-center
-        w-full lg:w-[52%] bg-[#1A3C6E] px-8 md:px-14 py-20
-        before:absolute before:top-0 before:right-[-80px] before:w-[160px]
-        before:h-full before:bg-[#1A3C6E] before:skew-x-[-6deg] before:z-10 before:hidden lg:before:block">
-
-        {/* Badge */}
-        <div className="anim-1 inline-flex items-center gap-2 bg-white/10 border border-white/15
-          text-white/90 text-[0.7rem] font-semibold tracking-widest uppercase
-          px-3.5 py-1.5 rounded-full w-fit mb-6">
-          <span className="w-1.5 h-1.5 bg-[#F97316] rounded-full animate-pulse" />
-          24/7 Emergency Roofing Services
-        </div>
-
-        {/* Headline */}
-        <h1 className="anim-2 font-display font-extrabold text-white leading-[1.08]
-          text-[clamp(2.2rem,5vw,4rem)] mb-5">
-          Your Roof.<br />
-          Our <span className="text-[#F97316]">Responsibility.</span>
-        </h1>
-
-        {/* Sub */}
-        <p className="anim-3 text-white/65 text-[1rem] leading-relaxed mb-8 max-w-sm">
-          From leaks and storm damage to full roof replacement, we handle every job with care and precision.
-        </p>
-
-        {/* CTAs */}
-        <div className="anim-4 flex flex-wrap gap-3 mb-8">
-          <a href="tel:+10000000000"
-            className="flex items-center gap-2.5 bg-[#F97316] hover:bg-[#EA6C0A]
-              text-white font-bold text-[0.9rem] px-7 py-3.5 rounded-xl
-              shadow-[0_6px_20px_rgba(249,115,22,0.45)] transition-all hover:-translate-y-0.5">
-            <Phone size={16} strokeWidth={2.5} />
-            Call Now — Free Quote
-          </a>
-          <Link to="/quote"
-            className="flex items-center gap-2 border border-white/25 hover:border-white/60
-              text-white font-semibold text-[0.9rem] px-6 py-3.5 rounded-xl
-              transition-all hover:bg-white/8 hover:-translate-y-0.5">
-            Get Estimate <ArrowRight size={15} />
-          </Link>
-        </div>
-
-        {/* Pills */}
-        <div className="anim-5 flex flex-wrap gap-4 mb-12">
-          {PILLS.map((p) => (
-            <div key={p.text} className="flex items-center gap-1.5 text-white/60 text-[0.78rem] font-medium">
-              <span className="text-[#F97316]">{p.icon}</span>
-              {p.text}
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* RIGHT — image */}
-      <div className="hidden lg:block absolute right-0 top-0 bottom-0 w-[52%]">
+      {/* Background image on the right — same pattern as ServicesHero */}
+      <div className="absolute right-0 top-0 bottom-0 hidden w-[55%] lg:block">
         <img
           src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&auto=format&fit=crop&q=80"
-          alt="Roofing professionals at work"
-          className="w-full h-full object-cover"
+          alt=""
+          className="h-full w-full object-cover opacity-90"
         />
-        {/* Dark gradient on left edge to blend with blue panel */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1A3C6E] via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1A3C6E] via-[#1A3C6E]/70 to-transparent" />
 
-        {/* Floating rating card */}
-        <div className="absolute bottom-48 right-32 bg-white rounded-2xl px-5 py-5 shadow-2xl">
-          <div className="flex items-center gap-1 mb-1">
+        {/* Floating cards anchored to the section's right region (scale with %) */}
+        <div className="absolute right-[8%] top-[56%] z-50 rounded-2xl bg-[#1A3C6E]/95 px-6 py-5 text-white shadow-2xl backdrop-blur">
+          <div className="mb-1 flex items-center gap-2">
+            <Clock size={14} color="#F97316" />
+            <p className="text-[0.65rem] font-semibold uppercase tracking-widest text-white/60">Emergency Service</p>
+          </div>
+          <p className="font-display text-[0.95rem] font-bold">24/7 Availability</p>
+          <p className="mt-0.5 text-[0.68rem] text-white/50">Always Ready to Respond</p>
+        </div>
+        <div className="absolute bottom-[18%] right-[30%] rounded-2xl bg-white px-5 py-5 shadow-2xl">
+          <div className="mb-1 flex items-center gap-1">
             {[...Array(5)].map((_, i) => (
               <Star key={i} size={13} fill="#F97316" color="#F97316" />
             ))}
           </div>
-          <p className="font-display font-extrabold text-[#111827] text-[1.5rem] leading-none">4.9</p>
-          <p className="text-[#6B7280] text-[0.7rem] font-medium mt-0.5">Verified Customer Reviews</p>
+          <p className="font-display text-[1.5rem] font-extrabold leading-none text-[#111827]">4.9</p>
+          <p className="mt-0.5 text-[0.7rem] font-medium text-[#6B7280]">Verified Customer Reviews</p>
         </div>
+      </div>
 
-        {/* Floating emergency card */}
-        <div className="absolute bottom-64 right-8 bg-[#1A3C6E] text-white rounded-2xl px-6 py-5 shadow-2xl">
-          <div className="flex items-center gap-2 mb-1">
-            <Clock size={14} color="#F97316" />
-            <p className="text-[0.65rem] font-semibold uppercase tracking-widest text-white/60">Emergency Service</p>
+      {/* Content — SAME container as the rest of the site: max-w-6xl mx-auto px-6 */}
+      <div className="relative z-10 mx-auto max-w-6xl px-6">
+        <div className="max-w-xl">
+          {/* Badge */}
+          <div className="mb-6 inline-flex w-fit items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3.5 py-1.5 text-[0.7rem] font-semibold uppercase tracking-widest text-white/90">
+            <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-[#F97316]" />
+            24/7 Emergency Roofing Services
           </div>
-          <p className="font-display font-bold text-[0.95rem]">24/7 Availability</p>
-          <p className="text-white/50 text-[0.68rem] mt-0.5">Always Ready to Respond</p>
+          {/* Headline */}
+          <h1 className="mb-5 font-display text-[clamp(2.2rem,4.5vw,3.75rem)] font-extrabold leading-[1.08] text-white text-balance">
+            Your Roof.
+            <br />
+            Our <span className="text-[#F97316]">Responsibility.</span>
+          </h1>
+          {/* Sub */}
+          <p className="mb-8 max-w-md text-[clamp(0.95rem,1.1vw,1.05rem)] leading-relaxed text-white/65 text-pretty">
+            From leaks and storm damage to full roof replacement, we handle every job with care and precision.
+          </p>
+          {/* CTAs */}
+          <div className="mb-8 flex flex-wrap gap-3">
+            <a
+              href="tel:+10000000000"
+              className="flex items-center gap-2.5 rounded-xl bg-[#F97316] px-7 py-3.5 text-[0.9rem] font-bold text-white shadow-[0_6px_20px_rgba(249,115,22,0.45)] transition-all hover:-translate-y-0.5 hover:bg-[#EA6C0A]"
+            >
+              <Phone size={16} strokeWidth={2.5} />
+              Call Now — Free Quote
+            </a>
+            <Link
+              to="/quote"
+              className="flex items-center gap-2 rounded-xl border border-white/25 px-6 py-3.5 text-[0.9rem] font-semibold text-white transition-all hover:-translate-y-0.5 hover:border-white/60 hover:bg-white/10"
+            >
+              Get Estimate <ArrowRight size={15} />
+            </Link>
+          </div>
+          {/* Pills */}
+          <div className="flex flex-wrap gap-x-5 gap-y-3">
+            {PILLS.map((p) => (
+              <div key={p.text} className="flex items-center gap-1.5 text-[0.78rem] font-medium text-white/60">
+                <span className="text-[#F97316]">{p.icon}</span>
+                {p.text}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
-      {/* Mobile image */}
-      <div className="lg:hidden w-full h-52 absolute bottom-0 left-0 right-0 z-0">
-        <img
-          src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop&q=80"
-          alt="Roofing"
-          className="w-full h-full object-cover opacity-20"
-        />
-      </div>
+      {/* Angled white transition into the next section — same as ServicesHero */}
+      <div
+        className="absolute bottom-[-2px] left-0 right-0 z-10 h-14 bg-white"
+        style={{ clipPath: "polygon(0 100%, 100% 0%, 100% 100%)" }}
+      />
     </section>
   );
 }

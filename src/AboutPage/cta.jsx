@@ -10,7 +10,7 @@ const TRUST = [
 export default function AboutCTA() {
   return (
     <section className="bg-[#1A3C6E] py-16">
-      <div className="max-w-5xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6">
 
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-10">
 

@@ -1,87 +1,157 @@
-import { useState, useRef, useCallback } from "react";
-import { MoveHorizontal } from "lucide-react";
+import { useState, useRef, useCallback, useEffect } from "react";
+import { ChevronLeft, ChevronRight, MapPin } from "lucide-react";
 
 const PAIRS = [
   {
     label: "Storm Damage → Full Repair",
     location: "Springfield, IL",
-    before: "https://images.unsplash.com/photo-1605152276897-4f618f831968?w=800&auto=format&fit=crop&q=80",
-    after:  "https://images.unsplash.com/photo-1632759145351-1d592919f522?w=800&auto=format&fit=crop&q=80",
+    duration: "4 days",
+    before: "https://images.unsplash.com/photo-1605152276897-4f618f831968?w=1200&auto=format&fit=crop&q=80",
+    after:  "https://images.unsplash.com/photo-1632759145351-1d592919f522?w=1200&auto=format&fit=crop&q=80",
   },
   {
     label: "Old Shingles → New Roof",
     location: "Springfield, IL",
-    before: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop&q=80",
-    after:  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&auto=format&fit=crop&q=80",
+    duration: "6 days",
+    before: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&auto=format&fit=crop&q=80",
+    after:  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&auto=format&fit=crop&q=80",
   },
 ];
 
-function Slider({ before, after }) {
-  const [pos, setPos]       = useState(50);
-  const dragging            = useRef(false);
-  const containerRef        = useRef(null);
+function Slider({ before, after, label }) {
+  const [pos, setPos] = useState(50);
+  const [active, setActive] = useState(false);
+  const dragging = useRef(false);
+  const containerRef = useRef(null);
 
-  const getPos = useCallback((clientX) => {
-    const rect = containerRef.current.getBoundingClientRect();
-    const raw  = ((clientX - rect.left) / rect.width) * 100;
-    return Math.min(Math.max(raw, 2), 98);
+  const setFromClientX = useCallback((clientX) => {
+    const el = containerRef.current;
+    if (!el) return;
+    const rect = el.getBoundingClientRect();
+    const raw = ((clientX - rect.left) / rect.width) * 100;
+    setPos(Math.min(Math.max(raw, 0), 100));
   }, []);
 
-  const onMouseMove = useCallback((e) => {
-    if (!dragging.current) return;
-    setPos(getPos(e.clientX));
-  }, [getPos]);
+  // Track pointer across the whole window so the drag never "sticks"
+  // when the cursor leaves the image bounds.
+  useEffect(() => {
+    const move = (e) => {
+      if (!dragging.current) return;
+      const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+      setFromClientX(clientX);
+    };
+    const up = () => {
+      dragging.current = false;
+      setActive(false);
+    };
+    window.addEventListener("mousemove", move);
+    window.addEventListener("touchmove", move, { passive: false });
+    window.addEventListener("mouseup", up);
+    window.addEventListener("touchend", up);
+    return () => {
+      window.removeEventListener("mousemove", move);
+      window.removeEventListener("touchmove", move);
+      window.removeEventListener("mouseup", up);
+      window.removeEventListener("touchend", up);
+    };
+  }, [setFromClientX]);
 
-  const onTouchMove = useCallback((e) => {
-    if (!dragging.current) return;
-    setPos(getPos(e.touches[0].clientX));
-  }, [getPos]);
+  const startDrag = () => {
+    dragging.current = true;
+    setActive(true);
+  };
+
+  // Click anywhere on the track to jump the handle there.
+  const onTrackDown = (e) => {
+    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+    setFromClientX(clientX);
+    startDrag();
+  };
+
+  const onKeyDown = (e) => {
+    if (e.key === "ArrowLeft") { setPos((p) => Math.max(0, p - 2)); }
+    else if (e.key === "ArrowRight") { setPos((p) => Math.min(100, p + 2)); }
+    else if (e.key === "Home") { setPos(0); }
+    else if (e.key === "End") { setPos(100); }
+  };
 
   return (
     <div
       ref={containerRef}
-      className="relative w-full h-64 md:h-80 rounded-2xl overflow-hidden cursor-col-resize select-none"
-      onMouseMove={onMouseMove}
-      onMouseUp={() => { dragging.current = false; }}
-      onMouseLeave={() => { dragging.current = false; }}
-      onTouchMove={onTouchMove}
-      onTouchEnd={() => { dragging.current = false; }}
+      onMouseDown={onTrackDown}
+      onTouchStart={onTrackDown}
+      className="group relative w-full aspect-[4/3] md:aspect-[3/2] rounded-3xl overflow-hidden
+        select-none cursor-col-resize ring-1 ring-black/5
+        shadow-[0_20px_60px_-15px_rgba(17,24,39,0.35)]"
     >
-      {/* After image (full width background) */}
-      <img src={after} alt="After" className="absolute inset-0 w-full h-full object-cover" />
+      {/* After image (full-bleed base layer) */}
+      <img
+        src={after || "/placeholder.svg"}
+        alt={`${label} — after`}
+        draggable={false}
+        className="absolute inset-0 w-full h-full object-cover"
+      />
 
-      {/* Before image (clipped) */}
-      <div className="absolute inset-0 overflow-hidden" style={{ width: `${pos}%` }}>
-        <img src={before} alt="Before"
-          className="absolute inset-0 h-full object-cover"
-          style={{ width: containerRef.current?.offsetWidth ?? "100%" }} />
-      </div>
+      {/* Before image (clipped by percentage via clip-path) */}
+      <img
+        src={before || "/placeholder.svg"}
+        alt={`${label} — before`}
+        draggable={false}
+        className="absolute inset-0 w-full h-full object-cover"
+        style={{ clipPath: `inset(0 ${100 - pos}% 0 0)` }}
+      />
+
+      {/* Top scrim for label legibility */}
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-20
+        bg-gradient-to-b from-black/45 to-transparent" />
 
       {/* Labels */}
-      <div className="absolute top-3 left-3 bg-black/60 text-white text-[0.68rem]
-        font-bold uppercase tracking-widest px-3 py-1 rounded-full backdrop-blur-sm">
+      <div className="pointer-events-none absolute top-4 left-4 flex items-center gap-1.5
+        bg-white/15 backdrop-blur-md text-white text-[0.62rem] font-bold uppercase
+        tracking-[0.15em] px-3 py-1.5 rounded-full ring-1 ring-white/25">
         Before
       </div>
-      <div className="absolute top-3 right-3 bg-[#F97316] text-white text-[0.68rem]
-        font-bold uppercase tracking-widest px-3 py-1 rounded-full">
+      <div className="pointer-events-none absolute top-4 right-4 flex items-center gap-1.5
+        bg-[#F97316] text-white text-[0.62rem] font-bold uppercase
+        tracking-[0.15em] px-3 py-1.5 rounded-full shadow-lg shadow-[#F97316]/30">
         After
       </div>
 
       {/* Divider line */}
-      <div className="absolute top-0 bottom-0 w-0.5 bg-white shadow-[0_0_8px_rgba(255,255,255,0.8)]"
-        style={{ left: `${pos}%` }} />
+      <div
+        className="pointer-events-none absolute top-0 bottom-0 w-[3px] -translate-x-1/2
+          bg-white shadow-[0_0_20px_rgba(255,255,255,0.9)]"
+        style={{ left: `${pos}%` }}
+      />
 
       {/* Handle */}
       <div
-        className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2
-          w-10 h-10 bg-white rounded-full shadow-xl
-          flex items-center justify-center cursor-grab active:cursor-grabbing
-          border-2 border-[#F97316]"
+        role="slider"
+        tabIndex={0}
+        aria-label={`Reveal before and after: ${label}`}
+        aria-valuemin={0}
+        aria-valuemax={100}
+        aria-valuenow={Math.round(pos)}
+        aria-orientation="horizontal"
+        onKeyDown={onKeyDown}
+        onMouseDown={(e) => { e.stopPropagation(); startDrag(); }}
+        onTouchStart={(e) => { e.stopPropagation(); startDrag(); }}
+        className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 z-10
+          h-12 w-12 rounded-full cursor-grab active:cursor-grabbing outline-none
+          focus-visible:ring-4 focus-visible:ring-[#F97316]/50 rounded-full"
         style={{ left: `${pos}%` }}
-        onMouseDown={(e) => { e.preventDefault(); dragging.current = true; }}
-        onTouchStart={() => { dragging.current = true; }}
       >
-        <MoveHorizontal size={16} color="#F97316" strokeWidth={2.5} />
+        {/* Pulse ring while idle */}
+        <span
+          className={`absolute inset-0 rounded-full bg-white/50 transition-opacity duration-300
+            ${active ? "opacity-0" : "opacity-100 animate-ping"}`}
+        />
+        {/* Knob */}
+        <span className="absolute inset-0 rounded-full bg-white/90 backdrop-blur
+          shadow-xl ring-1 ring-black/5 flex items-center justify-center gap-0">
+          <ChevronLeft size={16} color="#F97316" strokeWidth={3} className="-mr-1" />
+          <ChevronRight size={16} color="#F97316" strokeWidth={3} className="-ml-1" />
+        </span>
       </div>
     </div>
   );
@@ -103,18 +173,26 @@ export default function BeforeAfter() {
             Before &amp; After
           </h2>
           <p className="text-[#6B7280] mt-3 max-w-3xl text-[0.95rem] leading-relaxed">
-            Drag the slider to see the difference. These are real jobs we've completed right here in Springfield, IL — no stock photos, no staging.
+            Drag the slider — or use your arrow keys — to see the difference. These are real jobs we&apos;ve
+            completed right here in Springfield, IL. No stock photos, no staging.
           </p>
         </div>
 
         {/* Sliders grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {PAIRS.map((p) => (
-            <div key={p.label}>
-              <Slider before={p.before} after={p.after} />
-              <div className="mt-4 flex items-center justify-between">
-                <p className="font-display font-bold text-[#111827] text-[0.95rem]">{p.label}</p>
-                <p className="text-[#6B7280] text-[0.75rem] font-medium">{p.location}</p>
+            <div key={p.label} className="group">
+              <Slider before={p.before} after={p.after} label={p.label} />
+              <div className="mt-5 flex items-center justify-between gap-4">
+                <p className="font-display font-bold text-[#111827] text-[1rem] leading-snug">
+                  {p.label}
+                </p>
+                <div className="flex items-center gap-1.5 shrink-0 text-[#6B7280] text-[0.75rem] font-medium">
+                  <MapPin size={13} className="text-[#F97316]" />
+                  {p.location}
+                  <span className="mx-1 text-[#D1D5DB]">•</span>
+                  {p.duration}
+                </div>
               </div>
             </div>
           ))}
