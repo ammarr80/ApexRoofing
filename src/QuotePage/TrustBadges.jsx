@@ -4,32 +4,32 @@ import {
 } from "lucide-react";
 
 const TRUST_BADGES = [
-  { icon: <ShieldCheck size={20} />, label: "Licensed & Insured",  sub: "State of Texas" },
+  { icon: <ShieldCheck size={20} />, label: "Licensed & Insured",  sub: "State of Illinois" },
   { icon: <BadgeCheck  size={20} />, label: "GAF Certified",        sub: "Master Elite Contractor" },
-  { icon: <Star        size={20} />, label: "4.9 / 5.0 Rating",     sub: "180+ Google Reviews" },
+  { icon: <Star        size={20} />, label: "4.9 / 5.0 Rating",     sub: "Google Reviews" },
   { icon: <Clock       size={20} />, label: "Same-Day Response",    sub: "Mon–Sat 7am–7pm" },
   { icon: <Zap         size={20} />, label: "10-Year Warranty",     sub: "Workmanship guaranteed" },
-  { icon: <DollarSign  size={20} />, label: "Financing Available",  sub: "0% for 12 months" },
+  { icon: <DollarSign  size={20} />, label: "Financing Available",  sub: "Ask us for details" },
 ];
 
 const REVIEWS = [
   {
     name: "Marcus T.",
-    location: "South Houston",
+    location: "Springfield, IL",
     rating: 5,
-    text: "Apex came out within two hours of my call after the hail storm. Had everything documented for my insurance claim the same day. Roof was done in 48 hours. Unbelievable service.",
+    text: "They came out within two hours after the hail storm. Had everything documented for my insurance claim the same day. Roof was done in 48 hours.",
   },
   {
     name: "Jennifer K.",
-    location: "Round Rock",
+    location: "Decatur, IL",
     rating: 5,
-    text: "Three other roofers gave me vague quotes. Apex showed up, walked me through everything in plain English, and handed me a written estimate before they left. Exactly what I needed.",
+    text: "Three other roofers gave me vague quotes. These guys showed up, walked me through everything clearly, and handed me a written estimate before they left.",
   },
   {
     name: "David R.",
-    location: "Cedar Park",
+    location: "Lincoln, IL",
     rating: 5,
-    text: "The crew was on time, professional, and cleaned up every nail in the driveway. My neighbor already used them after seeing how smooth the job went.",
+    text: "The crew was on time, cleaned up every nail in the driveway, and left the yard spotless. My neighbor called them the following week.",
   },
 ];
 
@@ -46,7 +46,7 @@ function GoogleWordmark() {
   );
 }
 
-export default function TrustSection() {
+export default function QuoteTrust() {
   return (
     <section className="bg-white py-24" id="trust">
       <div className="max-w-6xl mx-auto px-6">
@@ -56,15 +56,14 @@ export default function TrustSection() {
           <div className="inline-flex items-center gap-2 bg-[#F97316]/8 border border-[#F97316]/18
             text-[#F97316] text-[0.7rem] font-bold tracking-widest uppercase
             px-3.5 py-1.5 rounded-full mb-4">
-            Why Houston Trusts Apex
+            Why Springfield Chooses PrimeShield
           </div>
           <h2 className="font-display font-extrabold text-[#111827]
             text-[clamp(1.85rem,3.5vw,2.6rem)] leading-tight mb-3">
             Every Promise. Every Job. Backed in Writing.
           </h2>
           <p className="text-[#6B7280] text-[0.95rem] leading-relaxed max-w-xl">
-            Roofing is expensive and trust is hard to earn. Here's why over 1,200 Houston
-            homeowners chose Apex — and why most refer us to their neighbors.
+            Roofing is a significant expense and it's hard to know who to trust. Here's what we put in writing on every job.
           </p>
         </div>
 
@@ -77,22 +76,17 @@ export default function TrustSection() {
                 hover:border-[#1A3C6E]/20 hover:bg-white
                 hover:shadow-[0_6px_20px_rgba(26,60,110,0.06)]
                 transition-all duration-200">
-
-              {/* Icon */}
               <div className="w-10 h-10 rounded-xl
                 bg-[#1A3C6E] flex items-center justify-center
                 text-white flex-shrink-0">
                 {b.icon}
               </div>
-
-              {/* Text */}
               <div className="min-w-0">
                 <p className="font-bold text-[#111827] text-[0.85rem] leading-snug truncate">
                   {b.label}
                 </p>
                 <p className="text-[#9CA3AF] text-[0.72rem] font-medium truncate">{b.sub}</p>
               </div>
-
             </div>
           ))}
         </div>
@@ -103,7 +97,7 @@ export default function TrustSection() {
         <div className="mb-10">
           <div className="flex items-center justify-between mb-7 flex-wrap gap-3">
             <h3 className="font-display font-bold text-[#111827] text-[1.3rem]">
-              What Houston Homeowners Say
+              What Springfield Homeowners Say
             </h3>
             <a
               href="https://google.com"
@@ -111,7 +105,7 @@ export default function TrustSection() {
               rel="noopener noreferrer"
               className="text-[0.8rem] font-semibold text-[#1A3C6E] hover:text-[#F97316]
                 flex items-center gap-1.5 transition-colors">
-              See all 180+ reviews →
+              See all reviews on Google →
             </a>
           </div>
 
@@ -159,12 +153,12 @@ export default function TrustSection() {
           </div>
           <div className="flex flex-wrap gap-3 flex-shrink-0">
             <a
-              href="tel:+15120000000"
+              href="tel:+15550183921"
               className="flex items-center gap-2 border border-white/22 text-white
                 font-semibold text-[0.85rem] px-5 py-2.5 rounded-xl
                 hover:bg-white/8 hover:border-white/40 transition-all">
               <Phone size={14} />
-              (512) 000-0000
+              (555) 018-3921
             </a>
             <a
               href="#quote-form"

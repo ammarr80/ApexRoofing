@@ -16,22 +16,21 @@ export default function AreasMap() {
             Find Us on the Map
           </h2>
           <p className="text-[#6B7280] text-[0.95rem] leading-relaxed max-w-lg">
-            We're based in Houston and cover the full metro area. Call us if you're unsure
-            whether we reach your neighborhood — we likely do.
+            We're based in Springfield and cover Central Illinois. Call us if you're unsure whether we reach your area.
           </p>
         </div>
 
         {/* Map embed */}
         <div className="rounded-2xl overflow-hidden border border-[#E5E7EB] shadow-sm w-full h-[440px]">
           <iframe
-            title="Apex Roofing — Houston TX Service Area Map"
+            title="PrimeShield Roofing — Springfield, IL Service Area Map"
             width="100%"
             height="100%"
             style={{ border: 0 }}
             loading="lazy"
             allowFullScreen
             referrerPolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d220975.39697374294!2d-97.87640313749998!3d30.307801899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b599a0cc032f%3A0x5d9b464bd469d57a!2sHouston%2C%20TX!5e0!3m2!1sen!2sus!4v1700000000000"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96926.53603915645!2d-89.70312!3d39.78173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880b6a6e7a1afb7d%3A0x1b5e7c6b2a4e1234!2sSpringfield%2C%20IL!5e0!3m2!1sen!2sus!4v1700000000000"
           />
         </div>
 

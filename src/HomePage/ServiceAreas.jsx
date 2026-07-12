@@ -2,15 +2,11 @@ import { ArrowRight, MapPin, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const AREAS = [
-  { name: "Houston",        primary: true,  tag: "Main Office" },
-  { name: "Round Rock",    primary: false, tag: "Full Coverage" },
-  { name: "Cedar Park",    primary: false, tag: "Full Coverage" },
-  { name: "Pflugerville",  primary: false, tag: "Full Coverage" },
-  { name: "Buda",          primary: false, tag: "Full Coverage" },
-  { name: "Kyle",          primary: false, tag: "Full Coverage" },
-  { name: "Georgetown",    primary: false, tag: "Full Coverage" },
-  { name: "Leander",       primary: false, tag: "Emergency Only" },
-  { name: "Manor",         primary: false, tag: "Emergency Only" },
+  { name: "Springfield",  primary: true,  tag: "Main Office" },
+  { name: "Lincoln",      primary: false, tag: "Full Coverage" },
+  { name: "Decatur",      primary: false, tag: "Full Coverage" },
+  { name: "Champaign",    primary: false, tag: "Full Coverage" },
+  { name: "Bloomington",  primary: false, tag: "Full Coverage" },
 ];
 
 const TAG_STYLES = {
@@ -34,11 +30,10 @@ export default function ServiceAreas() {
               Where We Work
             </div>
             <h2 className="font-display font-extrabold text-white text-[clamp(1.9rem,4vw,2.6rem)] leading-tight mb-4">
-              Roofing Houston<br />& Surrounding Areas
+              Roofing Springfield<br />& Central Illinois
             </h2>
             <p className="text-white/55 text-[0.95rem] leading-relaxed mb-8">
-              Apex covers all of Houston and the greater metro — from Cedar Park down to Buda.
-              Emergency response available across every listed area, day or night.
+              We cover Springfield and the surrounding Central Illinois area. Emergency response is available across all listed areas, day or night.
             </p>
 
             {/* Legend */}
@@ -53,22 +48,22 @@ export default function ServiceAreas() {
 
             <div className="flex flex-col gap-3">
               <div className="flex items-center gap-3">
-                <a href="tel:+15120000000"
+                <a href="tel:+15550183921"
                   className="flex items-center gap-2.5 bg-[#F97316] hover:bg-[#EA6C0A]
                     text-white font-bold text-[0.88rem] px-6 py-3 rounded-xl
                     shadow-[0_4px_18px_rgba(249,115,22,0.4)] transition-all hover:-translate-y-0.5 w-fit">
                   <Phone size={15} strokeWidth={2.5} />
-                  Call (512) 000-0000
+                  Call (555) 018-3921
                 </a>
                 <Link to="/quote"
                   className="flex items-center gap-2 border border-white/25 hover:border-white/60
                     text-white font-semibold text-[0.9rem] px-6 py-3.5 rounded-xl
                     transition-all hover:bg-white/8 hover:-translate-y-0.5">
-                    Detailed Area Coverage <ArrowRight size={15} />
+                    Get a Quote <ArrowRight size={15} />
                 </Link>
               </div>
               <p className="text-white/35 text-[0.75rem]">
-                Not on the list? Call us — we likely cover you.
+                Not on the list? Call us — we may still cover your area.
               </p>
             </div>
           </div>
@@ -76,17 +71,17 @@ export default function ServiceAreas() {
           {/* Right — map + grid */}
           <div className="flex-1 w-full flex flex-col gap-5">
 
-            {/* Google Maps Embed — Houston, TX */}
+            {/* Google Maps Embed — Springfield, IL */}
             <div className="rounded-2xl overflow-hidden border border-white/10 shadow-xl w-full h-72">
               <iframe
-                title="Apex Roofing Service Area — Houston, TX"
+                title="PrimeShield Roofing Service Area — Springfield, IL"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 loading="lazy"
                 allowFullScreen
                 referrerPolicy="no-referrer-when-downgrade"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d220975.39697374294!2d-97.87640313749998!3d30.307801899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b599a0cc032f%3A0x5d9b464bd469d57a!2sHouston%2C%20TX!5e0!3m2!1sen!2sus!4v1700000000000"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96926.53603915645!2d-89.70312!3d39.78173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880b6a6e7a1afb7d%3A0x1b5e7c6b2a4e1234!2sSpringfield%2C%20IL!5e0!3m2!1sen!2sus!4v1700000000000"
               />
             </div>
 
@@ -123,7 +118,7 @@ export default function ServiceAreas() {
 
             <div className="flex items-center gap-2 text-white/35 text-[0.78rem]">
               <MapPin size={13} />
-              <span>Coverage map updated regularly. Emergency response 24/7 across all zones.</span>
+              <span>Emergency response available 24/7 across all listed areas.</span>
             </div>
 
           </div>

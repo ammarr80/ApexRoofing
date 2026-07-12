@@ -4,22 +4,22 @@ const PILLARS = [
   {
     icon: <HardHat size={24} />,
     title: "Safety on Every Job",
-    desc: "Every Apex crew follows strict on-site safety protocols. We protect our workers, your property, and your family — no exceptions, no shortcuts under pressure.",
+    desc: "Every crew follows strict on-site safety protocols. We protect our workers, your property, and your family — no exceptions.",
   },
   {
     icon: <ClipboardCheck size={24} />,
     title: "Quality Workmanship",
-    desc: "We don't consider a job done until it's done right. Every install is inspected by a crew lead before we pack up. If something isn't right, we fix it before we leave.",
+    desc: "Every install is inspected by a crew lead before we pack up. If something isn't right, we fix it before we leave.",
   },
   {
     icon: <MessageSquare size={24} />,
     title: "Clear Communication",
-    desc: "You know what we're doing, why we're doing it, and what it costs — before we start. No surprises mid-job, no vague explanations, no runaround.",
+    desc: "You know what we're doing, why we're doing it, and what it costs — before we start. No surprises mid-job.",
   },
   {
     icon: <Sparkles size={24} />,
-    title: "Reliability You Can Count On",
-    desc: "We show up when we say we will. We finish when we say we will. In an industry full of no-shows and delays, we've built our reputation on just being dependable.",
+    title: "We Show Up When We Say We Will",
+    desc: "We arrive on time and finish on schedule. It sounds basic, but it's something a lot of contractors get wrong.",
   },
 ];
 
@@ -40,9 +40,7 @@ export default function OurApproach() {
             How We Work on Every Job
           </h2>
           <p className="text-[#6B7280] text-[0.95rem] leading-relaxed max-w-xl">
-            Our approach is straightforward — do the job right, treat people with respect, and
-            back everything we install. These aren't marketing words. They're the standard we
-            hold every crew member to on every job site.
+            Do the job right, communicate clearly, and stand behind everything we install. That's the standard we hold every crew member to.
           </p>
         </div>
 
@@ -53,7 +51,7 @@ export default function OurApproach() {
           <div className="rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.1)]">
             <img
               src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop&q=80"
-              alt="Apex Roofing crew performing a professional roof installation in Houston"
+              alt="PrimeShield Roofing crew performing a roof installation in Springfield, IL"
               className="w-full h-[480px] object-cover"
               loading="lazy"
             />
@@ -61,7 +59,7 @@ export default function OurApproach() {
 
           {/* Right: pillars */}
           <div className="flex flex-col gap-6">
-            {PILLARS.map((p, i) => (
+            {PILLARS.map((p) => (
               <div key={p.title}
                 className="flex items-start gap-5 pb-6 border-b border-[#F3F4F6] last:border-0 last:pb-0">
                 <div className="w-12 h-12 bg-[#1A3C6E] rounded-xl

@@ -9,7 +9,7 @@ const VALUES = [
   {
     icon: <Users size={20} />,
     title: "Local & Accountable",
-    desc: "We're based in Houston and focused on Houston. When you call, you reach the people doing the actual work — not a national call center.",
+    desc: "We're based in Springfield and focused on Central Illinois. When you call, you reach the people doing the actual work — not a national call center.",
   },
   {
     icon: <Award size={20} />,
@@ -35,7 +35,7 @@ export default function WhoWeAre() {
             <div className="rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.1)]">
               <img
                 src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&auto=format&fit=crop&q=80"
-                alt="Apex Roofing crew on a residential Houston roof"
+                alt="PrimeShield Roofing crew on a Springfield home"
                 className="w-full h-[460px] object-cover"
                 loading="lazy"
               />
@@ -45,7 +45,7 @@ export default function WhoWeAre() {
             <div className="absolute bottom-0 right-0 bg-[#1A3C6E] text-white
               rounded-2xl px-6 py-5 shadow-2xl">
               <p className="font-display font-black text-[2rem] leading-none text-[#F97316]">
-                Houston's Own
+                Springfield's Own
               </p>
               <p className="text-white/70 text-[0.75rem] font-semibold uppercase tracking-widest mt-1">
                 Local Roofing Contractor
@@ -72,21 +72,20 @@ export default function WhoWeAre() {
             <h2 className="font-display font-extrabold text-[#111827]
               text-[clamp(1.9rem,4vw,2.8rem)] leading-tight mb-5">
               A Roofing Company<br />
-              <span className="text-[#1A3C6E]">Houston Homeowners Trust.</span>
+              <span className="text-[#1A3C6E]">Springfield Homeowners Trust.</span>
             </h2>
 
             <p className="text-[#6B7280] text-[0.95rem] leading-relaxed mb-4">
-              Apex Roofing is a locally operated roofing contractor serving residential and
-              commercial clients throughout Houston and the greater metro area. We specialize
-              in roof repair, roof replacement, inspections, and emergency roofing services —
-              handling every job with the same level of professionalism regardless of size.
+              PrimeShield Roofing is a locally operated contractor serving residential and
+              commercial clients throughout Springfield and Central Illinois. We handle roof
+              repair, roof replacement, inspections, and emergency roofing — every job gets
+              the same level of care regardless of size.
             </p>
 
             <p className="text-[#6B7280] text-[0.95rem] leading-relaxed mb-10">
               Our team is made up of experienced, certified roofing professionals who take
-              their craft seriously. We work cleanly, communicate clearly, and stand behind
-              everything we install. That's not a tagline — it's how we've built our reputation
-              in this city, one roof at a time.
+              their work seriously. We show up when we say we will, communicate clearly
+              throughout the job, and stand behind everything we install.
             </p>
 
             {/* Values */}

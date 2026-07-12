@@ -7,12 +7,12 @@ const BENEFITS = [
   {
     icon: <Clock size={22} />,
     title: "Same-Day Response",
-    desc: "Call before noon and we're on-site the same day in most Houston zip codes. Emergencies dispatched within the hour.",
+    desc: "Call before noon and we'll aim to be on-site the same day. Emergencies are dispatched as quickly as possible.",
   },
   {
     icon: <DollarSign size={22} />,
     title: "Upfront, Flat Pricing",
-    desc: "You get a detailed written quote before we start. No surprise charges, no 'we found extra damage' upsells mid-job.",
+    desc: "You get a detailed written quote before we start. No surprise charges, no mid-job upsells.",
   },
   {
     icon: <BadgeCheck size={22} />,
@@ -22,27 +22,27 @@ const BENEFITS = [
   {
     icon: <ShieldCheck size={22} />,
     title: "10-Year Workmanship Warranty",
-    desc: "Every job we complete is covered for 10 years. If something goes wrong with our work, we come back and fix it. Period.",
+    desc: "Every job we complete is covered for 10 years. If something goes wrong with our work, we come back and fix it.",
   },
   {
     icon: <FileText size={22} />,
     title: "Insurance Claim Assistance",
-    desc: "We've helped hundreds of Houston homeowners navigate hail and storm claims. We document everything and work directly with your adjuster.",
+    desc: "We document storm and hail damage thoroughly and can work directly with your adjuster throughout the claims process.",
   },
   {
     icon: <Wrench size={22} />,
-    title: "Premium Materials Only",
-    desc: "We stock GAF and Owens Corning shingles, Firestone flat membranes, and standing seam metal — materials built for Texas weather.",
+    title: "Quality Materials",
+    desc: "We use GAF and Owens Corning shingles, Firestone flat membranes, and standing seam metal — materials built for Illinois weather.",
   },
   {
     icon: <ThumbsUp size={22} />,
-    title: "Clean, Respectful Crews",
-    desc: "Our teams clean up completely before leaving. No nails in the driveway, no debris in the yard. We treat your home like it's ours.",
+    title: "Clean Jobsite",
+    desc: "Our crews clean up before leaving. No nails in the driveway, no debris left behind.",
   },
   {
     icon: <Headphones size={22} />,
-    title: "Real People, Real Support",
-    desc: "You talk to the same crew member from first call to final walkthrough. No call centers, no handoffs, no confusion.",
+    title: "Consistent Point of Contact",
+    desc: "You deal with the same person from first call to final walkthrough. No handoffs, no confusion.",
   },
 ];
 
@@ -56,21 +56,20 @@ export default function Benefits() {
           <div className="inline-flex items-center gap-2 bg-[#F97316]/10 border border-[#F97316]/20
             text-[#F97316] text-[0.7rem] font-semibold tracking-widest uppercase
             px-3.5 py-1.5 rounded-full mb-4">
-            Why Apex
+            Why PrimeShield
           </div>
           <h2 className="font-display font-extrabold text-[#111827]
             text-[clamp(1.9rem,4vw,2.8rem)] leading-tight mb-3">
             What You Get With Every Job
           </h2>
           <p className="text-[#6B7280] text-[0.95rem] leading-relaxed max-w-xl">
-            We don't just fix roofs. We back our work, communicate clearly, and make the whole
-            experience as painless as possible — from first call to final inspection.
+            We back our work, give you clear pricing upfront, and keep you informed from start to finish.
           </p>
         </div>
 
         {/* Benefits grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {BENEFITS.map((b, i) => (
+          {BENEFITS.map((b) => (
             <div key={b.title}
               className="group flex flex-col gap-4 p-6
                 border border-[#E5E7EB] rounded-2xl

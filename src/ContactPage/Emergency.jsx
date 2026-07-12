@@ -32,24 +32,23 @@ export default function ContactEmergency() {
               Need Emergency Roof Repair?
             </h2>
             <p className="text-white/75 text-[0.92rem] leading-relaxed max-w-lg">
-              Active leak, storm damage, or a sudden collapse risk — Apex dispatches
-              a crew fast. Day or night, no extra charge for emergency calls.
+              Active leak, storm damage, or a sudden collapse risk — we dispatch a crew fast. Day or night, no extra charge for emergency calls.
             </p>
           </div>
         </div>
 
         <div className="shrink-0 flex flex-col items-center gap-3">
           <a
-            href="tel:+15120000000"
+            href="tel:+15559991044"
             className="flex items-center gap-3 bg-white hover:bg-white/90
               text-[#F97316] font-bold text-[1rem] px-8 py-4 rounded-xl
               shadow-[0_8px_28px_rgba(0,0,0,0.15)] transition-all hover:-translate-y-0.5 whitespace-nowrap"
           >
             <Phone size={18} strokeWidth={2.5} />
-            Call (512) 000-0000
+            Call (555) 999-1044
           </a>
           <p className="text-white/60 text-[0.72rem] font-medium tracking-wide">
-            Average Houston response: under 60 minutes
+            Emergency line — available 24/7
           </p>
         </div>
 

@@ -17,20 +17,20 @@ export default function ContactCTA() {
               Still Have Questions?
             </h2>
             <p className="text-[#6B7280] text-[0.88rem]">
-              Call us directly or request a free estimate — we respond within the hour.
+              Call us directly or request a free estimate — we'll get back to you quickly.
             </p>
           </div>
         </div>
 
         <div className="flex flex-col sm:flex-row gap-3 shrink-0">
           <a
-            href="tel:+15120000000"
+            href="tel:+15550183921"
             className="flex items-center justify-center gap-2 bg-[#F97316] hover:bg-[#EA6C0A]
               text-white font-bold text-[0.85rem] px-6 py-3 rounded-xl
               shadow-[0_4px_14px_rgba(249,115,22,0.3)] transition-all hover:-translate-y-0.5"
           >
             <Phone size={14} strokeWidth={2.5} />
-            Call (512) 000-0000
+            Call (555) 018-3921
           </a>
           <Link
             to="/quote"

@@ -3,49 +3,49 @@ import { Star, Quote } from "lucide-react";
 const REVIEWS = [
   {
     name: "Marcus T.",
-    location: "South Houston, TX",
+    location: "Springfield, IL",
     rating: 5,
     date: "March 2024",
-    text: "Apex showed up within 2 hours after the hail storm. Had my roof patched that same evening and fully replaced by Friday. Professional, fast, and completely honest about what needed to be done — exactly what you want when your ceiling is leaking.",
+    text: "They showed up within 2 hours after the hail storm. Had my roof patched that same evening and fully replaced by Friday. Straightforward about what needed to be done — exactly what you want when your ceiling is leaking.",
   },
   {
     name: "Priya S.",
-    location: "Round Rock, TX",
+    location: "Decatur, IL",
     rating: 5,
     date: "January 2024",
-    text: "Got three quotes before calling Apex. They weren't the cheapest but they were by far the most transparent. The crew arrived on time, cleaned up before leaving, and the new roof looks incredible. Worth every cent.",
+    text: "Got three quotes before calling. They weren't the cheapest but they were the most transparent. The crew arrived on time, cleaned up before leaving, and the new roof looks great. Worth it.",
   },
   {
     name: "Derek & Alicia M.",
-    location: "Cedar Park, TX",
+    location: "Lincoln, IL",
     rating: 5,
     date: "November 2023",
-    text: "We were nervous about the whole process — new roof is a big expense. Apex walked us through every step, handled the insurance claim themselves, and finished a day ahead of schedule. Couldn't have been easier.",
+    text: "We were nervous about the whole process — a new roof is a big expense. They walked us through every step, handled the insurance claim, and finished a day ahead of schedule.",
   },
   {
     name: "James O.",
-    location: "Pflugerville, TX",
+    location: "Champaign, IL",
     rating: 5,
     date: "August 2023",
-    text: "Had a leak I'd been ignoring for months. Called Apex on a Tuesday morning, they found the source by noon and sealed it same day. Turns out it was just a flashing issue — they could've told me I needed a new roof but they didn't. That's integrity.",
+    text: "Had a leak I'd been putting off for months. Called on a Tuesday morning, they found the source by noon and sealed it same day. Turned out to be a flashing issue — they could've told me I needed a new roof, but they didn't.",
   },
   {
     name: "Sandra K.",
-    location: "Buda, TX",
+    location: "Bloomington, IL",
     rating: 5,
     date: "June 2023",
-    text: "The crew was unbelievably respectful of our property. Laid down tarps everywhere, kept the noise to a minimum while my kids were napping, and swept the entire yard before leaving. Roof looks great too.",
+    text: "The crew was careful with our property. Tarps down everywhere, kept noise low while my kids were napping, and swept the yard before leaving. Roof looks great too.",
   },
   {
     name: "Tony R.",
-    location: "Georgetown, TX",
+    location: "Springfield, IL",
     rating: 5,
     date: "April 2023",
-    text: "Apex replaced our 22-year-old roof in one day. The team showed up at 7am, finished by 4pm, and left the place spotless. My neighbor asked who did it the next morning — already gave him their number.",
+    text: "They replaced our 22-year-old roof in one day. Showed up at 7am, finished by 4pm, left the place clean. My neighbor asked who did it the next morning.",
   },
 ];
 
-export default function Testimonials() {
+export default function ServicesTestimonials() {
   return (
     <section className="bg-white py-24" id="testimonials">
       <div className="max-w-6xl mx-auto px-6">
@@ -61,10 +61,10 @@ export default function Testimonials() {
             <div>
               <h2 className="font-display font-extrabold text-[#111827]
                 text-[clamp(1.9rem,4vw,2.8rem)] leading-tight mb-2">
-                What Houston Homeowners Say
+                What Springfield Homeowners Say
               </h2>
               <p className="text-[#6B7280] text-[0.95rem]">
-                200+ five-star reviews on Google. Here's what a few of them said.
+                A few reviews from homeowners we've worked with across Central Illinois.
               </p>
             </div>
             {/* Overall rating */}
@@ -81,7 +81,7 @@ export default function Testimonials() {
               <div className="w-px h-12 bg-[#E5E7EB]" />
               <div>
                 <p className="font-display font-bold text-[#111827] text-[0.95rem]">Google Rating</p>
-                <p className="text-[#6B7280] text-[0.75rem]">Based on 200+ reviews</p>
+                <p className="text-[#6B7280] text-[0.75rem]">Springfield, IL</p>
               </div>
             </div>
           </div>

@@ -5,42 +5,42 @@ const PROJECTS = [
   {
     img: "https://images.unsplash.com/photo-1632759145351-1d592919f522?w=800&auto=format&fit=crop&q=80",
     type: "Full Replacement",
-    location: "South Houston, TX",
+    location: "Springfield, IL",
     material: "GAF Timberline HDZ",
   },
   {
     img: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop&q=80",
     type: "Storm Damage Repair",
-    location: "Round Rock, TX",
+    location: "Decatur, IL",
     material: "Owens Corning Duration",
   },
   {
     img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&auto=format&fit=crop&q=80",
     type: "Roof Repair",
-    location: "Cedar Park, TX",
+    location: "Lincoln, IL",
     material: "Architectural Shingles",
   },
   {
     img: "https://images.unsplash.com/photo-1605152276897-4f618f831968?w=800&auto=format&fit=crop&q=80",
     type: "Full Replacement",
-    location: "Pflugerville, TX",
+    location: "Champaign, IL",
     material: "Metal Standing Seam",
   },
   {
     img: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&auto=format&fit=crop&q=80",
     type: "Leak Detection & Repair",
-    location: "Buda, TX",
+    location: "Bloomington, IL",
     material: "GAF Timberline",
   },
   {
     img: "https://images.unsplash.com/photo-1541123437800-1bb1317badc2?w=800&auto=format&fit=crop&q=80",
     type: "Gutter Installation",
-    location: "Georgetown, TX",
+    location: "Springfield, IL",
     material: "Seamless Aluminum K-Style",
   },
 ];
 
-export default function Gallery() {
+export default function ServicesGallery() {
   const [active, setActive] = useState(null);
 
   return (
@@ -56,10 +56,10 @@ export default function Gallery() {
           </div>
           <h2 className="font-display font-extrabold text-[#111827]
             text-[clamp(1.9rem,4vw,2.8rem)] leading-tight mb-3">
-            Recent Projects Across Houston
+            Recent Projects in Central Illinois
           </h2>
           <p className="text-[#6B7280] text-[0.95rem] leading-relaxed max-w-xl">
-            Every project below was completed by our Houston crew. Click any image to see the details.
+            A selection of recent jobs completed across the Springfield area. Click any image to see the details.
           </p>
         </div>
 

@@ -5,19 +5,19 @@ import {
 } from "lucide-react";
 
 const SERVICES = [
-  { icon: <Wrench size={22} />,          title: "Roof Repair",           desc: "Shingles, flashing, leaks — fixed fast before small issues become big bills." },
-  { icon: <Home size={22} />,            title: "Roof Replacement",      desc: "Full tear-off and premium installation. Built to last 30+ years." },
-  { icon: <Droplets size={22} />,        title: "Leak Detection",        desc: "We trace the source fast and seal it — no repeat visits, no guessing." },
-  { icon: <CloudLightning size={22} />,  title: "Storm Damage Repair",   desc: "Emergency hail and wind damage. We handle the job and the insurance claim." },
-  { icon: <Pipette size={22} />,         title: "Gutter Installation",   desc: "Protect your foundation with properly fitted gutters and downspouts." },
-  { icon: <Search size={22} />,          title: "Roof Inspection",       desc: "Full written report — ideal before buying, selling, or after any storm." },
+  { icon: <Wrench size={22} />,          title: "Roof Repair",           desc: "Shingles, flashing, leaks — we fix it fast before a small problem turns into a costly one." },
+  { icon: <Home size={22} />,            title: "Roof Replacement",      desc: "Full tear-off and solid installation. Built to handle whatever Illinois weather throws at it." },
+  { icon: <Droplets size={22} />,        title: "Leak Detection",        desc: "We find the source, not just the symptom — sealed properly so it doesn't come back." },
+  { icon: <CloudLightning size={22} />,  title: "Storm Damage Repair",   desc: "Hail or wind damage? We get on it quickly and can work directly with your insurance adjuster." },
+  { icon: <Pipette size={22} />,         title: "Gutter Installation",   desc: "Properly fitted gutters and downspouts to keep water away from your foundation." },
+  { icon: <Search size={22} />,          title: "Roof Inspection",       desc: "Detailed written report — useful before buying or selling a home, or after any major storm." },
 ];
 
 const CHECKS = [
-  "Clear pricing before any work starts",
-  "Professional tools and quality materials only",
-  "Respectful, clean crews on every job",
-  "No surprises — ever",
+  "Upfront pricing before any work begins",
+  "Quality materials and proper tools on every job",
+  "Clean, respectful crews who treat your property well",
+  "No hidden costs, no surprise charges",
 ];
 
 export default function Services() {
@@ -37,7 +37,7 @@ export default function Services() {
               Services We Offer
             </h2>
             <p className="text-white/50 mt-3 max-w-4xl text-[0.95rem] leading-relaxed">
-              Whether it’s urgent or routine, our priority stays the same — fast response times, transparent and honest pricing, and doing the job right the first time so you don’t have to deal with repeat issues or delays.
+              Whether it's an emergency or routine maintenance, we show up on time, tell you exactly what it'll cost, and get it done right — no callbacks, no runaround.
             </p>
           </div>
 
@@ -48,7 +48,7 @@ export default function Services() {
                 px-5 py-2.5 rounded-lg transition-all">
               All Services <ArrowRight size={14} />
             </Link>
-            <a href="tel:+10000000000"
+            <a href="tel:+15550183921"
               className="flex items-center gap-2 bg-[#F97316] hover:bg-[#EA6C0A]
                 text-white font-semibold text-[0.82rem]
                 px-5 py-2.5 rounded-lg transition-all
@@ -61,11 +61,9 @@ export default function Services() {
         {/* Body: checklist left + cards right */}
         <div className="flex flex-col lg:flex-row gap-10">
 
-        
-
           {/* Cards grid */}
           <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {SERVICES.map((s, i) => (
+            {SERVICES.map((s) => (
               <div key={s.title}
                 className="group bg-white/4 hover:bg-[#1A3C6E]/60
                   border border-white/8 hover:border-[#1A3C6E]

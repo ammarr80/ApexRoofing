@@ -10,7 +10,7 @@ const VALUES = [
   {
     icon: <Users size={20} />,
     title: "Local, Not Corporate",
-    desc: "Apex is Houston-based and Houston-focused. You're not talking to a call center — you're talking to the people doing the work.",
+    desc: "PrimeShield is Springfield-based and Springfield-focused. You're not talking to a call center — you're talking to the people doing the work.",
   },
   {
     icon: <Award size={20} />,
@@ -36,7 +36,7 @@ export default function About() {
             <div className="rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.1)]">
               <img
                 src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&auto=format&fit=crop&q=80"
-                alt="Apex Roofing crew working on an Houston home"
+                alt="PrimeShield Roofing crew working on a Springfield home"
                 className="w-full h-[420px] object-cover"
                 loading="lazy"
               />
@@ -45,9 +45,9 @@ export default function About() {
             {/* Floating stat card */}
             <div className="absolute -bottom-6 -right-6 bg-[#1A3C6E] text-white
               rounded-2xl px-6 py-5 shadow-2xl">
-              <p className="font-display font-black text-[2.2rem] leading-none text-[#F97316]">15+</p>
+              <p className="font-display font-black text-[2.2rem] leading-none text-[#F97316]">20+</p>
               <p className="text-white/70 text-[0.75rem] font-semibold uppercase tracking-widest mt-1">
-                Years Roofing Houston
+                Years Roofing Springfield
               </p>
             </div>
 
@@ -65,27 +65,26 @@ export default function About() {
             <div className="inline-flex items-center gap-2 bg-[#1A3C6E]/8 border border-[#1A3C6E]/15
               text-[#1A3C6E] text-[0.7rem] font-semibold tracking-widest uppercase
               px-3.5 py-1.5 rounded-full mb-5">
-              About Apex Roofing
+              About PrimeShield Roofing
             </div>
 
             <h2 className="font-display font-extrabold text-[#111827]
               text-[clamp(1.9rem,4vw,2.8rem)] leading-tight mb-5">
-              Houston's Roofing Crew.<br />
+              Springfield's Roofing Crew.<br />
               <span className="text-[#1A3C6E]">Built on Trust.</span>
             </h2>
 
             <p className="text-[#6B7280] text-[0.95rem] leading-relaxed mb-4 max-w-lg">
-              Apex Roofing has been protecting Houston homes since 2009. We started as a two-man crew
-              doing repairs in South Houston — today we're one of the most reviewed roofing companies
-              in the city, with a team of 20+ certified installers across the metro area.
+              PrimeShield Roofing has been working on Springfield homes since 2004. We started small,
+              doing repairs for neighbors — today we're one of the most reviewed roofing companies
+              in Central Illinois, with a crew of certified installers serving the entire metro area.
             </p>
 
             <p className="text-[#6B7280] text-[0.95rem] leading-relaxed mb-8 max-w-lg">
-              We built this company on a simple belief: homeowners deserve honest advice, quality
-              work, and a crew that shows up when they say they will. Every job we take — from a
-              $400 repair to a full replacement — gets the same level of attention.
+              We built this company on one simple idea: homeowners deserve honest advice, solid work,
+              and a crew that actually shows up when they say they will. Whether it's a small repair
+              or a full replacement, every job gets the same attention.
             </p>
-
 
             {/* Values grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
@@ -113,7 +112,7 @@ export default function About() {
                 text-white font-bold text-[0.88rem] px-7 py-3.5 rounded-xl
                 transition-all hover:-translate-y-0.5 shadow-[0_4px_14px_rgba(26,60,110,0.25)]"
             >
-              Meet the Apex Team →
+              Meet the PrimeShield Team →
             </Link>
           </div>
         </div>

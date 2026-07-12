@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Send, CheckCircle2, Check, CheckCircle } from "lucide-react";
+import { Send, CheckCircle2, CheckCircle } from "lucide-react";
 
 const SERVICES = [
   "Roof Repair",
@@ -46,13 +46,12 @@ export default function ContactForm() {
               Tell Us About Your Roof
             </h2>
             <p className="text-[#6B7280] text-[0.95rem] leading-relaxed mb-6">
-              Fill out the form and an Apex team member will call you back within the hour.
-              No pressure, no obligation — just a straight answer from a real roofer.
+              Fill out the form and someone from our team will call you back. No pressure, no obligation — just a straight answer from a real roofer.
             </p>
             <div className="flex flex-col gap-3 text-[0.85rem] text-[#6B7280]">
               <p className="flex items-center gap-2"> <CheckCircle className="text-[#F97316] w-5 h-5" /> Free estimate — no commitment</p>
               <p className="flex items-center gap-2"> <CheckCircle className="text-[#F97316] w-5 h-5" /> Same-day inspection available</p>
-              <p className="flex items-center gap-2"> <CheckCircle className="text-[#F97316] w-5 h-5" /> Response within 60 minutes</p>
+              <p className="flex items-center gap-2"> <CheckCircle className="text-[#F97316] w-5 h-5" /> We respond within the hour</p>
               <p className="flex items-center gap-2"> <CheckCircle className="text-[#F97316] w-5 h-5" /> Licensed & insured crew</p>
             </div>
           </div>
@@ -69,8 +68,7 @@ export default function ContactForm() {
                   We'll Call You Shortly
                 </h3>
                 <p className="text-[#6B7280] text-[0.9rem] max-w-sm leading-relaxed">
-                  Thanks for reaching out. An Apex team member will contact you within
-                  the hour to schedule your free inspection.
+                  We've received your request. Someone from our team will be in touch shortly to schedule your free inspection.
                 </p>
               </div>
             ) : (
@@ -86,7 +84,7 @@ export default function ContactForm() {
                   <div>
                     <label className={labelClass}>Phone Number *</label>
                     <input name="phone" required value={form.phone} onChange={handle}
-                      placeholder="(512) 000-0000" type="tel" className={inputClass} />
+                      placeholder="(555) 000-0000" type="tel" className={inputClass} />
                   </div>
                 </div>
 
@@ -119,11 +117,11 @@ export default function ContactForm() {
                     py-4 rounded-xl transition-all hover:-translate-y-0.5
                     shadow-[0_4px_16px_rgba(249,115,22,0.35)]">
                   <Send size={16} />
-                  Send Request — We'll Call Within the Hour
+                  Send Request
                 </button>
 
                 <p className="text-[#9CA3AF] text-[0.72rem] text-center">
-                  No spam. No obligation. Just honest roofing advice.
+                  No spam. No obligation. Your info is never shared.
                 </p>
               </form>
             )}

@@ -4,17 +4,17 @@ const INFO = [
   {
     icon: <Phone size={22} />,
     label: "Call Us",
-    value: "(512) 000-0000",
+    value: "(555) 018-3921",
     sub: "Emergency line open 24/7",
-    href: "tel:+15120000000",
+    href: "tel:+15550183921",
     highlight: true,
   },
   {
     icon: <Mail size={22} />,
     label: "Email",
-    value: "info@apexroofingHouston.com",
+    value: "contact@primeshieldroofing.com",
     sub: "We reply within a few hours",
-    href: "mailto:info@apexroofingHouston.com",
+    href: "mailto:contact@primeshieldroofing.com",
     highlight: false,
   },
   {

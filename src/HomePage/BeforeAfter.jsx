@@ -4,13 +4,13 @@ import { MoveHorizontal } from "lucide-react";
 const PAIRS = [
   {
     label: "Storm Damage → Full Repair",
-    location: "[City Name], [State]",
+    location: "Springfield, IL",
     before: "https://images.unsplash.com/photo-1605152276897-4f618f831968?w=800&auto=format&fit=crop&q=80",
     after:  "https://images.unsplash.com/photo-1632759145351-1d592919f522?w=800&auto=format&fit=crop&q=80",
   },
   {
     label: "Old Shingles → New Roof",
-    location: "[City Name], [State]",
+    location: "Springfield, IL",
     before: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop&q=80",
     after:  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&auto=format&fit=crop&q=80",
   },
@@ -103,7 +103,7 @@ export default function BeforeAfter() {
             Before &amp; After
           </h2>
           <p className="text-[#6B7280] mt-3 max-w-3xl text-[0.95rem] leading-relaxed">
-            Drag the slider to see the transformation. Real jobs, real results — right here in [City Name], with clear, visible outcomes you can trust.
+            Drag the slider to see the difference. These are real jobs we've completed right here in Springfield, IL — no stock photos, no staging.
           </p>
         </div>
 

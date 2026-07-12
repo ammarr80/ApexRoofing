@@ -27,8 +27,7 @@ export default function AreasCTA() {
               <span className="text-[#F97316]">Same-Day Response.</span>
             </h2>
             <p className="text-white/45 text-[0.88rem] leading-relaxed mb-6">
-              We know your neighborhood's weather, your roof types, and your insurance
-              adjusters by name. Call us to confirm your area and get a written estimate — fast.
+              Call us to confirm we cover your area and get a written estimate — we'll get back to you quickly.
             </p>
 
             <div className="flex flex-wrap gap-5">
@@ -44,13 +43,13 @@ export default function AreasCTA() {
           {/* Right */}
           <div className="flex flex-col gap-3 shrink-0 lg:min-w-[220px]">
             <a
-              href="tel:+15120000000"
+              href="tel:+15550183921"
               className="flex items-center justify-center gap-2.5 bg-[#F97316] hover:bg-[#EA6C0A]
                 text-white font-bold text-[0.9rem] px-7 py-3.5 rounded-xl
                 shadow-[0_4px_18px_rgba(249,115,22,0.35)] transition-all hover:-translate-y-0.5"
             >
               <Phone size={15} strokeWidth={2.5} />
-              Call (512) 000-0000
+              Call (555) 018-3921
             </a>
             <Link
               to="/quote"

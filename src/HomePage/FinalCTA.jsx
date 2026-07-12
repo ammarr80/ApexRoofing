@@ -21,13 +21,13 @@ export default function FinalCTA() {
 
           <div className="flex flex-wrap gap-3 shrink-0">
             <a
-              href="tel:+10000000000"
+              href="tel:+15550183921"
               className="flex items-center gap-2 bg-[#F97316] hover:bg-[#EA6C0A]
                 text-white font-bold text-[0.85rem] px-5 py-2.5 rounded-xl
                 shadow-[0_4px_14px_rgba(249,115,22,0.35)] transition-all hover:-translate-y-0.5"
             >
               <Phone size={14} strokeWidth={2.5} />
-              Call Now
+              Call (555) 018-3921
             </a>
             <Link
               to="/quote"
@@ -42,8 +42,8 @@ export default function FinalCTA() {
 
         <div className="mt-8 pt-6 border-t border-white/8 flex flex-col sm:flex-row
           items-center justify-between gap-3 text-white/20 text-[0.72rem]">
-          <p>© {new Date().getFullYear()} [Company Name]. All rights reserved.</p>
-          <p>[City], [State]</p>
+          <p>© {new Date().getFullYear()} PrimeShield Roofing. All rights reserved.</p>
+          <p>Springfield, IL</p>
         </div>
 
       </div>

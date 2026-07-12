@@ -3,36 +3,36 @@ import { Plus, Minus } from "lucide-react";
 
 const FAQS = [
   {
-    q: "How quickly can Apex respond to an emergency?",
-    a: "For active leaks or storm damage, we dispatch same-day — often within the hour in the Houston metro. We keep crews on call specifically for emergencies, no extra charge for after-hours response.",
+    q: "How quickly can you respond to an emergency?",
+    a: "For active leaks or storm damage, we dispatch same-day — often within the hour in the Springfield area. We keep crews available specifically for emergencies, with no extra charge for after-hours response.",
   },
   {
     q: "Do you offer free estimates?",
-    a: "Yes. Every estimate is free, written, and itemized. We come to your property, assess the full situation, and deliver a quote within 24 hours. No pressure, no obligation to proceed.",
+    a: "Yes. Every estimate is free, written, and itemized. We come to your property, assess the full situation, and deliver a quote within 24 hours. No obligation to proceed.",
   },
   {
     q: "How long does a full roof replacement take?",
-    a: "Most Houston homes are completed in a single day. Larger properties or complex roof lines may take two days. We show up at 7am, work straight through, and don't leave a job half-finished.",
+    a: "Most homes in the Springfield area are completed in a single day. Larger properties or complex roof lines may take two days. We show up when we say we will and don't leave a job unfinished.",
   },
   {
     q: "What roofing materials do you install?",
-    a: "We install GAF and Owens Corning architectural shingles, standing seam metal, TPO flat membranes, and more. For most Houston homes, we recommend GAF Timberline HDZ — it handles Texas heat and hail exceptionally well and carries a Lifetime limited warranty.",
+    a: "We install GAF and Owens Corning architectural shingles, standing seam metal, TPO flat membranes, and more. For most Illinois homes, we recommend GAF Timberline HDZ — it holds up well through Midwest winters and hail seasons and carries a Lifetime limited warranty.",
   },
   {
     q: "Will you work directly with my insurance company?",
-    a: "Yes — and we're experienced at it. We document all storm damage with photos, write detailed reports, and communicate directly with your adjuster if needed. We've helped hundreds of Houston homeowners get their full claim covered.",
+    a: "Yes. We document all storm damage with photos, write detailed reports, and can communicate directly with your adjuster if needed.",
   },
   {
     q: "What does your 10-year warranty actually cover?",
-    a: "Our workmanship warranty covers any defect in our installation — if something fails because of how we installed it, we come back and fix it at no cost. This is separate from the manufacturer's material warranty, which can extend up to Lifetime depending on the product.",
+    a: "Our workmanship warranty covers any defect in our installation. If something fails because of how we installed it, we come back and fix it at no cost. This is separate from the manufacturer's material warranty, which can extend up to Lifetime depending on the product.",
   },
   {
-    q: "Do you service areas outside Houston?",
-    a: "Yes. We cover Round Rock, Cedar Park, Pflugerville, Buda, Kyle, Georgetown, Leander, and Manor. If you're within 40 miles of downtown Houston, call us — we likely cover your area.",
+    q: "Do you service areas outside Springfield?",
+    a: "Yes. We cover Lincoln, Decatur, Champaign, and Bloomington. Not sure if we cover your area? Give us a call.",
   },
   {
-    q: "Is Apex licensed and insured in Texas?",
-    a: "Absolutely. We're fully licensed as a roofing contractor in the state of Texas and carry both general liability insurance and workers' compensation. We'll provide proof of insurance before any work begins — never hire a roofer who won't.",
+    q: "Is PrimeShield Roofing licensed and insured in Illinois?",
+    a: "Yes. We're fully licensed in Illinois and carry both general liability insurance and workers' compensation. We'll provide proof of insurance before any work begins.",
   },
 ];
 
@@ -80,10 +80,10 @@ export default function ServicesFAQ() {
           </div>
           <h2 className="font-display font-extrabold text-[#111827]
             text-[clamp(1.9rem,4vw,2.8rem)] leading-tight mb-3">
-            Questions We Hear Every Day
+            Common Questions
           </h2>
           <p className="text-[#6B7280] text-[0.95rem] leading-relaxed max-w-lg">
-            Straight answers from the Apex team. If you don't see your question here, just call us.
+            Answers to questions we hear often. If yours isn't here, just call us.
           </p>
         </div>
 

@@ -26,35 +26,34 @@ export default function Footer() {
               </div>
               <div className="flex flex-col leading-none">
                 <span className="font-display font-bold text-white text-[1rem] tracking-tight">
-                  Apex Roofing Co.
+                  PrimeShield Roofing
                 </span>
                 <span className="text-[0.62rem] text-white/40 tracking-widest uppercase">
-                  Houston, Texas
+                  Springfield, Illinois
                 </span>
               </div>
             </Link>
 
             <p className="text-white/40 text-[0.85rem] leading-relaxed max-w-xs">
-              Houston's trusted roofing contractor. Repairs, replacements, and emergency
-              service — backed by a 10-year warranty.
+              Roofing contractor serving Springfield and Central Illinois. Repairs, replacements, and emergency service — backed by a 10-year workmanship warranty.
             </p>
 
             <div className="flex flex-col gap-3">
-              <a href="tel:+19121676642"
+              <a href="tel:+15550183921"
                 className="flex items-center gap-2.5 text-white/70 hover:text-white
                   text-[0.85rem] font-medium transition-colors">
                 <Phone size={14} className="text-[#F97316]" />
-                (912) 167-6642
+                (555) 018-3921
               </a>
-              <a href="mailto:info@apexroofingHouston.com"
+              <a href="mailto:contact@primeshieldroofing.com"
                 className="flex items-center gap-2.5 text-white/70 hover:text-white
                   text-[0.85rem] font-medium transition-colors">
                 <Mail size={14} className="text-[#F97316]" />
-                info@apexroofingHouston.com
+                contact@primeshieldroofing.com
               </a>
               <div className="flex items-center gap-2.5 text-white/70 text-[0.85rem] font-medium">
                 <MapPin size={14} className="text-[#F97316]" />
-                Houston, TX &amp; Surrounding Areas
+                Springfield, IL &amp; Surrounding Areas
               </div>
             </div>
           </div>
@@ -84,17 +83,16 @@ export default function Footer() {
               Get a Free Estimate
             </p>
             <p className="text-white/40 text-[0.85rem] leading-relaxed mb-6">
-              Call us or request a quote online. We respond within the hour —
-              same-day inspections available.
+              Call us or request a quote online. We aim to respond quickly — same-day inspections available in most cases.
             </p>
             <div className="flex flex-col gap-3">
-              <a href="tel:+19121676642"
+              <a href="tel:+15550183921"
                 className="flex items-center justify-center gap-2.5
                   bg-[#F97316] hover:bg-[#EA6C0A] text-white font-bold text-[0.85rem]
                   px-5 py-3 rounded-xl transition-all hover:-translate-y-0.5
                   shadow-[0_4px_14px_rgba(249,115,22,0.35)]">
                 <Phone size={14} strokeWidth={2.5} />
-                Call (912) 167-6642
+                Call (555) 018-3921
               </a>
               <Link to="/quote"
                 className="flex items-center justify-center gap-2
@@ -114,7 +112,7 @@ export default function Footer() {
         <div className="max-w-6xl mx-auto px-6 py-5
           flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-white/25 text-[0.75rem]">
-            © {new Date().getFullYear()} Apex Roofing Co. · Houston, TX · All rights reserved.
+            © {new Date().getFullYear()} PrimeShield Roofing · Springfield, IL · All rights reserved.
           </p>
           <div className="flex items-center gap-5">
             {[["Privacy Policy", "/privacy"], ["Terms", "/terms"]].map(([l, t]) => (

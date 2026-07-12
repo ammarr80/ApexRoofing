@@ -7,7 +7,7 @@ const REASONS = [
   {
     icon: <Clock size={20} />,
     title: "Fast Response Times",
-    desc: "Same-day service in most Houston zip codes. Emergency calls dispatched within the hour.",
+    desc: "Same-day service available in most Springfield zip codes. Emergency calls dispatched within the hour.",
   },
   {
     icon: <DollarSign size={20} />,
@@ -17,7 +17,7 @@ const REASONS = [
   {
     icon: <ShieldCheck size={20} />,
     title: "10-Year Workmanship Warranty",
-    desc: "Every job is backed by our warranty. If our work fails, we come back and fix it — no questions.",
+    desc: "Every job is backed by our warranty. If our work fails, we come back and fix it.",
   },
   {
     icon: <BadgeCheck size={20} />,
@@ -27,17 +27,17 @@ const REASONS = [
   {
     icon: <FileText size={20} />,
     title: "Insurance Claim Support",
-    desc: "We handle storm damage documentation and work directly with your adjuster to get your claim covered.",
+    desc: "We handle storm damage documentation and work directly with your adjuster throughout the process.",
   },
   {
     icon: <Wrench size={20} />,
-    title: "Premium Materials Only",
-    desc: "We stock GAF, Owens Corning, and Firestone products — materials built to handle Texas conditions.",
+    title: "Quality Materials",
+    desc: "We use GAF, Owens Corning, and Firestone products — materials rated for Midwest conditions.",
   },
   {
     icon: <ThumbsUp size={20} />,
     title: "Clean Job Sites",
-    desc: "Full cleanup before we leave. No nails in the driveway, no debris in your yard — guaranteed.",
+    desc: "Full cleanup before we leave. No nails in the driveway, no debris left in your yard.",
   },
   {
     icon: <Headphones size={20} />,
@@ -56,15 +56,14 @@ export default function WhyChooseUs() {
           <div className="inline-flex items-center gap-2 bg-white/10 border border-white/15
             text-white/80 text-[0.7rem] font-semibold tracking-widest uppercase
             px-3.5 py-1.5 rounded-full mb-4">
-            Why Apex
+            Why PrimeShield
           </div>
           <h2 className="font-display font-extrabold text-white
             text-[clamp(1.9rem,4vw,2.8rem)] leading-tight mb-3">
-            Why Houston Homeowners<br />Choose Apex Roofing
+            Why Springfield Homeowners<br />Choose PrimeShield Roofing
           </h2>
           <p className="text-white/50 text-[0.95rem] leading-relaxed max-w-xl">
-            There's no shortage of roofing companies in Houston. Here's what makes the difference
-            when you hire Apex — and why most of our new customers come from referrals.
+            There's no shortage of roofing companies in Central Illinois. Here's what we put in writing on every job.
           </p>
         </div>
 

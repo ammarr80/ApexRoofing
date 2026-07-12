@@ -2,15 +2,11 @@ import {Link} from "react-router-dom"
 import { MapPin, ArrowRight } from "lucide-react";
 
 const AREAS = [
-  { name: "Houston",       tag: "Main Office",    primary: true,  desc: "Our home base. Full roofing services across all Houston zip codes." },
-  { name: "Round Rock",   tag: "Full Coverage",  primary: false, desc: "Residential and commercial roofing with same-day availability." },
-  { name: "Cedar Park",   tag: "Full Coverage",  primary: false, desc: "Repairs, replacements, and inspections for Cedar Park homeowners." },
-  { name: "Pflugerville", tag: "Full Coverage",  primary: false, desc: "Fast response roofing services for the Pflugerville area." },
-  { name: "Buda",         tag: "Full Coverage",  primary: false, desc: "Full roofing coverage including emergency storm damage repair." },
-  { name: "Kyle",         tag: "Full Coverage",  primary: false, desc: "Roof repair and replacement for Kyle and surrounding areas." },
-  { name: "Georgetown",   tag: "Full Coverage",  primary: false, desc: "Serving Georgetown homeowners with quality roofing workmanship." },
-  { name: "Leander",      tag: "Emergency Only", primary: false, desc: "Emergency roofing dispatch available. Call for full service availability." },
-  { name: "Manor",        tag: "Emergency Only", primary: false, desc: "Emergency roofing dispatch available. Call for full service availability." },
+  { name: "Springfield",  tag: "Main Office",   primary: true,  desc: "Our home base. Full roofing services across all Springfield zip codes." },
+  { name: "Lincoln",      tag: "Full Coverage", primary: false, desc: "Residential and commercial roofing with same-day availability." },
+  { name: "Decatur",      tag: "Full Coverage", primary: false, desc: "Repairs, replacements, and inspections for Decatur homeowners." },
+  { name: "Champaign",    tag: "Full Coverage", primary: false, desc: "Fast response roofing services for the Champaign area." },
+  { name: "Bloomington",  tag: "Full Coverage", primary: false, desc: "Full roofing coverage including emergency storm damage repair." },
 ];
 
 const TAG_COLOR = {
@@ -36,8 +32,7 @@ export default function AreasGrid() {
             Cities & Communities We Cover
           </h2>
           <p className="text-[#6B7280] text-[0.95rem] leading-relaxed max-w-xl">
-            Apex Roofing serves Houston and the greater metro area. Every area below
-            receives the same quality of work and response time — no second-class service.
+            PrimeShield serves Springfield and Central Illinois. Every area below gets the same crew, the same standards, and the same warranty.
           </p>
         </div>
 
@@ -83,18 +78,18 @@ export default function AreasGrid() {
               </p>
 
               <Link
-  to="/services#services-grid"
-  className="flex items-center gap-1.5 text-[#1A3C6E] text-[0.8rem] font-semibold
-    group-hover:gap-2.5 transition-all"
->
-  View Services <ArrowRight size={13} />
-</Link>
+                to="/services#services-grid"
+                className="flex items-center gap-1.5 text-[#1A3C6E] text-[0.8rem] font-semibold
+                  group-hover:gap-2.5 transition-all"
+              >
+                View Services <ArrowRight size={13} />
+              </Link>
             </div>
           ))}
         </div>
 
         <p className="text-[#9CA3AF] text-[0.8rem] mt-6">
-          Don't see your area? Call us — we cover up to 40 miles from downtown Houston.
+          Don't see your area? Call us — we may still cover you.
         </p>
 
       </div>

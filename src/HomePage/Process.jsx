@@ -18,7 +18,7 @@ const STEPS = [
     num: "03",
     icon: <HardHat size={24} />,
     title: "Repair or Install",
-    desc: "Our certified crew gets to work. Clean, efficient, respectful of your home and your time.",
+    desc: "Our certified crew gets to work. Clean, efficient, and respectful of your home and your time.",
   },
   {
     num: "04",
@@ -45,7 +45,7 @@ export default function Process() {
               Simple Steps,<br />From Call to Completion
             </h2>
             <p className="text-white/55 mt-3 max-w-3xl text-[0.95rem] leading-relaxed">
-             A clear, straightforward process from your first contact all the way through to the final inspection, with each step handled in a structured and transparent way so you always know what’s happening, what comes next, and exactly what to expect at every stage.
+              No surprises, no runaround. We keep you in the loop at every step — from the first call to the final walkthrough.
             </p>
           </div>
           <Link to="/quote"

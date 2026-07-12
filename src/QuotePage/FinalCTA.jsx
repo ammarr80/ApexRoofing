@@ -16,19 +16,19 @@ export default function QuoteCTA() {
               We're One Call Away.
             </h2>
             <p className="text-[#6B7280] text-[0.85rem]">
-              Most people hear back within the hour — same-day inspections available.
+              Call us and we'll get back to you quickly — same-day inspections available in most cases.
             </p>
           </div>
         </div>
 
         <a
-          href="tel:+15120000000"
+          href="tel:+15550183921"
           className="flex items-center gap-2.5 bg-[#F97316] hover:bg-[#EA6C0A]
             text-white font-bold text-[0.88rem] px-6 py-3 rounded-xl shrink-0
             shadow-[0_4px_14px_rgba(249,115,22,0.3)] transition-all hover:-translate-y-0.5"
         >
           <Phone size={14} strokeWidth={2.5} />
-          Call (512) 000-0000
+          Call (555) 018-3921
         </a>
 
       </div>

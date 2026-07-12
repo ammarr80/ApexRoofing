@@ -76,9 +76,7 @@ export default function QuoteHero() {
             </h1>
 
             <p className="text-white/55 text-[1rem] leading-relaxed mb-9 max-w-[460px]">
-              Houston's most trusted roofing crew. We show up, inspect your roof, and hand
-              you a written quote — with zero pressure and zero cost. Most estimates
-              are scheduled within one business day.
+              We come out, inspect your roof, and give you a written quote — no pressure, no cost. Most estimates are scheduled within one business day.
             </p>
 
             {/* CTAs */}
@@ -93,12 +91,12 @@ export default function QuoteHero() {
                 Request Free Estimate
               </a>
               <a
-                href="tel:+15120000000"
+                href="tel:+15550183921"
                 className="flex items-center gap-2.5 border border-white/22 hover:border-white/48
                   text-white font-semibold text-[0.92rem] px-6 py-3.5 rounded-xl
                   transition-all hover:bg-white/7 hover:-translate-y-0.5">
                 <Phone size={15} strokeWidth={2.5} />
-                (512) 000-0000
+                (555) 018-3921
               </a>
             </div>
 

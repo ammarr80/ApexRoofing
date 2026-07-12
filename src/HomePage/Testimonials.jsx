@@ -5,47 +5,47 @@ const REVIEWS = [
     name: "Marcus T.",
     city: "Springfield",
     rating: 5,
-    text: "Called after a hailstorm and they were on-site same day. Roof fixed, insurance claim handled — I didn't have to do a thing. Truly impressive.",
+    text: "Called after a hailstorm and they were on-site same day. Roof fixed, insurance claim handled — I didn't have to do a thing.",
     service: "Storm Damage Repair",
     initials: "MT",
   },
   {
     name: "Linda Reyes",
-    city: "Maplewood",
+    city: "Decatur",
     rating: 5,
-    text: "Full roof replacement done in under two days. The crew was clean, respectful, and the final walkthrough gave me total confidence. Worth every penny.",
+    text: "Full roof replacement done in under two days. The crew was clean, respectful, and the final walkthrough gave me total confidence.",
     service: "Roof Replacement",
     initials: "LR",
   },
   {
     name: "Derek S.",
-    city: "Fairview",
+    city: "Lincoln",
     rating: 5,
-    text: "Had a persistent leak two other companies couldn't trace. These guys found it in an hour and sealed it properly. Zero issues since.",
+    text: "Had a persistent leak two other companies couldn't find. These guys traced it in an hour and sealed it properly. No issues since.",
     service: "Leak Detection",
     initials: "DS",
   },
   {
     name: "Angela Kim",
-    city: "Riverside",
+    city: "Champaign",
     rating: 5,
-    text: "Needed an inspection before closing on a house. Got a detailed written report the same day. Professional, fast, and no upselling.",
+    text: "Needed an inspection before closing on a house. Got a detailed written report the same day. Fast, professional, no pressure.",
     service: "Roof Inspection",
     initials: "AK",
   },
   {
     name: "Tom Vasquez",
-    city: "Cedarville",
+    city: "Bloomington",
     rating: 5,
-    text: "Emergency call at 9pm after wind ripped off flashing. They showed up within two hours. Temporary seal that night, full repair next morning.",
+    text: "Called at 9pm after wind ripped off flashing. They showed up within two hours — temporary seal that night, full repair next morning.",
     service: "Emergency Repair",
     initials: "TV",
   },
   {
     name: "Sandra B.",
-    city: "Lakewood",
+    city: "Springfield",
     rating: 5,
-    text: "Clear quote upfront, no surprise charges at the end. The gutters look great and the whole job was done faster than expected.",
+    text: "Upfront quote, no surprise charges at the end. Gutters look great and the job was wrapped up faster than expected.",
     service: "Gutter Installation",
     initials: "SB",
   },
@@ -78,7 +78,7 @@ export default function Testimonials() {
               What Homeowners<br />Are Saying
             </h2>
             <p className="text-white/50 mt-3 max-w-md text-[0.95rem] leading-relaxed">
-              Hundreds of satisfied homeowners across the region. Here's what a few of them had to say.
+              A few reviews from homeowners we've worked with across Central Illinois.
             </p>
           </div>
 
@@ -87,7 +87,7 @@ export default function Testimonials() {
             <div>
               <p className="font-display font-extrabold text-white text-[2.8rem] leading-none">4.9</p>
               <Stars count={5} />
-              <p className="text-white/40 text-[0.68rem] font-medium mt-1.5 uppercase tracking-wide">200+ Google Reviews</p>
+              <p className="text-white/40 text-[0.68rem] font-medium mt-1.5 uppercase tracking-wide">Google Reviews</p>
             </div>
             <div className="w-px h-14 bg-white/10" />
             <div className="flex flex-col gap-2">
@@ -118,7 +118,6 @@ export default function Testimonials() {
               {/* Top row */}
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center gap-3">
-                  {/* Avatar */}
                   <div className="w-10 h-10 rounded-xl bg-[#1A3C6E] border border-[#1A3C6E]/60
                     flex items-center justify-center
                     font-display font-bold text-white text-[0.78rem] shrink-0">

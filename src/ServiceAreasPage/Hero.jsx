@@ -2,13 +2,13 @@ import { Link } from "react-router-dom";
 import { MapPin, Phone, ArrowRight } from "lucide-react";
 
 const STATS = [
-  { num: "9+",   label: "Cities Covered" },
-  { num: "40mi", label: "Service Radius" },
+  { num: "5",    label: "Cities Covered" },
   { num: "24/7", label: "Emergency Response" },
-  { num: "500+", label: "Houston Roofs Done" },
+  { num: "20+",  label: "Years in Business" },
+  { num: "1,400+", label: "Roofs Completed" },
 ];
 
-const AREAS = ["Houston", "Round Rock", "Cedar Park", "Pflugerville", "Buda", "Kyle", "Georgetown", "Leander", "Manor"];
+const AREAS = ["Springfield", "Lincoln", "Decatur", "Champaign", "Bloomington"];
 
 export default function ServiceAreasHero() {
   return (
@@ -40,22 +40,21 @@ export default function ServiceAreasHero() {
 
         <h1 className="font-display font-extrabold text-white leading-tight
           text-[clamp(1.9rem,3.8vw,2.9rem)] mb-3 max-w-xl">
-          Roofing Houston &<br />
-          <span className="text-[#F97316]">The Entire Metro Area.</span>
+          Roofing Springfield &<br />
+          <span className="text-[#F97316]">Central Illinois.</span>
         </h1>
 
         <p className="text-white/55 text-[0.88rem] leading-relaxed mb-6 max-w-md">
-          Same crew, same standards, same 10-year warranty — across Houston
-          and 8 surrounding communities.
+          Same crew, same standards, same 10-year warranty — across Springfield and surrounding communities.
         </p>
 
         <div className="flex flex-wrap gap-3 mb-6">
-          <a href="tel:+15120000000"
+          <a href="tel:+15550183921"
             className="flex items-center gap-2.5 bg-[#F97316] hover:bg-[#EA6C0A]
               text-white font-bold text-[0.85rem] px-6 py-3 rounded-xl
               shadow-[0_4px_16px_rgba(249,115,22,0.4)] transition-all hover:-translate-y-0.5">
             <Phone size={14} strokeWidth={2.5} />
-            Call (512) 000-0000
+            Call (555) 018-3921
           </a>
           <Link to="/quote"
             className="flex items-center gap-2 border border-white/25 hover:border-white/50

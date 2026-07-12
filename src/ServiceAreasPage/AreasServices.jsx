@@ -5,12 +5,12 @@ const SERVICES = [
   {
     icon: <Wrench size={20} />,
     title: "Roof Repair",
-    desc: "Fast, reliable repairs across all service areas — shingles, flashing, leaks, and more.",
+    desc: "Fast repairs across all service areas — shingles, flashing, leaks, and more.",
   },
   {
     icon: <Home size={20} />,
     title: "Roof Replacement",
-    desc: "Full tear-off and replacement using premium GAF and Owens Corning materials.",
+    desc: "Full tear-off and replacement using GAF and Owens Corning materials.",
   },
   {
     icon: <Zap size={20} />,
@@ -20,7 +20,7 @@ const SERVICES = [
   {
     icon: <Search size={20} />,
     title: "Roof Inspections",
-    desc: "Written inspection reports with photos — available in all Apex service areas.",
+    desc: "Written inspection reports with photos — available across all service areas.",
   },
 ];
 
@@ -41,8 +41,7 @@ export default function AreaServices() {
               Roofing Services in Every Area
             </h2>
             <p className="text-white/50 text-[0.95rem] leading-relaxed max-w-xl">
-              Every service Apex offers is available across all listed areas —
-              same crew, same standards, same warranty, regardless of your zip code.
+              Every service we offer is available across all listed areas — same crew, same standards, same warranty, regardless of your zip code.
             </p>
           </div>
           <Link to="/services"

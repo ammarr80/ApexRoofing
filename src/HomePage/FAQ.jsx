@@ -4,31 +4,31 @@ import { Plus, Minus } from "lucide-react";
 const FAQS = [
   {
     q: "How do I know if my roof needs a repair or a full replacement?",
-    a: "If your roof is under 15 years old and the damage is isolated — a few missing shingles, a small leak, cracked flashing — a repair is usually the right call. If it's over 20 years old, has widespread damage, or you're seeing sagging or daylight through the decking, replacement is almost always more cost-effective long term. Apex gives you an honest assessment, not the most expensive option.",
+    a: "If your roof is under 15 years old and the damage is isolated — a few missing shingles, a small leak, cracked flashing — a repair is usually the right call. If it's over 20 years old, has widespread damage, or you're seeing sagging or daylight through the decking, replacement is almost always more cost-effective long term. We'll give you a straight assessment when we come out.",
   },
   {
     q: "Do you work with homeowner insurance for storm damage?",
-    a: "Yes — and we're experienced at it. We document all storm damage thoroughly, communicate directly with your adjuster if needed, and make sure nothing gets missed in the claim. Houston homeowners have seen a lot of hail the past few years. We know the process and we'll walk you through every step.",
+    a: "Yes. We document all storm damage thoroughly and can communicate directly with your adjuster if needed. We'll make sure nothing gets missed in the claim and walk you through each step of the process.",
   },
   {
     q: "How long does a full roof replacement take?",
-    a: "Most standard Houston homes are done in a single day. Larger properties or complex roof lines may take two days. We show up on time, work clean, and don't leave a job half-finished.",
+    a: "Most standard homes in the Springfield area are done in a single day. Larger properties or complex roof lines may take two days. We show up when we say we will and don't leave a job unfinished.",
   },
   {
     q: "What roofing materials do you use?",
-    a: "We install architectural shingles, metal roofing, flat TPO membranes, and more. For most Houston homes, we recommend GAF or Owens Corning architectural shingles — they handle Texas heat well and carry strong manufacturer warranties. We'll recommend the right material for your home's style, budget, and long-term needs.",
+    a: "We install architectural shingles, metal roofing, flat TPO membranes, and more. For most Illinois homes, we recommend GAF or Owens Corning architectural shingles — they hold up well through Midwest winters and carry solid manufacturer warranties. We'll suggest the right material based on your home, budget, and long-term goals.",
   },
   {
     q: "Do you offer financing?",
-    a: "Yes. We offer 0% financing options for qualified homeowners. A new roof is a significant investment — we don't think you should have to drain savings to protect your home. Ask us about financing when you call for your free estimate.",
+    a: "Yes. We offer financing options for qualified homeowners. Ask us about it when you call for your free estimate.",
   },
   {
-    q: "Is Apex Roofing licensed and insured in Texas?",
-    a: "Absolutely. We're fully licensed as a roofing contractor in Texas, carry general liability insurance, and all our crews are covered under workers' compensation. Never hire a roofer without verifying this — it protects you as the homeowner.",
+    q: "Is PrimeShield Roofing licensed and insured in Illinois?",
+    a: "Yes. We're fully licensed in Illinois, carry general liability insurance, and all crews are covered under workers' compensation. Always verify this before hiring any roofing contractor — it protects you as the homeowner.",
   },
   {
-    q: "What areas around Houston do you serve?",
-    a: "We serve all of Houston and the surrounding areas including Round Rock, Cedar Park, Pflugerville, Buda, Kyle, Georgetown, Leander, and Manor. If you're within 40 miles of downtown Houston, we've got you covered.",
+    q: "What areas around Springfield do you serve?",
+    a: "We serve Springfield and surrounding Central Illinois areas including Lincoln, Decatur, Champaign, and Bloomington. Not sure if we cover your area? Give us a call.",
   },
 ];
 
@@ -79,7 +79,7 @@ export default function FAQ() {
             What People Ask
           </h2>
           <p className="text-[#6B7280] mt-3 text-[0.95rem] leading-relaxed max-w-3xl">
-            Houston homeowners ask us these questions every single day — from roofing and repairs to pricing, timelines, and what to expect before getting started. We keep it simple: clear answers, honest advice, and no fluff or sales pressure.
+            Answers to common questions about roofing repairs, replacements, inspections, and what to expect when you work with us.
           </p>
         </div>
 

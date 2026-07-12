@@ -7,7 +7,7 @@ const STEPS = [
     icon: <ClipboardList size={24} />,
     title: "Free Roof Inspection",
     tag: "Same day available",
-    desc: "We come out to your Houston property, assess the full roof — not just the obvious damage. You get a written report with photos, no pressure, no obligation.",
+    desc: "We come out to your property and assess the full roof — not just the obvious damage. You get a written report with photos, no pressure, no obligation.",
     detail: "Takes 30–45 minutes on-site.",
   },
   {
@@ -15,7 +15,7 @@ const STEPS = [
     icon: <Calculator size={24} />,
     title: "Clear Written Estimate",
     tag: "No hidden costs",
-    desc: "You receive a detailed, itemized quote within 24 hours. Every material, every hour of labor — spelled out clearly so you know exactly what you're paying for and why.",
+    desc: "You receive a detailed, itemized quote within 24 hours. Every material, every hour of labor — laid out clearly so you know exactly what you're paying for.",
     detail: "Most estimates delivered same day.",
   },
   {
@@ -23,15 +23,15 @@ const STEPS = [
     icon: <HardHat size={24} />,
     title: "Professional Installation",
     tag: "GAF certified crew",
-    desc: "Our certified crew arrives on time, works efficiently, and keeps your property clean throughout. Most Houston repairs are finished same-day. Replacements typically take 1–2 days.",
-    detail: "Full cleanup included, always.",
+    desc: "Our certified crew arrives on time, works efficiently, and cleans up before leaving. Most repairs are finished same-day. Replacements typically take 1–2 days.",
+    detail: "Full cleanup included on every job.",
   },
   {
     num: "04",
     icon: <BadgeCheck size={24} />,
     title: "Walkthrough & Warranty",
     tag: "10-year guarantee",
-    desc: "Before we leave, we walk the job with you — show you everything we did and answer any questions. Your 10-year workmanship warranty starts the moment we sign off.",
+    desc: "Before we leave, we walk the job with you — show you what was done and answer any questions. Your 10-year workmanship warranty starts the moment we sign off.",
     detail: "Warranty documentation provided on-site.",
   },
 ];
@@ -55,12 +55,11 @@ export default function ServicesProcess() {
                 From First Call to<br />Final Sign-Off
               </h2>
               <p className="text-[#6B7280] text-[0.95rem] leading-relaxed max-w-lg">
-                Four straightforward steps. No surprises, no runaround — just a clear process
-                that gets your roof fixed fast and done right.
+                Four straightforward steps. You'll know what's happening, what it costs, and what to expect at each stage.
               </p>
             </div>
             <div className="flex gap-3 shrink-0">
-              <a href="tel:+15120000000"
+              <a href="tel:+15550183921"
                 className="flex items-center gap-2 bg-[#F97316] hover:bg-[#EA6C0A]
                   text-white font-bold text-[0.85rem] px-5 py-2.5 rounded-xl
                   shadow-[0_4px_14px_rgba(249,115,22,0.3)] transition-all hover:-translate-y-0.5">

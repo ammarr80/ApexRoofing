@@ -2,37 +2,37 @@ const PHOTOS = [
   {
     src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&auto=format&fit=crop&q=80",
     label: "Full Replacement",
-    location: "Springfield",
+    location: "Springfield, IL",
     span: "col-span-2 row-span-2",
   },
   {
     src: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&auto=format&fit=crop&q=80",
     label: "Shingle Repair",
-    location: "Maplewood",
+    location: "Lincoln, IL",
     span: "",
   },
   {
     src: "https://images.unsplash.com/photo-1605146769289-440113cc3d00?w=600&auto=format&fit=crop&q=80",
     label: "Storm Damage",
-    location: "Fairview",
+    location: "Decatur, IL",
     span: "",
   },
   {
     src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=80",
     label: "New Installation",
-    location: "Riverside",
+    location: "Champaign, IL",
     span: "",
   },
   {
     src: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?w=600&auto=format&fit=crop&q=80",
     label: "Gutter Install",
-    location: "Cedarville",
+    location: "Bloomington, IL",
     span: "",
   },
   {
     src: "https://images.unsplash.com/photo-1513467535987-fd81bc7d62f8?w=600&auto=format&fit=crop&q=80",
     label: "Leak Repair",
-    location: "Lakewood",
+    location: "Springfield, IL",
     span: "",
   },
 ];
@@ -54,7 +54,7 @@ export default function Gallery() {
               Recent Projects
             </h2>
             <p className="text-white/40 text-[0.95rem] max-w-3xl leading-relaxed">
-              Every job is completed to the same consistent standard, whether it’s a small repair or a full replacement, ensuring reliable quality and attention to detail in every case.
+              Small repair or full replacement — every job gets the same level of care and attention. Here's some of our recent work across Central Illinois.
             </p>
           </div>
         </div>

@@ -22,8 +22,8 @@ const PERKS = [
   },
   {
     icon: <DollarSign size={20} />,
-    title: "100% free, no obligation",
-    desc: "No pressure, no upsells. Just an honest written estimate you can keep.",
+    title: "Free, no obligation",
+    desc: "No pressure, no upsells. Just a written estimate you can keep.",
   },
   {
     icon: <FileText size={20} />,
@@ -70,8 +70,7 @@ export default function QuoteForm() {
             </h2>
 
             <p className="text-[#6B7280] text-[0.95rem] leading-relaxed mb-10 max-w-[400px]">
-              Fill out the form and one of our team members will call you back to schedule
-              a free on-site inspection. Most estimates are delivered the same day we visit.
+              Fill out the form and someone from our team will call you to schedule a free on-site inspection. Most estimates are delivered the same day we visit.
             </p>
 
             {/* Perks */}
@@ -107,7 +106,7 @@ export default function QuoteForm() {
                 ))}
               </div>
               <span className="text-[0.82rem] text-[#374151]">
-                <strong className="font-bold text-[#111827]">4.9</strong> · 180+ reviews
+                <strong className="font-bold text-[#111827]">4.9</strong> · Springfield, IL
               </span>
             </div>
           </div>
@@ -143,12 +142,11 @@ export default function QuoteForm() {
                     Request Sent!
                   </h4>
                   <p className="text-[#6B7280] text-[0.88rem] leading-relaxed max-w-xs">
-                    We've received your request and will call you within 24 hours to
-                    schedule your free inspection. Keep an eye on your phone.
+                    We've received your request and will call you within 24 hours to schedule your free inspection.
                   </p>
                   <div className="flex items-center gap-2 text-[#F97316] text-[0.82rem] font-semibold mt-2">
                     <Phone size={14} />
-                    Or call us now: (512) 000-0000
+                    Or call us now: (555) 018-3921
                   </div>
                 </div>
               ) : (
@@ -171,7 +169,7 @@ export default function QuoteForm() {
                         Phone Number <span className="text-[#F97316]">*</span>
                       </label>
                       <input
-                        type="tel" required placeholder="(512) 555-0100"
+                        type="tel" required placeholder="(555) 000-0000"
                         className="w-full px-3.5 py-2.5 rounded-lg border border-[#E5E7EB] text-[0.88rem]
                           text-[#111827] placeholder-[#9CA3AF] focus:outline-none
                           focus:border-[#1A3C6E] focus:ring-2 focus:ring-[#1A3C6E]/10 transition-all"
@@ -196,7 +194,7 @@ export default function QuoteForm() {
                       Property Address <span className="text-[#F97316]">*</span>
                     </label>
                     <input
-                      type="text" required placeholder="1234 Barton Springs Rd, Houston TX"
+                      type="text" required placeholder="1424 West Maple Street, Springfield, IL"
                       className="w-full px-3.5 py-2.5 rounded-lg border border-[#E5E7EB] text-[0.88rem]
                         text-[#111827] placeholder-[#9CA3AF] focus:outline-none
                         focus:border-[#1A3C6E] focus:ring-2 focus:ring-[#1A3C6E]/10 transition-all"
@@ -274,7 +272,7 @@ export default function QuoteForm() {
                       shadow-[0_6px_20px_rgba(249,115,22,0.38)]
                       hover:shadow-[0_8px_26px_rgba(249,115,22,0.46)]
                       hover:-translate-y-0.5">
-                    Get My Request
+                    Send My Estimate Request
                     <ArrowRight size={16} />
                   </button>
 

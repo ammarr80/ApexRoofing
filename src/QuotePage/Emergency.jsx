@@ -8,7 +8,7 @@ const SIGNALS = [
   "Water inside the home",
 ];
 
-export default function EmergencyCTA() {
+export default function QuoteEmergency() {
   return (
     <section className="bg-[#F9FAFB] py-16 border-t border-[#E5E7EB]">
       <div className="max-w-6xl mx-auto px-6">
@@ -36,7 +36,6 @@ export default function EmergencyCTA() {
 
               {/* Left */}
               <div>
-                {/* Badge */}
                 <div className="inline-flex items-center gap-2 bg-red-500/15 border border-red-500/30
                   text-red-400 text-[0.68rem] font-bold tracking-widest uppercase
                   px-3 py-1 rounded-full mb-5">
@@ -51,11 +50,9 @@ export default function EmergencyCTA() {
                 </h2>
 
                 <p className="text-white/55 text-[0.92rem] leading-relaxed mb-6 max-w-lg">
-                  Don't wait. Water damage compounds fast. Our emergency crew covers all
-                  of Houston and surrounding areas 24/7 — including weekends and holidays.
+                  Water damage compounds fast. Our emergency crew covers Springfield and surrounding areas 24/7 — including weekends and holidays.
                 </p>
 
-                {/* Signals */}
                 <div className="flex flex-wrap gap-x-6 gap-y-2.5">
                   {SIGNALS.map((s) => (
                     <div key={s} className="flex items-center gap-2 text-white/50 text-[0.8rem] font-medium">
@@ -74,16 +71,16 @@ export default function EmergencyCTA() {
                     Emergency Hotline
                   </p>
                   <a
-                    href="tel:+15120000000"
+                    href="tel:+15559991044"
                     className="font-display font-black text-white text-[1.4rem] leading-none
                       hover:text-[#F97316] transition-colors">
-                    (512) 000-0000
+                    (555) 999-1044
                   </a>
                   <p className="text-white/35 text-[0.75rem] mt-1.5">Available 24 hours, 7 days a week</p>
                 </div>
 
                 <a
-                  href="tel:+15120000000"
+                  href="tel:+15559991044"
                   className="flex items-center gap-2.5 w-full justify-center
                     bg-[#F97316] hover:bg-[#EA6C0A] text-white font-bold text-[0.9rem]
                     px-6 py-3.5 rounded-xl transition-all

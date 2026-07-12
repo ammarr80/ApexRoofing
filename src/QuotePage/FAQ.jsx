@@ -12,27 +12,27 @@ const FAQS = [
   },
   {
     q: "Do you help with insurance claims?",
-    a: "Yes, and this is one of the things we're known for. We photograph and document all damage in a format your adjuster can use, communicate with your insurance company directly, and walk you through every step of the claims process. Many of our customers pay nothing out of pocket for storm damage repairs.",
+    a: "Yes. We photograph and document all damage in a format your adjuster can use, communicate with your insurance company directly, and walk you through each step of the claims process.",
   },
   {
     q: "How long does a roof replacement take?",
-    a: "Most full replacements are completed in one to two days depending on roof size and complexity. We give you a specific project timeline in your written estimate so you know exactly what to expect before we start.",
+    a: "Most full replacements are completed in one to two days depending on roof size and complexity. We include a specific project timeline in your written estimate so you know what to expect before we start.",
   },
   {
     q: "Do you offer financing?",
-    a: "Yes. We offer 0% financing for 12 months through our lending partner for qualifying customers. We also work with most major insurance carriers and can help you understand what your policy covers before any work begins.",
+    a: "Yes. We offer financing options for qualifying customers. We also work with most major insurance carriers and can help you understand what your policy covers before any work begins.",
   },
   {
     q: "What areas do you serve?",
-    a: "We cover Houston and all surrounding areas including Round Rock, Cedar Park, Pflugerville, Buda, Kyle, Georgetown, Leander, Manor, and Bee Cave. If you're not sure whether we cover your zip code, just call and we'll tell you straight.",
+    a: "We cover Springfield and surrounding Central Illinois areas including Lincoln, Decatur, Champaign, and Bloomington. Not sure if we cover your area? Call us and we'll tell you straight.",
   },
   {
     q: "What warranty do you offer?",
-    a: "Every job comes with a 10-year workmanship warranty backed by us directly. For full replacements using GAF materials, you also receive a manufacturer's warranty on the materials themselves — separate from and in addition to our own guarantee.",
+    a: "Every job comes with a 10-year workmanship warranty backed by us directly. For full replacements using GAF materials, you also receive a manufacturer's warranty on the materials themselves — separate from our own guarantee.",
   },
   {
     q: "Will I be dealing with a salesperson or an actual roofer?",
-    a: "An actual roofer. The person who inspects your roof is the same person who manages your job. You get one point of contact from first call to final walkthrough — no call centers, no handoffs, no runaround.",
+    a: "An actual roofer. The person who inspects your roof is the same person who manages your job. One point of contact from first call to final walkthrough.",
   },
 ];
 
@@ -72,7 +72,7 @@ function FAQItem({ faq, isOpen, onToggle }) {
   );
 }
 
-export default function FAQ() {
+export default function QuoteFAQ() {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
@@ -90,20 +90,19 @@ export default function FAQ() {
             </div>
             <h2 className="font-display font-extrabold text-[#111827]
               text-[clamp(1.85rem,3vw,2.5rem)] leading-tight mb-4">
-              Questions We<br />
-              Hear Every Day.
+              Common<br />
+              Questions.
             </h2>
             <p className="text-[#6B7280] text-[0.9rem] leading-relaxed mb-8">
-              Still unsure? Call us directly — we're happy to talk through
-              anything before you commit to a single thing.
+              Still unsure? Call us — we're happy to answer anything before you commit to a single thing.
             </p>
             <a
-              href="tel:+15120000000"
+              href="tel:+15550183921"
               className="inline-flex items-center gap-2 border border-[#E5E7EB]
                 text-[#374151] font-semibold text-[0.85rem] px-5 py-2.5 rounded-xl
                 hover:border-[#1A3C6E]/30 hover:text-[#1A3C6E] bg-white
                 transition-all">
-              Call (512) 000-0000
+              Call (555) 018-3921
             </a>
           </div>
 

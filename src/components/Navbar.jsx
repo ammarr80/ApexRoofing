@@ -67,11 +67,11 @@ export default function Navbar() {
 
           <div className="flex flex-col leading-none gap-0.5">
             <span className="font-display font-bold text-white text-[1rem] tracking-tight">
-              Apex Roofing Co.
+              PrimeShield Roofing
             </span>
 
             <span className="text-[0.62rem] text-white/50 tracking-widest uppercase font-medium">
-              Roofing Co.
+              Springfield, IL
             </span>
           </div>
         </Link>
@@ -102,12 +102,12 @@ export default function Navbar() {
         {/* Right */}
         <div className="hidden lg:flex items-center gap-4 ml-auto">
           <a
-            href="tel:+10000000000"
+            href="tel:+15550183921"
             className="flex items-center gap-2 text-white/90 hover:text-white
               text-[0.85rem] font-semibold transition-colors"
           >
             <Phone size={14} strokeWidth={2.5} />
-            (912) 167-6642
+            (555) 018-3921
           </a>
 
           <Link
@@ -150,12 +150,12 @@ export default function Navbar() {
 
           <div className="pt-4 flex flex-col gap-3">
             <a
-              href="tel:+10000000000"
+              href="tel:+15550183921"
               className="flex items-center justify-center gap-2 border border-white/25
                 text-white font-semibold text-sm py-3 rounded-lg"
             >
               <Phone size={15} />
-              (912) 167-6642
+              (555) 018-3921
             </a>
 
             <Link

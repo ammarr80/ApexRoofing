@@ -11,7 +11,7 @@ const SERVICES = [
     slug: "roof-repair",
     price: "From $250",
     time: "Same day",
-    desc: "Missing shingles, cracked flashing, storm punctures — we diagnose the actual source and fix it properly the first time. No patchwork that fails in the next rain.",
+    desc: "Missing shingles, cracked flashing, storm punctures — we find the actual source and fix it properly. No patchwork that fails in the next rain.",
     points: ["Shingle replacement", "Flashing repair", "Ridge cap fixes", "Leak sealing"],
   },
   {
@@ -20,7 +20,7 @@ const SERVICES = [
     slug: "roof-replacement",
     price: "From $6,500",
     time: "1–2 days",
-    desc: "Full tear-off and installation of a new roof system using GAF or Owens Corning materials. Built to handle Houston summers, hail seasons, and everything in between.",
+    desc: "Full tear-off and installation using GAF or Owens Corning materials. Built to handle Illinois winters, hail seasons, and everything in between.",
     points: ["Full tear-off & disposal", "Decking inspection", "GAF/OC shingles", "10-year warranty"],
   },
   {
@@ -29,7 +29,7 @@ const SERVICES = [
     slug: "leak-detection",
     price: "From $150",
     time: "Same day",
-    desc: "We trace the source of your leak fast — no guessing, no unnecessary tear-out. Using moisture mapping and visual inspection to find exactly where water is getting in.",
+    desc: "We find the source of your leak without unnecessary tear-out — using moisture mapping and visual inspection to pinpoint exactly where water is getting in.",
     points: ["Moisture mapping", "Attic inspection", "Full written report", "No unnecessary work"],
   },
   {
@@ -38,7 +38,7 @@ const SERVICES = [
     slug: "storm-damage",
     price: "Insurance covered",
     time: "Emergency dispatch",
-    desc: "Houston gets hit hard every hail season. We document all damage thoroughly, communicate with your insurance adjuster, and restore your roof to pre-storm condition.",
+    desc: "We document all damage thoroughly, work with your insurance adjuster, and restore your roof to its pre-storm condition.",
     points: ["Insurance documentation", "Adjuster coordination", "Emergency tarping", "Full restoration"],
   },
   {
@@ -56,7 +56,7 @@ const SERVICES = [
     slug: "inspection",
     price: "From $99",
     time: "Same day",
-    desc: "A full written inspection report with photos — ideal before buying or selling a home, after any storm, or if you haven't had your roof checked in the last 3 years.",
+    desc: "A full written report with photos — useful before buying or selling a home, after any storm, or if your roof hasn't been checked in a few years.",
     points: ["Photo documentation", "Written condition report", "Estimated remaining life", "Insurance-ready format"],
   },
 ];
@@ -78,8 +78,7 @@ export default function ServicesGrid() {
             Everything Your Roof Needs
           </h2>
           <p className="text-[#6B7280] text-[0.95rem] leading-relaxed max-w-xl">
-            Whether it's a $200 repair or a full replacement, every Apex job comes
-            with honest pricing, certified labor, and a crew that cleans up after itself.
+            Every job comes with upfront pricing, certified labor, and a crew that cleans up before they leave.
           </p>
         </div>
 

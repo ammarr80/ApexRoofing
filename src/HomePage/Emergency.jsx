@@ -31,11 +31,11 @@ export default function Emergency() {
             </div>
             <h2 className="font-display font-extrabold text-white leading-tight
               text-[clamp(1.6rem,3.5vw,2.3rem)] mb-2">
-              24/7 Emergency Roof Repair in Houston
+              24/7 Emergency Roof Repair in Springfield
             </h2>
             <p className="text-white/75 text-[0.92rem] leading-relaxed max-w-lg">
-              Leak coming through your ceiling at 2am? Hail just tore through your neighborhood?
-              Apex dispatches a crew fast — day or night, no extra charge for after-hours.
+              Leak coming through your ceiling at 2am? Hail just hit your neighborhood?
+              We dispatch a crew fast — day or night, no extra charge for after-hours calls.
             </p>
           </div>
         </div>
@@ -43,16 +43,16 @@ export default function Emergency() {
         {/* Right CTA */}
         <div className="shrink-0 flex flex-col items-start md:items-center gap-3">
           <a
-            href="tel:+15120000000"
+            href="tel:+15559991044"
             className="flex items-center gap-3 bg-white hover:bg-white/90
               text-[#F97316] font-bold text-[1rem] px-8 py-4 rounded-xl
               shadow-[0_8px_28px_rgba(0,0,0,0.15)] transition-all hover:-translate-y-0.5 whitespace-nowrap"
           >
             <Phone size={18} strokeWidth={2.5} />
-            Call (912) 167-6642
+            Call (555) 999-1044
           </a>
           <p className="text-white/60 text-[0.72rem] font-medium tracking-wide">
-            Average Houston response time: under 60 min
+            Average Springfield response time: under 60 min
           </p>
         </div>
 

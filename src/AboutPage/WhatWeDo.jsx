@@ -7,12 +7,12 @@ const SERVICES = [
   {
     icon: <Wrench size={22} />,
     title: "Roof Repair",
-    desc: "From isolated shingle damage to widespread storm impact, we diagnose the root cause and fix it correctly — not just patch over it.",
+    desc: "From isolated shingle damage to widespread storm impact, we find the root cause and fix it properly — not just patch over it.",
   },
   {
     icon: <Home size={22} />,
     title: "Roof Replacement",
-    desc: "When repair isn't enough, we handle full tear-off and installation using premium materials rated for Texas weather conditions.",
+    desc: "When repair isn't enough, we handle full tear-off and installation using quality materials rated for Illinois weather conditions.",
   },
   {
     icon: <Search size={22} />,
@@ -22,12 +22,12 @@ const SERVICES = [
   {
     icon: <Zap size={22} />,
     title: "Emergency Roofing",
-    desc: "Active leak or sudden storm damage? We dispatch fast — same day across Houston, after-hours included, no emergency surcharge.",
+    desc: "Active leak or sudden storm damage? We dispatch same day across Springfield and surrounding areas — after-hours included, no emergency surcharge.",
   },
   {
     icon: <Settings size={22} />,
     title: "Roof Maintenance",
-    desc: "Preventative maintenance extends the life of your roof significantly. We clear debris, reseal vulnerable areas, and catch problems early.",
+    desc: "Preventative maintenance extends the life of your roof. We clear debris, reseal vulnerable areas, and catch problems before they get costly.",
   },
 ];
 
@@ -47,12 +47,11 @@ export default function WhatWeDo() {
             <div>
               <h2 className="font-display font-extrabold text-[#111827]
                 text-[clamp(1.9rem,4vw,2.8rem)] leading-tight mb-3">
-                Full-Service Roofing<br />for Houston Homes & Businesses
+                Full-Service Roofing<br />for Springfield Homes & Businesses
               </h2>
               <p className="text-[#6B7280] text-[0.95rem] leading-relaxed max-w-xl">
-                Apex handles every aspect of residential and commercial roofing — from a single
-                repair call to a full replacement project. One company, every service, backed by
-                a 10-year workmanship warranty.
+                PrimeShield handles every aspect of residential and commercial roofing — from a single
+                repair call to a full replacement. Every service is backed by a 10-year workmanship warranty.
               </p>
             </div>
             <Link to="/services"

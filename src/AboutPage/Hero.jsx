@@ -34,28 +34,28 @@ export default function AboutHero() {
           <div className="inline-flex items-center gap-2 bg-white/10 border border-white/15
             text-white/80 text-[0.68rem] font-semibold tracking-widest uppercase
             px-3 py-1 rounded-full">
-            About Apex Roofing
+            About PrimeShield Roofing
           </div>
         </div>
 
         <h1 className="font-display font-extrabold text-white leading-tight
           text-[clamp(1.9rem,3.8vw,2.9rem)] mb-3 max-w-xl">
-          Houston's Roofing Company —<br />
+          Springfield's Roofing Company —<br />
           <span className="text-[#F97316]">Built on Honest Work.</span>
         </h1>
 
         <p className="text-white/55 text-[0.88rem] leading-relaxed mb-6 max-w-md">
-          Full-service residential and commercial roofing across Houston and surrounding
-          communities. Straightforward pricing, certified crews, work built to last.
+          Full-service residential and commercial roofing across Springfield and Central Illinois.
+          Straightforward pricing, certified crews, work built to last.
         </p>
 
         <div className="flex flex-wrap gap-3 mb-6">
-          <a href="tel:+15120000000"
+          <a href="tel:+15550183921"
             className="flex items-center gap-2.5 bg-[#F97316] hover:bg-[#EA6C0A]
               text-white font-bold text-[0.85rem] px-6 py-3 rounded-xl
               shadow-[0_4px_16px_rgba(249,115,22,0.4)] transition-all hover:-translate-y-0.5">
             <Phone size={14} strokeWidth={2.5} />
-            Call (512) 000-0000
+            Call (555) 018-3921
           </a>
           <Link to="/quote"
             className="flex items-center gap-2 border border-white/25 hover:border-white/50

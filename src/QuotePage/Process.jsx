@@ -4,20 +4,20 @@ const STEPS = [
   {
     num: "01",
     title: "Submit Your Request",
-    desc: "Fill out the form above or give us a call. Takes less than 90 seconds. Tell us what's going on and we'll take it from there.",
+    desc: "Fill out the form above or give us a call. Tell us what's going on and we'll take it from there.",
     detail: "No account needed. No paperwork upfront.",
   },
   {
     num: "02",
     title: "We Schedule Your Inspection",
-    desc: "One of our team members calls you back within 24 hours to book a free on-site visit at a time that works for you.",
-    detail: "Same-day appointments available in most Houston zip codes.",
+    desc: "Someone from our team calls you back within 24 hours to book a free on-site visit at a time that works for you.",
+    detail: "Same-day appointments available in most Springfield zip codes.",
   },
   {
     num: "03",
     title: "You Get a Written Estimate",
     desc: "Our inspector walks your roof, documents everything with photos, and hands you a detailed written quote before leaving your property.",
-    detail: "No vague ballparks. Line-item pricing you can actually compare.",
+    detail: "Line-item pricing you can actually compare.",
   },
   {
     num: "04",
@@ -45,8 +45,7 @@ export default function QuoteProcess() {
             <em className="not-italic text-[#F97316]">Here's Exactly What Happens.</em>
           </h2>
           <p className="text-[#6B7280] text-[0.95rem] leading-relaxed max-w-lg">
-            No mystery. No vague timelines. Every Apex job follows the same clear four-step
-            process so you always know what's coming next.
+            Four steps. No mystery, no vague timelines — you'll know what's coming at every stage.
           </p>
         </div>
 
@@ -99,12 +98,12 @@ export default function QuoteProcess() {
             </p>
           </div>
           <div className="flex flex-wrap gap-3">
-            <a href="tel:+15120000000"
+            <a href="tel:+15550183921"
               className="flex items-center gap-2 border border-[#E5E7EB] text-[#374151]
                 font-semibold text-[0.85rem] px-5 py-2.5 rounded-xl
                 hover:border-[#1A3C6E]/30 hover:text-[#1A3C6E] transition-all">
               <Phone size={14} />
-              (512) 000-0000
+              (555) 018-3921
             </a>
             <a href="#quote-form"
               className="flex items-center gap-2 bg-[#F97316] hover:bg-[#EA6C0A]

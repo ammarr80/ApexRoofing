@@ -1,17 +1,10 @@
 import { Link } from "react-router-dom";
 import { Phone, ArrowRight, ShieldCheck, Clock, BadgeCheck, Star } from "lucide-react";
 
-const STATS = [
-  { num: "500+",  label: "Roofs Done" },
-  { num: "15+",   label: "Years Active" },
-  { num: "4.9",   label: "Google Stars" },
-  { num: "24/7",  label: "Emergency" },
-];
-
 const PILLS = [
-  { icon: <ShieldCheck size={13} />, text: "Licensed & Insured" },
-  { icon: <BadgeCheck  size={13} />, text: "10-Year Warranty" },
-  { icon: <Clock       size={13} />, text: "Same-Day Response" },
+  { icon: <ShieldCheck size={13} />, text: "Fully Licensed & Insured" },
+  { icon: <BadgeCheck  size={13} />, text: "Workmanship Warranty Included" },
+  { icon: <Clock       size={13} />, text: "Fast Response Times" },
 ];
 
 export default function Hero() {
@@ -29,7 +22,7 @@ export default function Hero() {
           text-white/90 text-[0.7rem] font-semibold tracking-widest uppercase
           px-3.5 py-1.5 rounded-full w-fit mb-6">
           <span className="w-1.5 h-1.5 bg-[#F97316] rounded-full animate-pulse" />
-          Available Now — 24/7 Emergency
+          24/7 Emergency Roofing Services
         </div>
 
         {/* Headline */}
@@ -41,7 +34,7 @@ export default function Hero() {
 
         {/* Sub */}
         <p className="anim-3 text-white/65 text-[1rem] leading-relaxed mb-8 max-w-sm">
-          Storm damage, leaks, or full replacement — [City Name]'s most trusted roofers are one call away.
+          From leaks and storm damage to full roof replacement, we handle every job with care and precision.
         </p>
 
         {/* CTAs */}
@@ -70,16 +63,6 @@ export default function Hero() {
             </div>
           ))}
         </div>
-
-        {/* Stats row */}
-        <div className="anim-5 grid grid-cols-2 sm:grid-cols-4 gap-4 pt-8 border-t border-white/10">
-          {STATS.map((s) => (
-            <div key={s.num}>
-              <p className="font-display font-extrabold text-white text-[1.6rem] leading-none mb-0.5">{s.num}</p>
-              <p className="text-white/45 text-[0.65rem] font-medium uppercase tracking-wide">{s.label}</p>
-            </div>
-          ))}
-        </div>
       </div>
 
       {/* RIGHT — image */}
@@ -100,17 +83,17 @@ export default function Hero() {
             ))}
           </div>
           <p className="font-display font-extrabold text-[#111827] text-[1.5rem] leading-none">4.9</p>
-          <p className="text-[#6B7280] text-[0.7rem] font-medium mt-0.5">200+ Google Reviews</p>
+          <p className="text-[#6B7280] text-[0.7rem] font-medium mt-0.5">Verified Customer Reviews</p>
         </div>
 
         {/* Floating emergency card */}
         <div className="absolute bottom-64 right-8 bg-[#1A3C6E] text-white rounded-2xl px-6 py-5 shadow-2xl">
           <div className="flex items-center gap-2 mb-1">
             <Clock size={14} color="#F97316" />
-            <p className="text-[0.65rem] font-semibold uppercase tracking-widest text-white/60">Emergency</p>
+            <p className="text-[0.65rem] font-semibold uppercase tracking-widest text-white/60">Emergency Service</p>
           </div>
-          <p className="font-display font-bold text-[0.95rem]">24/7 Response</p>
-          <p className="text-white/50 text-[0.68rem] mt-0.5">We're always available</p>
+          <p className="font-display font-bold text-[0.95rem]">24/7 Availability</p>
+          <p className="text-white/50 text-[0.68rem] mt-0.5">Always Ready to Respond</p>
         </div>
       </div>
 

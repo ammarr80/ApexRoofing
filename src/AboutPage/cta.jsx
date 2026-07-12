@@ -27,8 +27,7 @@ export default function AboutCTA() {
               <span className="text-[#F97316]">Actually Trust.</span>
             </h2>
             <p className="text-white/45 text-[0.88rem] leading-relaxed">
-              We'll come to your property, give you an honest assessment, and tell you
-              exactly what your roof needs — nothing more, nothing less.
+              We'll come out, give you an honest assessment, and tell you exactly what your roof needs — nothing more, nothing less.
             </p>
           </div>
 
@@ -36,13 +35,13 @@ export default function AboutCTA() {
           <div className="flex flex-col gap-4 shrink-0 lg:items-end">
             <div className="flex flex-col gap-3 lg:min-w-[220px]">
               <a
-                href="tel:+15120000000"
+                href="tel:+15550183921"
                 className="flex items-center justify-center gap-2.5 bg-[#F97316] hover:bg-[#EA6C0A]
                   text-white font-bold text-[0.9rem] px-7 py-3.5 rounded-xl
                   shadow-[0_4px_18px_rgba(249,115,22,0.35)] transition-all hover:-translate-y-0.5"
               >
                 <Phone size={15} strokeWidth={2.5} />
-                Call (512) 000-0000
+                Call (555) 018-3921
               </a>
               <Link
                 to="/quote"
