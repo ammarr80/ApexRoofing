@@ -9,17 +9,32 @@ const PILLS = [
 
 export default function AboutHero() {
   return (
-    <section className="relative bg-[#1A3C6E] pt-24 pb-20 overflow-hidden">
+    <section className="relative bg-[#112951] pt-24 pb-20 overflow-hidden">
 
-      <div className="absolute right-0 top-0 bottom-0 w-[50%]">
+      {/* Photo panel on the right, richer treatment than the original */}
+      <div className="absolute right-0 top-0 bottom-0 w-[52%]">
         <img
-          src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=1200&auto=format&fit=crop&q=80"
+          src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=1400&auto=format&fit=crop&q=80"
           alt=""
-          className="w-full h-full object-cover object-center opacity-25"
+          className="w-full h-full object-cover object-center opacity-40"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1A3C6E] via-[#1A3C6E]/70 to-[#1A3C6E]/10" />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#1A3C6E]/50 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#112951] via-[#112951]/60 to-[#112951]/15" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#112951]/40 via-transparent to-[#112951]/50" />
       </div>
+
+      {/* Stripe texture, kept subtle over the left/text side */}
+      <div
+        className="absolute inset-0 opacity-[0.03] pointer-events-none"
+        style={{
+          backgroundImage:
+            "repeating-linear-gradient(-52deg, transparent, transparent 38px, rgba(255,255,255,1) 38px, rgba(255,255,255,1) 40px)",
+        }}
+      />
+
+      <div
+        className="absolute -top-32 -left-20 w-[420px] h-[420px] rounded-full pointer-events-none"
+        style={{ background: "radial-gradient(circle, rgba(249,115,22,0.1) 0%, transparent 68%)" }}
+      />
 
       <div className="relative z-10 max-w-6xl mx-auto px-6">
 
@@ -38,22 +53,22 @@ export default function AboutHero() {
           </div>
         </div>
 
-        <h1 className="font-display font-extrabold text-white leading-tight
-          text-[clamp(1.9rem,3.8vw,2.9rem)] mb-3 max-w-xl">
-          Springfield's Roofing Company —<br />
+        <h1 className="font-display font-extrabold text-white leading-[1.1]
+          text-[clamp(2rem,4.2vw,3.2rem)] mb-4 max-w-xl">
+          Springfield's Roofing Company —{" "}
           <span className="text-[#F97316]">Built on Honest Work.</span>
         </h1>
 
-        <p className="text-white/55 text-[0.88rem] leading-relaxed mb-6 max-w-md">
+        <p className="text-white/55 text-[0.92rem] leading-relaxed mb-8 max-w-md">
           Full-service residential and commercial roofing across Springfield and Central Illinois.
           Straightforward pricing, certified crews, work built to last.
         </p>
 
-        <div className="flex flex-wrap gap-3 mb-6">
+        <div className="flex flex-wrap gap-3 mb-8">
           <a href="tel:+15550183921"
             className="flex items-center gap-2.5 bg-[#F97316] hover:bg-[#EA6C0A]
               text-white font-bold text-[0.85rem] px-6 py-3 rounded-xl
-              shadow-[0_4px_16px_rgba(249,115,22,0.4)] transition-all hover:-translate-y-0.5">
+              shadow-[0_6px_22px_rgba(249,115,22,0.4)] transition-all hover:-translate-y-0.5">
             <Phone size={14} strokeWidth={2.5} />
             Call (555) 018-3921
           </a>

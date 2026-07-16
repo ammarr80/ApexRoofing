@@ -18,7 +18,12 @@ export default function Hero() {
           alt=""
           className="h-full w-full object-cover opacity-90"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1A3C6E] via-[#1A3C6E]/70 to-transparent" />
+
+        {/* Solid navy block with a diagonal edge — hard cut instead of a fade */}
+        <div
+          className="absolute inset-0 bg-[#1A3C6E]"
+          style={{ clipPath: "polygon(0 0, 38% 0, 12% 100%, 0 100%)" }}
+        />
 
         {/* Floating cards anchored to the section's right region (scale with %) */}
         <div className="absolute right-[8%] top-[56%] z-50 rounded-2xl bg-[#1A3C6E]/95 px-6 py-5 text-white shadow-2xl backdrop-blur">
