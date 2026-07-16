@@ -5,12 +5,12 @@ import {
 } from "lucide-react";
 
 const SERVICES = [
-  { icon: <Wrench size={22} />,          title: "Roof Repair",           desc: "Shingles, flashing, leaks — we fix it fast before a small problem turns into a costly one." },
-  { icon: <Home size={22} />,            title: "Roof Replacement",      desc: "Full tear-off and solid installation. Built to handle whatever Illinois weather throws at it." },
-  { icon: <Droplets size={22} />,        title: "Leak Detection",        desc: "We find the source, not just the symptom — sealed properly so it doesn't come back." },
-  { icon: <CloudLightning size={22} />,  title: "Storm Damage Repair",   desc: "Hail or wind damage? We get on it quickly and can work directly with your insurance adjuster." },
-  { icon: <Pipette size={22} />,         title: "Gutter Installation",   desc: "Properly fitted gutters and downspouts to keep water away from your foundation." },
-  { icon: <Search size={22} />,          title: "Roof Inspection",       desc: "Detailed written report — useful before buying or selling a home, or after any major storm." },
+  { icon: <Wrench size={22} />,          title: "Roof Repair",           desc: "Cracked shingles, damaged flashing, active leaks — we diagnose it fast and fix it right, before a small issue becomes a costly one." },
+  { icon: <Home size={22} />,            title: "Roof Replacement",      desc: "Complete tear-off and new roof installation, built to stand up to everything Central Illinois weather can throw at it." },
+  { icon: <Droplets size={22} />,        title: "Leak Detection",        desc: "We track down the actual source of the leak — not just the water stain — and seal it properly so it stays fixed." },
+  { icon: <CloudLightning size={22} />,  title: "Storm Damage Repair",   desc: "Hail or wind damage after a storm? We respond quickly and can work directly with your insurance adjuster on the claim." },
+  { icon: <Pipette size={22} />,         title: "Gutter Installation",   desc: "Properly sized, properly sloped gutters and downspouts that move water away from your roof and foundation." },
+  { icon: <Search size={22} />,          title: "Roof Inspection",       desc: "A thorough, written inspection report — ideal before buying or selling a home, or right after a major storm." },
 ];
 
 const CHECKS = [
@@ -34,10 +34,10 @@ export default function Services() {
               What We Do
             </div>
             <h2 className="font-display font-extrabold text-white text-[clamp(1.9rem,4vw,2.8rem)] leading-tight">
-              Services We Offer
+              Roofing Services for Springfield Homeowners
             </h2>
             <p className="text-white/50 mt-3 max-w-4xl text-[0.95rem] leading-relaxed">
-              Whether it's an emergency or routine maintenance, we show up on time, tell you exactly what it'll cost, and get it done right — no callbacks, no runaround.
+              Whether it's an emergency repair or a full roof replacement, we show up on time, give you a clear price upfront, and get the job done right — no callbacks, no runaround.
             </p>
           </div>
 
@@ -46,7 +46,7 @@ export default function Services() {
               className="flex items-center gap-2 border border-white/15 hover:border-white/35
                 text-white/80 hover:text-white font-semibold text-[0.82rem]
                 px-5 py-2.5 rounded-lg transition-all">
-              All Services <ArrowRight size={14} />
+              View All Services <ArrowRight size={14} />
             </Link>
             <a href="tel:+15550183921"
               className="flex items-center gap-2 bg-[#F97316] hover:bg-[#EA6C0A]

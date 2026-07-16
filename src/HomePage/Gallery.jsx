@@ -1,7 +1,7 @@
 const PHOTOS = [
   {
     src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&auto=format&fit=crop&q=80",
-    label: "Full Replacement",
+    label: "Full Roof Replacement",
     location: "Springfield, IL",
     span: "col-span-2 row-span-2",
   },
@@ -13,19 +13,19 @@ const PHOTOS = [
   },
   {
     src: "https://images.unsplash.com/photo-1605146769289-440113cc3d00?w=600&auto=format&fit=crop&q=80",
-    label: "Storm Damage",
+    label: "Storm Damage Repair",
     location: "Decatur, IL",
     span: "",
   },
   {
     src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=80",
-    label: "New Installation",
+    label: "New Roof Installation",
     location: "Champaign, IL",
     span: "",
   },
   {
     src: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?w=600&auto=format&fit=crop&q=80",
-    label: "Gutter Install",
+    label: "Gutter Installation",
     location: "Bloomington, IL",
     span: "",
   },
@@ -51,10 +51,10 @@ export default function Gallery() {
           </div>
           <div className="flex flex-col justify-between gap-4">
             <h2 className="font-display font-extrabold text-white text-[clamp(1.9rem,4vw,2.8rem)] leading-tight">
-              Recent Projects
+              Recent Roofing Projects in Central Illinois
             </h2>
             <p className="text-white/40 text-[0.95rem] max-w-3xl leading-relaxed">
-              Small repair or full replacement — every job gets the same level of care and attention. Here's some of our recent work across Central Illinois.
+              From a single shingle repair to a complete roof replacement, every project gets the same level of care and attention to detail. Here's a look at some of our recent work around Springfield and the surrounding area.
             </p>
           </div>
         </div>

@@ -3,18 +3,18 @@ import { Link } from "react-router-dom";
 
 export default function FinalCTA() {
   return (
-    <section className="bg-[#1A3C6E] py-14" id="contact">
+    <section className="bg-white py-14" id="contact">
       <div className="max-w-6xl mx-auto px-6">
 
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-8">
           <div className="flex items-start gap-4">
             <div className="w-px self-stretch bg-[#F97316] shrink-0 mt-1" />
             <div>
-              <p className="text-white/40 text-[0.7rem] font-semibold uppercase tracking-widest mb-1.5">
-                Free Quote · No Obligation
+              <p className="text-[#6B7280] text-[0.7rem] font-semibold uppercase tracking-widest mb-1.5">
+                Free Estimate · No Obligation
               </p>
-              <h2 className="font-display font-extrabold text-white text-[clamp(1.4rem,3vw,1.9rem)] leading-tight">
-                Need Roofing Help Today?
+              <h2 className="font-display font-extrabold text-[#111827] text-[clamp(1.4rem,3vw,1.9rem)] leading-tight">
+                Need a Roof Repair or Replacement?
               </h2>
             </div>
           </div>
@@ -31,21 +31,14 @@ export default function FinalCTA() {
             </a>
             <Link
               to="/quote"
-              className="flex items-center gap-1.5 text-white/60 hover:text-white
+              className="flex items-center gap-1.5 text-[#1A3C6E]/70 hover:text-[#1A3C6E]
                 font-semibold text-[0.85rem] px-2 py-2.5
                 transition-colors"
             >
-              Get Estimate <ArrowRight size={13} />
+              Get Your Free Estimate <ArrowRight size={13} />
             </Link>
           </div>
         </div>
-
-        <div className="mt-8 pt-6 border-t border-white/8 flex flex-col sm:flex-row
-          items-center justify-between gap-3 text-white/20 text-[0.72rem]">
-          <p>© {new Date().getFullYear()} PrimeShield Roofing. All rights reserved.</p>
-          <p>Springfield, IL</p>
-        </div>
-
       </div>
     </section>
   );

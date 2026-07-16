@@ -30,10 +30,10 @@ export default function ServiceAreas() {
               Where We Work
             </div>
             <h2 className="font-display font-extrabold text-white text-[clamp(1.9rem,4vw,2.6rem)] leading-tight mb-4">
-              Roofing Springfield<br />& Central Illinois
+              Roofing Contractor Serving<br />Springfield & Central Illinois
             </h2>
             <p className="text-white/55 text-[0.95rem] leading-relaxed mb-8">
-              We cover Springfield and the surrounding Central Illinois area. Emergency response is available across all listed areas, day or night.
+              We provide roof repair, replacement, and inspection services throughout Springfield and the surrounding Central Illinois area, with emergency response available across every area we serve, day or night.
             </p>
 
             {/* Legend */}
@@ -59,11 +59,11 @@ export default function ServiceAreas() {
                   className="flex items-center gap-2 border border-white/25 hover:border-white/60
                     text-white font-semibold text-[0.9rem] px-6 py-3.5 rounded-xl
                     transition-all hover:bg-white/8 hover:-translate-y-0.5">
-                    Get a Quote <ArrowRight size={15} />
+                    Get a Free Quote <ArrowRight size={15} />
                 </Link>
               </div>
               <p className="text-white/35 text-[0.75rem]">
-                Not on the list? Call us — we may still cover your area.
+                Don't see your town listed? Call us — there's a good chance we cover your area too.
               </p>
             </div>
           </div>
@@ -118,7 +118,7 @@ export default function ServiceAreas() {
 
             <div className="flex items-center gap-2 text-white/35 text-[0.78rem]">
               <MapPin size={13} />
-              <span>Emergency response available 24/7 across all listed areas.</span>
+              <span>24/7 emergency roof repair available across all listed service areas.</span>
             </div>
 
           </div>

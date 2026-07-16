@@ -5,26 +5,26 @@ const STEPS = [
   {
     num: "01",
     icon: <ClipboardList size={24} />,
-    title: "Inspection",
-    desc: "We come to you — same day when possible. Full roof assessment, no pressure, no commitment.",
+    title: "Free Roof Inspection",
+    desc: "We come out to your home — often same-day. A full roof assessment with no pressure and no obligation.",
   },
   {
     num: "02",
     icon: <Calculator size={24} />,
-    title: "Free Estimate",
-    desc: "Clear, itemized quote delivered fast. You know exactly what you're paying before we touch anything.",
+    title: "Written Estimate",
+    desc: "A clear, itemized quote, delivered fast. You'll know exactly what the job costs before we start any work.",
   },
   {
     num: "03",
     icon: <HardHat size={24} />,
-    title: "Repair or Install",
-    desc: "Our certified crew gets to work. Clean, efficient, and respectful of your home and your time.",
+    title: "Repair or Installation",
+    desc: "Our certified crew gets to work — efficient, clean, and respectful of your home and your schedule.",
   },
   {
     num: "04",
     icon: <BadgeCheck size={24} />,
-    title: "Final Sign-Off",
-    desc: "We walk you through everything before we leave. Backed by our 10-year workmanship warranty.",
+    title: "Final Walkthrough",
+    desc: "We review the completed work with you before we leave, backed by our 10-year workmanship warranty.",
   },
 ];
 
@@ -42,17 +42,17 @@ export default function Process() {
               Our Process
             </div>
             <h2 className="font-display font-extrabold text-white text-[clamp(1.9rem,4vw,2.8rem)] leading-tight">
-              Simple Steps,<br />From Call to Completion
+              From First Call to<br />Finished Roof
             </h2>
             <p className="text-white/55 mt-3 max-w-3xl text-[0.95rem] leading-relaxed">
-              No surprises, no runaround. We keep you in the loop at every step — from the first call to the final walkthrough.
+              No surprises, no runaround. We keep you informed at every step — from your first call to the final walkthrough.
             </p>
           </div>
           <Link to="/quote"
             className="flex items-center gap-2 bg-[#F97316] hover:bg-[#EA6C0A]
               text-white font-bold text-[0.88rem] px-7 py-3.5 rounded-xl
               shadow-[0_4px_18px_rgba(249,115,22,0.4)] transition-all hover:-translate-y-0.5 shrink-0 w-fit">
-            Start Now <ArrowRight size={15} />
+            Get Your Free Estimate <ArrowRight size={15} />
           </Link>
         </div>
 

@@ -32,8 +32,6 @@ function Slider({ before, after, label }) {
     setPos(Math.min(Math.max(raw, 0), 100));
   }, []);
 
-  // Track pointer across the whole window so the drag never "sticks"
-  // when the cursor leaves the image bounds.
   useEffect(() => {
     const move = (e) => {
       if (!dragging.current) return;
@@ -61,7 +59,6 @@ function Slider({ before, after, label }) {
     setActive(true);
   };
 
-  // Click anywhere on the track to jump the handle there.
   const onTrackDown = (e) => {
     const clientX = e.touches ? e.touches[0].clientX : e.clientX;
     setFromClientX(clientX);
@@ -84,7 +81,6 @@ function Slider({ before, after, label }) {
         select-none cursor-col-resize ring-1 ring-black/5
         shadow-[0_20px_60px_-15px_rgba(17,24,39,0.35)]"
     >
-      {/* After image (full-bleed base layer) */}
       <img
         src={after || "/placeholder.svg"}
         alt={`${label} — after`}
@@ -92,7 +88,6 @@ function Slider({ before, after, label }) {
         className="absolute inset-0 w-full h-full object-cover"
       />
 
-      {/* Before image (clipped by percentage via clip-path) */}
       <img
         src={before || "/placeholder.svg"}
         alt={`${label} — before`}
@@ -101,11 +96,9 @@ function Slider({ before, after, label }) {
         style={{ clipPath: `inset(0 ${100 - pos}% 0 0)` }}
       />
 
-      {/* Top scrim for label legibility */}
       <div className="pointer-events-none absolute inset-x-0 top-0 h-20
         bg-gradient-to-b from-black/45 to-transparent" />
 
-      {/* Labels */}
       <div className="pointer-events-none absolute top-4 left-4 flex items-center gap-1.5
         bg-white/15 backdrop-blur-md text-white text-[0.62rem] font-bold uppercase
         tracking-[0.15em] px-3 py-1.5 rounded-full ring-1 ring-white/25">
@@ -117,14 +110,12 @@ function Slider({ before, after, label }) {
         After
       </div>
 
-      {/* Divider line */}
       <div
         className="pointer-events-none absolute top-0 bottom-0 w-[3px] -translate-x-1/2
           bg-white shadow-[0_0_20px_rgba(255,255,255,0.9)]"
         style={{ left: `${pos}%` }}
       />
 
-      {/* Handle */}
       <div
         role="slider"
         tabIndex={0}
@@ -141,12 +132,10 @@ function Slider({ before, after, label }) {
           focus-visible:ring-4 focus-visible:ring-[#F97316]/50 rounded-full"
         style={{ left: `${pos}%` }}
       >
-        {/* Pulse ring while idle */}
         <span
           className={`absolute inset-0 rounded-full bg-white/50 transition-opacity duration-300
             ${active ? "opacity-0" : "opacity-100 animate-ping"}`}
         />
-        {/* Knob */}
         <span className="absolute inset-0 rounded-full bg-white/90 backdrop-blur
           shadow-xl ring-1 ring-black/5 flex items-center justify-center gap-0">
           <ChevronLeft size={16} color="#F97316" strokeWidth={3} className="-mr-1" />
@@ -170,11 +159,11 @@ export default function BeforeAfter() {
             Real Results
           </div>
           <h2 className="font-display font-extrabold text-[#111827] text-[clamp(1.9rem,4vw,2.8rem)] leading-tight">
-            Before &amp; After
+            Roof Repair Before &amp; After
           </h2>
           <p className="text-[#6B7280] mt-3 max-w-3xl text-[0.95rem] leading-relaxed">
-            Drag the slider — or use your arrow keys — to see the difference. These are real jobs we&apos;ve
-            completed right here in Springfield, IL. No stock photos, no staging.
+            Drag the slider — or use your arrow keys — to see the difference. These are actual roofing
+            jobs completed right here in Springfield, IL. No stock photos, no staged shots.
           </p>
         </div>
 

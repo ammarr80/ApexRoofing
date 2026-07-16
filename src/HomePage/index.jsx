@@ -24,7 +24,6 @@ export default function HomePage() {
 <Testimonials />
 <FAQ />
 <ServiceAreas />
-{/* <ContactForm /> */}
 <FinalCTA />
     </main>
   );

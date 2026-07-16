@@ -4,11 +4,11 @@ import { Plus, Minus } from "lucide-react";
 const FAQS = [
   {
     q: "How do I know if my roof needs a repair or a full replacement?",
-    a: "If your roof is under 15 years old and the damage is isolated — a few missing shingles, a small leak, cracked flashing — a repair is usually the right call. If it's over 20 years old, has widespread damage, or you're seeing sagging or daylight through the decking, replacement is almost always more cost-effective long term. We'll give you a straight assessment when we come out.",
+    a: "If your roof is under 15 years old and the damage is isolated — a few missing shingles, a small leak, cracked flashing — a repair is usually the right call. If it's over 20 years old, has widespread damage, or you're noticing sagging or daylight through the decking, replacement is almost always more cost-effective in the long run. We'll give you a straight, honest assessment when we come out to inspect your roof.",
   },
   {
     q: "Do you work with homeowner insurance for storm damage?",
-    a: "Yes. We document all storm damage thoroughly and can communicate directly with your adjuster if needed. We'll make sure nothing gets missed in the claim and walk you through each step of the process.",
+    a: "Yes. We document all storm and hail damage thoroughly and can communicate directly with your insurance adjuster if needed. We'll make sure nothing gets missed in your claim and walk you through each step of the process.",
   },
   {
     q: "How long does a full roof replacement take?",
@@ -16,7 +16,7 @@ const FAQS = [
   },
   {
     q: "What roofing materials do you use?",
-    a: "We install architectural shingles, metal roofing, flat TPO membranes, and more. For most Illinois homes, we recommend GAF or Owens Corning architectural shingles — they hold up well through Midwest winters and carry solid manufacturer warranties. We'll suggest the right material based on your home, budget, and long-term goals.",
+    a: "We install architectural shingles, metal roofing, flat TPO membranes, and more. For most Illinois homes, we recommend GAF or Owens Corning architectural shingles — they hold up well through Midwest winters and come with strong manufacturer warranties. We'll recommend the right material based on your home, budget, and long-term goals.",
   },
   {
     q: "Do you offer financing?",
@@ -24,11 +24,11 @@ const FAQS = [
   },
   {
     q: "Is PrimeShield Roofing licensed and insured in Illinois?",
-    a: "Yes. We're fully licensed in Illinois, carry general liability insurance, and all crews are covered under workers' compensation. Always verify this before hiring any roofing contractor — it protects you as the homeowner.",
+    a: "Yes. We're fully licensed in Illinois, carry general liability insurance, and all of our crews are covered under workers' compensation. Always verify this before hiring any roofing contractor — it protects you as the homeowner.",
   },
   {
     q: "What areas around Springfield do you serve?",
-    a: "We serve Springfield and surrounding Central Illinois areas including Lincoln, Decatur, Champaign, and Bloomington. Not sure if we cover your area? Give us a call.",
+    a: "We serve Springfield and the surrounding Central Illinois area, including Lincoln, Decatur, Champaign, and Bloomington. Not sure if we cover your area? Give us a call.",
   },
 ];
 
@@ -76,10 +76,10 @@ export default function FAQ() {
             FAQ
           </div>
           <h2 className="font-display font-extrabold text-[#111827] text-[clamp(1.9rem,4vw,2.8rem)] leading-tight">
-            What People Ask
+            Roof Repair & Replacement FAQs
           </h2>
           <p className="text-[#6B7280] mt-3 text-[0.95rem] leading-relaxed max-w-3xl">
-            Answers to common questions about roofing repairs, replacements, inspections, and what to expect when you work with us.
+            Answers to the questions we hear most from homeowners about roof repairs, replacements, inspections, and what to expect when you work with PrimeShield.
           </p>
         </div>
 

@@ -5,7 +5,7 @@ const REVIEWS = [
     name: "Marcus T.",
     city: "Springfield",
     rating: 5,
-    text: "Called after a hailstorm and they were on-site same day. Roof fixed, insurance claim handled — I didn't have to do a thing.",
+    text: "Called after a hailstorm and PrimeShield was on-site the same day. Roof fixed, insurance claim handled — I didn't have to lift a finger.",
     service: "Storm Damage Repair",
     initials: "MT",
   },
@@ -13,7 +13,7 @@ const REVIEWS = [
     name: "Linda Reyes",
     city: "Decatur",
     rating: 5,
-    text: "Full roof replacement done in under two days. The crew was clean, respectful, and the final walkthrough gave me total confidence.",
+    text: "Full roof replacement done in under two days. The crew was clean, respectful, and the final walkthrough gave me total confidence in the work.",
     service: "Roof Replacement",
     initials: "LR",
   },
@@ -21,7 +21,7 @@ const REVIEWS = [
     name: "Derek S.",
     city: "Lincoln",
     rating: 5,
-    text: "Had a persistent leak two other companies couldn't find. These guys traced it in an hour and sealed it properly. No issues since.",
+    text: "Had a persistent leak two other companies couldn't track down. This crew found it in an hour and sealed it properly — no issues since.",
     service: "Leak Detection",
     initials: "DS",
   },
@@ -29,7 +29,7 @@ const REVIEWS = [
     name: "Angela Kim",
     city: "Champaign",
     rating: 5,
-    text: "Needed an inspection before closing on a house. Got a detailed written report the same day. Fast, professional, no pressure.",
+    text: "Needed a roof inspection before closing on a house. Got a detailed written report the same day — fast, professional, and zero sales pressure.",
     service: "Roof Inspection",
     initials: "AK",
   },
@@ -37,7 +37,7 @@ const REVIEWS = [
     name: "Tom Vasquez",
     city: "Bloomington",
     rating: 5,
-    text: "Called at 9pm after wind ripped off flashing. They showed up within two hours — temporary seal that night, full repair next morning.",
+    text: "Called at 9pm after wind ripped off our flashing. They showed up within two hours — temporary seal that night, full repair the next morning.",
     service: "Emergency Repair",
     initials: "TV",
   },
@@ -45,7 +45,7 @@ const REVIEWS = [
     name: "Sandra B.",
     city: "Springfield",
     rating: 5,
-    text: "Upfront quote, no surprise charges at the end. Gutters look great and the job was wrapped up faster than expected.",
+    text: "Upfront quote and no surprise charges at the end. The new gutters look great and the job wrapped up faster than I expected.",
     service: "Gutter Installation",
     initials: "SB",
   },
@@ -75,7 +75,7 @@ export default function Testimonials() {
               Real Reviews
             </div>
             <h2 className="font-display font-extrabold text-white text-[clamp(1.9rem,4vw,2.8rem)] leading-tight">
-              What Homeowners<br />Are Saying
+              What Springfield Homeowners<br />Are Saying
             </h2>
             <p className="text-white/50 mt-3 max-w-md text-[0.95rem] leading-relaxed">
               A few reviews from homeowners we've worked with across Central Illinois.

@@ -31,11 +31,11 @@ export default function Emergency() {
             </div>
             <h2 className="font-display font-extrabold text-white leading-tight
               text-[clamp(1.6rem,3.5vw,2.3rem)] mb-2">
-              24/7 Emergency Roof Repair in Springfield
+              24/7 Emergency Roof Repair in Springfield, IL
             </h2>
             <p className="text-white/75 text-[0.92rem] leading-relaxed max-w-lg">
-              Leak coming through your ceiling at 2am? Hail just hit your neighborhood?
-              We dispatch a crew fast — day or night, no extra charge for after-hours calls.
+              Water coming through the ceiling at 2am? Hail just tore through your neighborhood?
+              We dispatch a crew fast — day or night, with no extra charge for after-hours calls.
             </p>
           </div>
         </div>
@@ -52,7 +52,7 @@ export default function Emergency() {
             Call (555) 999-1044
           </a>
           <p className="text-white/60 text-[0.72rem] font-medium tracking-wide">
-            Average Springfield response time: under 60 min
+            Average response time in Springfield: under 60 minutes
           </p>
         </div>
 

@@ -5,7 +5,7 @@ const VALUES = [
   {
     icon: <ShieldCheck size={20} />,
     title: "No Shortcuts",
-    desc: "Every job is done to code, with quality materials, by trained crews. We don't cut corners on your most important asset.",
+    desc: "Every roof is installed to code, with quality materials, by trained crews. We don't cut corners on the thing protecting your whole home.",
   },
   {
     icon: <Users size={20} />,
@@ -15,12 +15,12 @@ const VALUES = [
   {
     icon: <Award size={20} />,
     title: "GAF Certified",
-    desc: "We're certified by one of North America's top roofing manufacturers. That means better warranties and higher installation standards.",
+    desc: "We hold certification from one of North America's leading roofing manufacturers, which means stronger warranties and higher installation standards for you.",
   },
   {
     icon: <ThumbsUp size={20} />,
     title: "Straight Answers",
-    desc: "We tell you what your roof actually needs — not the most expensive option. If a repair will do the job, we'll say so.",
+    desc: "We'll tell you what your roof actually needs — not just the most expensive option. If a repair will do the job, that's what we'll recommend.",
   },
 ];
 
@@ -70,20 +70,21 @@ export default function About() {
 
             <h2 className="font-display font-extrabold text-[#111827]
               text-[clamp(1.9rem,4vw,2.8rem)] leading-tight mb-5">
-              Springfield's Roofing Crew.<br />
+              A Local Roofing Contractor<br />
               <span className="text-[#1A3C6E]">Built on Trust.</span>
             </h2>
 
             <p className="text-[#6B7280] text-[0.95rem] leading-relaxed mb-4 max-w-lg">
-              PrimeShield Roofing has been working on Springfield homes since 2004. We started small,
-              doing repairs for neighbors — today we're one of the most reviewed roofing companies
-              in Central Illinois, with a crew of certified installers serving the entire metro area.
+              PrimeShield Roofing has been repairing and replacing roofs across Springfield since 2004.
+              We started out doing small repairs for neighbors — today we're one of the most
+              reviewed roofing companies in Central Illinois, with a full crew of certified
+              installers serving homeowners throughout the metro area.
             </p>
 
             <p className="text-[#6B7280] text-[0.95rem] leading-relaxed mb-8 max-w-lg">
-              We built this company on one simple idea: homeowners deserve honest advice, solid work,
-              and a crew that actually shows up when they say they will. Whether it's a small repair
-              or a full replacement, every job gets the same attention.
+              This company was built on one idea: homeowners deserve honest advice, solid
+              craftsmanship, and a crew that shows up when they say they will. Whether it's a
+              minor repair or a complete roof replacement, every job gets the same level of care.
             </p>
 
             {/* Values grid */}
