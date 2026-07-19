@@ -7,42 +7,42 @@ const BENEFITS = [
   {
     icon: <Clock size={22} />,
     title: "Same-Day Response",
-    desc: "Call before noon and we'll aim to be on-site the same day. Emergencies are dispatched as quickly as possible.",
+    desc: "Call before noon and we'll aim to have a crew on-site the same day. Emergency calls are dispatched as fast as we can get there.",
   },
   {
     icon: <DollarSign size={22} />,
     title: "Upfront, Flat Pricing",
-    desc: "You get a detailed written quote before we start. No surprise charges, no mid-job upsells.",
+    desc: "You get a detailed written quote before any work begins — no surprise charges and no mid-job upsells.",
   },
   {
     icon: <BadgeCheck size={22} />,
     title: "GAF Certified Installation",
-    desc: "Our certification means manufacturer-backed warranties on materials — not just our word, but GAF's guarantee behind every install.",
+    desc: "Our certification means manufacturer-backed warranties on materials — not just our word, but GAF's guarantee standing behind every install.",
   },
   {
     icon: <ShieldCheck size={22} />,
     title: "10-Year Workmanship Warranty",
-    desc: "Every job we complete is covered for 10 years. If something goes wrong with our work, we come back and fix it.",
+    desc: "Every job we complete is covered for 10 years. If something ever goes wrong with our work, we come back and make it right.",
   },
   {
     icon: <FileText size={22} />,
     title: "Insurance Claim Assistance",
-    desc: "We document storm and hail damage thoroughly and can work directly with your adjuster throughout the claims process.",
+    desc: "We document storm and hail damage thoroughly and can work directly with your adjuster throughout the entire claims process.",
   },
   {
     icon: <Wrench size={22} />,
     title: "Quality Materials",
-    desc: "We use GAF and Owens Corning shingles, Firestone flat membranes, and standing seam metal — materials built for Illinois weather.",
+    desc: "We install GAF and Owens Corning shingles, Firestone flat membranes, and standing seam metal — materials built to handle Illinois weather.",
   },
   {
     icon: <ThumbsUp size={22} />,
     title: "Clean Jobsite",
-    desc: "Our crews clean up before leaving. No nails in the driveway, no debris left behind.",
+    desc: "Our crews clean up thoroughly before leaving — no stray nails in the driveway, no debris left behind.",
   },
   {
     icon: <Headphones size={22} />,
-    title: "Consistent Point of Contact",
-    desc: "You deal with the same person from first call to final walkthrough. No handoffs, no confusion.",
+    title: "One Consistent Contact",
+    desc: "You deal with the same person from your first call through the final walkthrough — no handoffs, no confusion.",
   },
 ];
 
@@ -63,7 +63,7 @@ export default function Benefits() {
             What You Get With Every Job
           </h2>
           <p className="text-[#6B7280] text-[0.95rem] leading-relaxed max-w-xl">
-            We back our work, give you clear pricing upfront, and keep you informed from start to finish.
+            We stand behind our work, give you clear pricing upfront, and keep you informed every step of the way.
           </p>
         </div>
 

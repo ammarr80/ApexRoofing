@@ -5,26 +5,21 @@ import {
   Wrench, Droplets, CloudLightning, Pipette, Search, MapPin,
 } from "lucide-react";
 
-/* ----------------------------------------------------------------
-   Data — mirrors ServicesGrid + AreasGrid so the nav stays in sync.
-   Links WITH a `menu` render a dropdown (info-rich).
-   Links WITHOUT a `menu` redirect directly to their page.
-------------------------------------------------------------------- */
 const SERVICES = [
-  { icon: Wrench,        title: "Roof Repair",        slug: "roof-repair",     price: "From $250",        time: "Same day" },
-  { icon: Home,          title: "Roof Replacement",   slug: "roof-replacement", price: "From $6,500",     time: "1–2 days" },
-  { icon: Droplets,      title: "Leak Detection",     slug: "leak-detection",  price: "From $150",        time: "Same day" },
-  { icon: CloudLightning, title: "Storm Damage Repair", slug: "storm-damage",  price: "Insurance covered", time: "Emergency" },
-  { icon: Pipette,       title: "Gutter Installation", slug: "gutters",        price: "From $800",        time: "1 day" },
-  { icon: Search,        title: "Roof Inspection",    slug: "inspection",      price: "From $99",         time: "Same day" },
+  { icon: Wrench,          title: "Roof Repair",            slug: "roof-repair",      price: "Affordable rates",      time: "Same day" },
+  { icon: Home,            title: "Roof Replacement",       slug: "roof-replacement", price: "Free estimates",        time: "1–2 days" },
+  { icon: Droplets,        title: "Leak Detection",         slug: "leak-detection",   price: "Fast diagnosis",        time: "Same day" },
+  { icon: CloudLightning,  title: "Storm Damage Repair",    slug: "storm-damage",     price: "Insurance assistance",  time: "Emergency" },
+  { icon: Pipette,         title: "Gutter Installation",     slug: "gutters",           price: "Custom solutions",      time: "1 day" },
+  { icon: Search,          title: "Roof Inspection",         slug: "inspection",       price: "Detailed assessment",   time: "Same day" },
 ];
 
 const AREAS = [
-  { name: "Springfield", slug: "springfield", tag: "Main Office",   primary: true,  desc: "Our home base. Full roofing services across all zip codes." },
-  { name: "Lincoln",     slug: "lincoln",     tag: "Full Coverage", primary: false, desc: "Residential and commercial with same-day availability." },
-  { name: "Decatur",     slug: "decatur",     tag: "Full Coverage", primary: false, desc: "Repairs, replacements, and inspections." },
-  { name: "Champaign",   slug: "champaign",   tag: "Full Coverage", primary: false, desc: "Fast response roofing services." },
-  { name: "Bloomington", slug: "bloomington", tag: "Full Coverage", primary: false, desc: "Full coverage including emergency storm damage." },
+  { name: "Springfield", slug: "springfield", tag: "Main Office",   primary: true,  desc: "Our home base — full roofing services across every Springfield zip code." },
+  { name: "Lincoln",     slug: "lincoln",     tag: "Full Coverage", primary: false, desc: "Residential and commercial roofing with same-day availability." },
+  { name: "Decatur",     slug: "decatur",     tag: "Full Coverage", primary: false, desc: "Roof repairs, replacements, and inspections." },
+  { name: "Champaign",   slug: "champaign",   tag: "Full Coverage", primary: false, desc: "Fast-response roofing services." },
+  { name: "Bloomington", slug: "bloomington", tag: "Full Coverage", primary: false, desc: "Full coverage, including emergency storm damage repair." },
 ];
 
 const LINKS = [
@@ -182,9 +177,9 @@ function MobileAreas() {
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
-  const [open, setOpen] = useState(false); // mobile menu
-  const [openDropdown, setOpenDropdown] = useState(null); // desktop dropdown label
-  const [openAccordion, setOpenAccordion] = useState(null); // mobile accordion label
+  const [open, setOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState(null);
+  const [openAccordion, setOpenAccordion] = useState(null);
 
   const navRef = useRef(null);
   const { pathname } = useLocation();
@@ -195,14 +190,12 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", fn);
   }, []);
 
-  // Close everything on route change
   useEffect(() => {
     setOpen(false);
     setOpenDropdown(null);
     setOpenAccordion(null);
   }, [pathname]);
 
-  // Close desktop dropdown on outside click
   useEffect(() => {
     const handleClick = (e) => {
       if (navRef.current && !navRef.current.contains(e.target)) {
@@ -213,7 +206,6 @@ export default function Navbar() {
     return () => document.removeEventListener("mousedown", handleClick);
   }, []);
 
-  // Close desktop dropdown on Escape
   useEffect(() => {
     const handleKey = (e) => {
       if (e.key === "Escape") setOpenDropdown(null);
@@ -256,7 +248,6 @@ export default function Navbar() {
             const isActive = pathname === l.to || pathname.startsWith(l.to + "/");
             const isDropdownOpen = openDropdown === l.label;
 
-            // Simple link: redirect directly.
             if (!l.menu) {
               return (
                 <Link
@@ -271,7 +262,6 @@ export default function Navbar() {
               );
             }
 
-            // Info-rich link: click to open dropdown panel.
             return (
               <div key={l.to} className="relative">
                 <button
@@ -344,7 +334,6 @@ export default function Navbar() {
           {LINKS.map((l) => {
             const isAccordionOpen = openAccordion === l.label;
 
-            // Simple link: redirect directly.
             if (!l.menu) {
               return (
                 <Link
@@ -358,7 +347,6 @@ export default function Navbar() {
               );
             }
 
-            // Info-rich link: tap to expand accordion.
             return (
               <div key={l.to} className="border-b border-white/[0.08]">
                 <button

@@ -35,7 +35,7 @@ export default function Footer() {
             </Link>
 
             <p className="text-white/40 text-[0.85rem] leading-relaxed max-w-xs">
-              Roofing contractor serving Springfield and Central Illinois. Repairs, replacements, and emergency service — backed by a 10-year workmanship warranty.
+              Local roofing contractor serving Springfield and Central Illinois — roof repair, replacement, and emergency service, backed by a 10-year workmanship warranty.
             </p>
 
             <div className="flex flex-col gap-3">
@@ -83,7 +83,7 @@ export default function Footer() {
               Get a Free Estimate
             </p>
             <p className="text-white/40 text-[0.85rem] leading-relaxed mb-6">
-              Call us or request a quote online. We aim to respond quickly — same-day inspections available in most cases.
+              Call us or request a quote online. We respond fast — same-day roof inspections are available in most cases.
             </p>
             <div className="flex flex-col gap-3">
               <a href="tel:+15550183921"

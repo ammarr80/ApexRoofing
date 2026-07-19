@@ -12,11 +12,11 @@ const PILLS = [
 
 const QUICK_LINKS = [
   { icon: <Wrench size={18} />,         label: "Repair",         price: "Most Repairs in 1 Day",   href: "#roof-repair" },
-  { icon: <Home size={18} />,           label: "Replacement",    price: "Built to last", href: "#roof-replacement" },
-  { icon: <Droplets size={18} />,       label: "Leak Detection", price: "Stop Water Damage Early",   href: "#leak-detection" },
-  { icon: <CloudLightning size={18} />, label: "Storm Damage",   price: "Insurance covered", href: "#storm-damage" },
-  { icon: <Pipette size={18} />,        label: "Gutters",        price: "Emergency Response",   href: "#gutters" },
-  { icon: <Search size={18} />,         label: "Inspection",     price: "Protect Your Foundation",    href: "#inspection" },
+  { icon: <Home size={18} />,           label: "Replacement",    price: "Built to Last",           href: "#roof-replacement" },
+  { icon: <Droplets size={18} />,       label: "Leak Detection", price: "Stop Water Damage Early", href: "#leak-detection" },
+  { icon: <CloudLightning size={18} />, label: "Storm Damage",   price: "Insurance Covered",        href: "#storm-damage" },
+  { icon: <Pipette size={18} />,        label: "Gutters",        price: "Protect Your Foundation",  href: "#gutters" },
+  { icon: <Search size={18} />,         label: "Inspection",     price: "Fast, Detailed Reports",    href: "#inspection" },
 ];
 
 export default function ServicesHero() {
@@ -68,13 +68,13 @@ export default function ServicesHero() {
 
             <h1 className="font-display font-extrabold text-white leading-[1.1]
               text-[clamp(2.1rem,4.4vw,3.3rem)] mb-4">
-              Roofing Services for Springfield Homeowners —{" "}
+              Complete Roofing Services for Springfield Homeowners —{" "}
               <span className="text-[#F97316]">Start to Finish.</span>
             </h1>
 
             <p className="text-white/55 text-[0.92rem] leading-relaxed mb-8 max-w-md">
-              From a single shingle repair to a full tear-off, we handle it all.
-              Upfront quotes, certified crews, 10-year workmanship warranty.
+              From a single shingle repair to a complete tear-off and replacement, we handle it all —
+              upfront quotes, certified crews, and a 10-year workmanship warranty on every job.
             </p>
 
             <div className="flex flex-wrap items-center gap-3 mb-8">
@@ -89,7 +89,7 @@ export default function ServicesHero() {
                 className="flex items-center gap-2 border border-white/25 hover:border-white/50
                   text-white font-semibold text-[0.85rem] px-5 py-3 rounded-xl
                   transition-all hover:bg-white/8">
-                Free Estimate <ArrowRight size={13} />
+                Get a Free Estimate <ArrowRight size={13} />
               </Link>
             </div>
 

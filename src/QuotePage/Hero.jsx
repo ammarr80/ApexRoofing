@@ -76,7 +76,7 @@ export default function QuoteHero() {
             </h1>
 
             <p className="text-white/55 text-[1rem] leading-relaxed mb-9 max-w-[460px]">
-              We come out, inspect your roof, and give you a written quote — no pressure, no cost. Most estimates are scheduled within one business day.
+              We'll come out, inspect your roof, and hand you a written quote — no pressure and no cost. Most estimates are scheduled within one business day.
             </p>
 
             {/* CTAs */}
@@ -154,7 +154,7 @@ export default function QuoteHero() {
                   <ArrowRight size={15} />
                 </a>
                 <p className="text-center text-[0.7rem] text-[#9CA3AF] mt-3 flex items-center justify-center gap-1.5">
-                  🔒 Your info is never sold or shared.
+                  🔒 Your information is never sold or shared.
                 </p>
               </div>
             </div>

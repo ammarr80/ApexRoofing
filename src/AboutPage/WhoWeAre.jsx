@@ -9,12 +9,12 @@ const VALUES = [
   {
     icon: <Users size={20} />,
     title: "Local & Accountable",
-    desc: "We're based in Springfield and focused on Central Illinois. When you call, you reach the people doing the actual work — not a national call center.",
+    desc: "We're based in Springfield and focused on Central Illinois. When you call, you reach the people actually doing the work — not a national call center.",
   },
   {
     icon: <Award size={20} />,
     title: "Certified Crews",
-    desc: "Our installers are trained and certified. Every project is supervised by an experienced crew lead who takes responsibility for the outcome.",
+    desc: "Our installers are trained and certified, and every project is supervised by an experienced crew lead who takes responsibility for the outcome.",
   },
   {
     icon: <ThumbsUp size={20} />,
@@ -79,7 +79,7 @@ export default function WhoWeAre() {
               PrimeShield Roofing is a locally operated contractor serving residential and
               commercial clients throughout Springfield and Central Illinois. We handle roof
               repair, roof replacement, inspections, and emergency roofing — every job gets
-              the same level of care regardless of size.
+              the same level of care, no matter the size.
             </p>
 
             <p className="text-[#6B7280] text-[0.95rem] leading-relaxed mb-10">

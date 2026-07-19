@@ -17,13 +17,13 @@ const REVIEWS = [
     name: "Marcus T.",
     location: "Springfield, IL",
     rating: 5,
-    text: "They came out within two hours after the hail storm. Had everything documented for my insurance claim the same day. Roof was done in 48 hours.",
+    text: "They came out within two hours after the hail storm. Had everything documented for my insurance claim the same day, and the roof was done in 48 hours.",
   },
   {
     name: "Jennifer K.",
     location: "Decatur, IL",
     rating: 5,
-    text: "Three other roofers gave me vague quotes. These guys showed up, walked me through everything clearly, and handed me a written estimate before they left.",
+    text: "Three other roofers gave me vague quotes. This crew showed up, walked me through everything clearly, and handed me a written estimate before they left.",
   },
   {
     name: "David R.",
@@ -63,7 +63,7 @@ export default function QuoteTrust() {
             Every Promise. Every Job. Backed in Writing.
           </h2>
           <p className="text-[#6B7280] text-[0.95rem] leading-relaxed max-w-xl">
-            Roofing is a significant expense and it's hard to know who to trust. Here's what we put in writing on every job.
+            Roofing is a big expense, and it's hard to know who to trust. Here's what we put in writing on every job.
           </p>
         </div>
 
@@ -148,7 +148,7 @@ export default function QuoteTrust() {
               Ready to get your free estimate?
             </p>
             <p className="text-white/50 text-[0.82rem]">
-              No pressure. No obligation. Just honest pricing.
+              No pressure, no obligation — just honest pricing.
             </p>
           </div>
           <div className="flex flex-wrap gap-3 flex-shrink-0">

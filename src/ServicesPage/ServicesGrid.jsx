@@ -11,7 +11,7 @@ const SERVICES = [
     slug: "roof-repair",
     price: "From $250",
     time: "Same day",
-    desc: "Missing shingles, cracked flashing, storm punctures — we find the actual source and fix it properly. No patchwork that fails in the next rain.",
+    desc: "Missing shingles, cracked flashing, storm punctures — we find the actual source and fix it properly, not a patch job that fails in the next rain.",
     points: ["Shingle replacement", "Flashing repair", "Ridge cap fixes", "Leak sealing"],
   },
   {
@@ -20,7 +20,7 @@ const SERVICES = [
     slug: "roof-replacement",
     price: "From $6,500",
     time: "1–2 days",
-    desc: "Full tear-off and installation using GAF or Owens Corning materials. Built to handle Illinois winters, hail seasons, and everything in between.",
+    desc: "Full tear-off and installation using GAF or Owens Corning materials, built to handle Illinois winters, hail seasons, and everything in between.",
     points: ["Full tear-off & disposal", "Decking inspection", "GAF/OC shingles", "10-year warranty"],
   },
   {
@@ -29,7 +29,7 @@ const SERVICES = [
     slug: "leak-detection",
     price: "From $150",
     time: "Same day",
-    desc: "We find the source of your leak without unnecessary tear-out — using moisture mapping and visual inspection to pinpoint exactly where water is getting in.",
+    desc: "We track down the source of your leak without unnecessary tear-out, using moisture mapping and a thorough visual inspection to find exactly where water is getting in.",
     points: ["Moisture mapping", "Attic inspection", "Full written report", "No unnecessary work"],
   },
   {
@@ -38,7 +38,7 @@ const SERVICES = [
     slug: "storm-damage",
     price: "Insurance covered",
     time: "Emergency dispatch",
-    desc: "We document all damage thoroughly, work with your insurance adjuster, and restore your roof to its pre-storm condition.",
+    desc: "We document all storm and hail damage thoroughly, work directly with your insurance adjuster, and restore your roof to its pre-storm condition.",
     points: ["Insurance documentation", "Adjuster coordination", "Emergency tarping", "Full restoration"],
   },
   {
@@ -56,7 +56,7 @@ const SERVICES = [
     slug: "inspection",
     price: "From $99",
     time: "Same day",
-    desc: "A full written report with photos — useful before buying or selling a home, after any storm, or if your roof hasn't been checked in a few years.",
+    desc: "A full written report with photos — useful before buying or selling a home, after a storm, or if your roof hasn't been checked in a few years.",
     points: ["Photo documentation", "Written condition report", "Estimated remaining life", "Insurance-ready format"],
   },
 ];

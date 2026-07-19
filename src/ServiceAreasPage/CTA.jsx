@@ -27,7 +27,7 @@ export default function AreasCTA() {
               <span className="text-[#F97316]">Same-Day Response.</span>
             </h2>
             <p className="text-white/45 text-[0.88rem] leading-relaxed mb-6">
-              Call us to confirm we cover your area and get a written estimate — we'll get back to you quickly.
+              Call to confirm we cover your area and get a free, written estimate — we respond quickly.
             </p>
 
             <div className="flex flex-wrap gap-5">
@@ -58,7 +58,7 @@ export default function AreasCTA() {
                 text-white/55 hover:text-white/80 font-semibold text-[0.88rem]
                 px-7 py-3 rounded-xl transition-all"
             >
-              Request Free Estimate <ArrowRight size={13} />
+              Request Your Free Estimate <ArrowRight size={13} />
             </Link>
           </div>
 

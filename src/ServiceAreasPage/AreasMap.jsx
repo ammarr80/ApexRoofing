@@ -16,7 +16,7 @@ export default function AreasMap() {
             Find Us on the Map
           </h2>
           <p className="text-[#6B7280] text-[0.95rem] leading-relaxed max-w-lg">
-            We're based in Springfield and cover Central Illinois. Call us if you're unsure whether we reach your area.
+            We're based in Springfield and cover the surrounding Central Illinois area. Give us a call if you're not sure whether we reach your neighborhood.
           </p>
         </div>
 
@@ -36,7 +36,7 @@ export default function AreasMap() {
 
         <div className="flex items-center gap-2 text-[#9CA3AF] text-[0.78rem] mt-4">
           <MapPin size={13} />
-          Emergency response available 24/7 across all service zones.
+          24/7 emergency roof repair available across all service zones.
         </div>
 
       </div>

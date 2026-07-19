@@ -61,7 +61,7 @@ export default function ContactHero() {
             </h1>
 
             <p className="text-white/55 text-[0.92rem] leading-relaxed mb-8 max-w-md">
-              Fill out the form below or call us directly. We respond quickly — same-day inspections available across Springfield and Central Illinois.
+              Fill out the form below or give us a call directly. We respond fast — same-day inspections are available across Springfield and Central Illinois.
             </p>
 
             <a href="tel:+15550183921"

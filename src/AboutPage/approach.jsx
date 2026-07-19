@@ -14,7 +14,7 @@ const PILLARS = [
   {
     icon: <MessageSquare size={24} />,
     title: "Clear Communication",
-    desc: "You know what we're doing, why we're doing it, and what it costs — before we start. No surprises mid-job.",
+    desc: "You'll know what we're doing, why we're doing it, and what it costs — before we ever start. No surprises mid-job.",
   },
   {
     icon: <Sparkles size={24} />,
@@ -40,7 +40,7 @@ export default function OurApproach() {
             How We Work on Every Job
           </h2>
           <p className="text-[#6B7280] text-[0.95rem] leading-relaxed max-w-xl">
-            Do the job right, communicate clearly, and stand behind everything we install. That's the standard we hold every crew member to.
+            Do the job right, communicate clearly, and stand behind everything we install — that's the standard we hold every crew member to.
           </p>
         </div>
 

@@ -50,7 +50,7 @@ export default function QuoteEmergency() {
                 </h2>
 
                 <p className="text-white/55 text-[0.92rem] leading-relaxed mb-6 max-w-lg">
-                  Water damage compounds fast. Our emergency crew covers Springfield and surrounding areas 24/7 — including weekends and holidays.
+                  Water damage compounds fast. Our emergency crew covers Springfield and the surrounding area 24/7, including weekends and holidays.
                 </p>
 
                 <div className="flex flex-wrap gap-x-6 gap-y-2.5">

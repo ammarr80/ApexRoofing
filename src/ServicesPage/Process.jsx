@@ -7,15 +7,15 @@ const STEPS = [
     icon: <ClipboardList size={24} />,
     title: "Free Roof Inspection",
     tag: "Same day available",
-    desc: "We come out to your property and assess the full roof — not just the obvious damage. You get a written report with photos, no pressure, no obligation.",
-    detail: "Takes 30–45 minutes on-site.",
+    desc: "We come out and assess the full roof — not just the obvious damage. You'll get a written report with photos, no pressure and no obligation to move forward.",
+    detail: "Takes about 30–45 minutes on-site.",
   },
   {
     num: "02",
     icon: <Calculator size={24} />,
     title: "Clear Written Estimate",
     tag: "No hidden costs",
-    desc: "You receive a detailed, itemized quote within 24 hours. Every material, every hour of labor — laid out clearly so you know exactly what you're paying for.",
+    desc: "You'll receive a detailed, itemized quote within 24 hours — every material and every hour of labor spelled out, so you know exactly what you're paying for.",
     detail: "Most estimates delivered same day.",
   },
   {
@@ -23,7 +23,7 @@ const STEPS = [
     icon: <HardHat size={24} />,
     title: "Professional Installation",
     tag: "GAF certified crew",
-    desc: "Our certified crew arrives on time, works efficiently, and cleans up before leaving. Most repairs are finished same-day. Replacements typically take 1–2 days.",
+    desc: "Our certified crew arrives on time, works efficiently, and cleans up before leaving. Most repairs finish same-day; replacements typically take one to two days.",
     detail: "Full cleanup included on every job.",
   },
   {
@@ -31,7 +31,7 @@ const STEPS = [
     icon: <BadgeCheck size={24} />,
     title: "Walkthrough & Warranty",
     tag: "10-year guarantee",
-    desc: "Before we leave, we walk the job with you — show you what was done and answer any questions. Your 10-year workmanship warranty starts the moment we sign off.",
+    desc: "Before we leave, we walk the finished job with you and answer any questions. Your 10-year workmanship warranty starts the moment we sign off.",
     detail: "Warranty documentation provided on-site.",
   },
 ];
@@ -55,7 +55,7 @@ export default function ServicesProcess() {
                 From First Call to<br />Final Sign-Off
               </h2>
               <p className="text-[#6B7280] text-[0.95rem] leading-relaxed max-w-lg">
-                Four straightforward steps. You'll know what's happening, what it costs, and what to expect at each stage.
+                Four straightforward steps. You'll always know what's happening, what it costs, and what to expect at each stage.
               </p>
             </div>
             <div className="flex gap-3 shrink-0">

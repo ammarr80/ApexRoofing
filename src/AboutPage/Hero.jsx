@@ -60,8 +60,8 @@ export default function AboutHero() {
         </h1>
 
         <p className="text-white/55 text-[0.92rem] leading-relaxed mb-8 max-w-md">
-          Full-service residential and commercial roofing across Springfield and Central Illinois.
-          Straightforward pricing, certified crews, work built to last.
+          Full-service residential and commercial roofing across Springfield and Central Illinois,
+          with straightforward pricing, certified crews, and work that's built to last.
         </p>
 
         <div className="flex flex-wrap gap-3 mb-8">
@@ -76,7 +76,7 @@ export default function AboutHero() {
             className="flex items-center gap-2 border border-white/25 hover:border-white/50
               text-white font-semibold text-[0.85rem] px-5 py-3 rounded-xl
               transition-all hover:bg-white/8">
-            Get Free Estimate <ArrowRight size={13} />
+            Get a Free Estimate <ArrowRight size={13} />
           </Link>
         </div>
 

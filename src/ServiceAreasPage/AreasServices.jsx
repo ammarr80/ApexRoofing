@@ -5,22 +5,22 @@ const SERVICES = [
   {
     icon: <Wrench size={20} />,
     title: "Roof Repair",
-    desc: "Fast repairs across all service areas — shingles, flashing, leaks, and more.",
+    desc: "Fast, reliable repairs across every service area — shingles, flashing, leaks, and more.",
   },
   {
     icon: <Home size={20} />,
     title: "Roof Replacement",
-    desc: "Full tear-off and replacement using GAF and Owens Corning materials.",
+    desc: "Full tear-off and replacement using GAF and Owens Corning materials, built to last.",
   },
   {
     icon: <Zap size={20} />,
     title: "Emergency Roofing",
-    desc: "24/7 emergency dispatch across every listed area. No after-hours surcharge.",
+    desc: "24/7 emergency dispatch across every listed area, with no after-hours surcharge.",
   },
   {
     icon: <Search size={20} />,
     title: "Roof Inspections",
-    desc: "Written inspection reports with photos — available across all service areas.",
+    desc: "Detailed written inspection reports with photos, available across all of our service areas.",
   },
 ];
 
@@ -38,10 +38,10 @@ export default function AreaServices() {
             </div>
             <h2 className="font-display font-extrabold text-white
               text-[clamp(1.9rem,4vw,2.8rem)] leading-tight mb-3">
-              Roofing Services in Every Area
+              Roofing Services in Every Area We Serve
             </h2>
             <p className="text-white/50 text-[0.95rem] leading-relaxed max-w-xl">
-              Every service we offer is available across all listed areas — same crew, same standards, same warranty, regardless of your zip code.
+              Every service we offer is available across all of our listed areas — same crew, same standards, same warranty, no matter your zip code.
             </p>
           </div>
           <Link to="/services"

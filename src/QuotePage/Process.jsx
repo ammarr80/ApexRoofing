@@ -22,7 +22,7 @@ const STEPS = [
   {
     num: "04",
     title: "We Get to Work",
-    desc: "You approve the estimate, we pull permits if needed and schedule your crew. Most jobs start within a week of approval.",
+    desc: "You approve the estimate, we pull permits if needed, and schedule your crew — most jobs start within a week of approval.",
     detail: "You're kept updated from start to final walkthrough.",
   },
 ];
@@ -45,7 +45,7 @@ export default function QuoteProcess() {
             <em className="not-italic text-[#F97316]">Here's Exactly What Happens.</em>
           </h2>
           <p className="text-[#6B7280] text-[0.95rem] leading-relaxed max-w-lg">
-            Four steps. No mystery, no vague timelines — you'll know what's coming at every stage.
+            Four steps, no mystery, no vague timelines — you'll know what's coming at every stage.
           </p>
         </div>
 
@@ -94,7 +94,7 @@ export default function QuoteProcess() {
               Ready to start step one?
             </p>
             <p className="text-[#6B7280] text-[0.82rem]">
-              The form takes 90 seconds. We'll handle everything after that.
+              The form takes 90 seconds — we'll handle everything after that.
             </p>
           </div>
           <div className="flex flex-wrap gap-3">

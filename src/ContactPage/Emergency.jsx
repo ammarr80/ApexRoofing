@@ -32,7 +32,7 @@ export default function ContactEmergency() {
               Need Emergency Roof Repair?
             </h2>
             <p className="text-white/75 text-[0.92rem] leading-relaxed max-w-lg">
-              Active leak, storm damage, or a sudden collapse risk — we dispatch a crew fast. Day or night, no extra charge for emergency calls.
+              Active leak, storm damage, or a sudden collapse risk — we get a crew out fast, day or night, with no extra charge for emergency calls.
             </p>
           </div>
         </div>

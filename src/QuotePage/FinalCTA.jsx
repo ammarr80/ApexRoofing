@@ -16,7 +16,7 @@ export default function QuoteCTA() {
               We're One Call Away.
             </h2>
             <p className="text-[#6B7280] text-[0.85rem]">
-              Call us and we'll get back to you quickly — same-day inspections available in most cases.
+              Call us and we'll get back to you fast — same-day inspections available in most cases.
             </p>
           </div>
         </div>

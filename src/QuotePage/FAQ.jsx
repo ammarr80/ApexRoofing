@@ -4,7 +4,7 @@ import { Plus, Minus } from "lucide-react";
 const FAQS = [
   {
     q: "Is the estimate really free?",
-    a: "Yes, completely. We come out, inspect your roof, and hand you a written quote with zero charge and zero obligation. We don't ask for a credit card or any payment information to schedule.",
+    a: "Yes, completely. We come out, inspect your roof, and hand you a written quote at zero charge and zero obligation. We don't ask for a credit card or any payment information to schedule.",
   },
   {
     q: "How quickly can you come out?",
@@ -20,19 +20,19 @@ const FAQS = [
   },
   {
     q: "Do you offer financing?",
-    a: "Yes. We offer financing options for qualifying customers. We also work with most major insurance carriers and can help you understand what your policy covers before any work begins.",
+    a: "Yes. We offer financing options for qualifying customers, and we also work with most major insurance carriers to help you understand what your policy covers before any work begins.",
   },
   {
     q: "What areas do you serve?",
-    a: "We cover Springfield and surrounding Central Illinois areas including Lincoln, Decatur, Champaign, and Bloomington. Not sure if we cover your area? Call us and we'll tell you straight.",
+    a: "We cover Springfield and the surrounding Central Illinois area, including Lincoln, Decatur, Champaign, and Bloomington. Not sure if we cover your area? Call us and we'll tell you straight.",
   },
   {
     q: "What warranty do you offer?",
-    a: "Every job comes with a 10-year workmanship warranty backed by us directly. For full replacements using GAF materials, you also receive a manufacturer's warranty on the materials themselves — separate from our own guarantee.",
+    a: "Every job comes with a 10-year workmanship warranty backed by us directly. For full replacements using GAF materials, you also get a manufacturer's warranty on the materials themselves, separate from our own guarantee.",
   },
   {
     q: "Will I be dealing with a salesperson or an actual roofer?",
-    a: "An actual roofer. The person who inspects your roof is the same person who manages your job. One point of contact from first call to final walkthrough.",
+    a: "An actual roofer. The person who inspects your roof is the same person who manages your job — one point of contact from first call to final walkthrough.",
   },
 ];
 

@@ -46,7 +46,7 @@ export default function ContactForm() {
               Tell Us About Your Roof
             </h2>
             <p className="text-[#6B7280] text-[0.95rem] leading-relaxed mb-6">
-              Fill out the form and someone from our team will call you back. No pressure, no obligation — just a straight answer from a real roofer.
+              Fill out the form and someone from our team will call you back — no pressure, no obligation, just a straight answer from a real roofer.
             </p>
             <div className="flex flex-col gap-3 text-[0.85rem] text-[#6B7280]">
               <p className="flex items-center gap-2"> <CheckCircle className="text-[#F97316] w-5 h-5" /> Free estimate — no commitment</p>
@@ -68,7 +68,7 @@ export default function ContactForm() {
                   We'll Call You Shortly
                 </h3>
                 <p className="text-[#6B7280] text-[0.9rem] max-w-sm leading-relaxed">
-                  We've received your request. Someone from our team will be in touch shortly to schedule your free inspection.
+                  We've received your request. Someone from our team will reach out shortly to schedule your free inspection.
                 </p>
               </div>
             ) : (
@@ -121,7 +121,7 @@ export default function ContactForm() {
                 </button>
 
                 <p className="text-[#9CA3AF] text-[0.72rem] text-center">
-                  No spam. No obligation. Your info is never shared.
+                  No spam. No obligation. Your information is never shared.
                 </p>
               </form>
             )}

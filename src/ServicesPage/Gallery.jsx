@@ -4,7 +4,7 @@ import { X, ZoomIn } from "lucide-react";
 const PROJECTS = [
   {
     img: "https://images.unsplash.com/photo-1632759145351-1d592919f522?w=800&auto=format&fit=crop&q=80",
-    type: "Full Replacement",
+    type: "Full Roof Replacement",
     location: "Springfield, IL",
     material: "GAF Timberline HDZ",
   },
@@ -22,7 +22,7 @@ const PROJECTS = [
   },
   {
     img: "https://images.unsplash.com/photo-1605152276897-4f618f831968?w=800&auto=format&fit=crop&q=80",
-    type: "Full Replacement",
+    type: "Full Roof Replacement",
     location: "Champaign, IL",
     material: "Metal Standing Seam",
   },
@@ -56,10 +56,10 @@ export default function ServicesGallery() {
           </div>
           <h2 className="font-display font-extrabold text-[#111827]
             text-[clamp(1.9rem,4vw,2.8rem)] leading-tight mb-3">
-            Recent Projects in Central Illinois
+            Recent Roofing Projects in Central Illinois
           </h2>
           <p className="text-[#6B7280] text-[0.95rem] leading-relaxed max-w-xl">
-            A selection of recent jobs completed across the Springfield area. Click any image to see the details.
+            A selection of recent roof repair, replacement, and installation jobs completed across the Springfield area. Click any photo for the full details.
           </p>
         </div>
 

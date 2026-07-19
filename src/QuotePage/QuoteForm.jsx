@@ -23,7 +23,7 @@ const PERKS = [
   {
     icon: <DollarSign size={20} />,
     title: "Free, no obligation",
-    desc: "No pressure, no upsells. Just a written estimate you can keep.",
+    desc: "No pressure, no upsells — just a written estimate you can keep.",
   },
   {
     icon: <FileText size={20} />,
@@ -33,7 +33,7 @@ const PERKS = [
   {
     icon: <Wrench size={20} />,
     title: "GAF Certified installation",
-    desc: "Every job is backed by manufacturer warranties — not just our word.",
+    desc: "Every job is backed by manufacturer warranties, not just our word.",
   },
 ];
 
@@ -70,7 +70,7 @@ export default function QuoteForm() {
             </h2>
 
             <p className="text-[#6B7280] text-[0.95rem] leading-relaxed mb-10 max-w-[400px]">
-              Fill out the form and someone from our team will call you to schedule a free on-site inspection. Most estimates are delivered the same day we visit.
+              Fill out the form and someone from our team will call to schedule a free on-site inspection. Most estimates are delivered the same day we visit.
             </p>
 
             {/* Perks */}

@@ -4,12 +4,12 @@ const REASONS = [
   {
     icon: <Clock size={22} />,
     title: "Fast Response Times",
-    desc: "We're based in Springfield — not dispatched from out of state. When you call, a local crew is on the way.",
+    desc: "We're based right here in Springfield, not dispatched from out of state. When you call, a local crew is already on the way.",
   },
   {
     icon: <Map size={22} />,
     title: "Local Roofing Knowledge",
-    desc: "We know Central Illinois weather — the hail seasons, the winters, the storm patterns. That experience shows in how we work.",
+    desc: "We know Central Illinois weather — the hail seasons, the hard winters, the storm patterns. That experience shows in how we build and repair roofs.",
   },
   {
     icon: <CalendarCheck size={22} />,
@@ -19,7 +19,7 @@ const REASONS = [
   {
     icon: <HardHat size={22} />,
     title: "Quality Workmanship",
-    desc: "Every job is backed by our 10-year workmanship warranty. The same standard of work in every city, every time.",
+    desc: "Every job is backed by our 10-year workmanship warranty — the same standard of work in every city, every time.",
   },
 ];
 
@@ -43,7 +43,7 @@ export default function WhyLocal() {
               <span className="text-[#1A3C6E]">Actually Shows Up.</span>
             </h2>
             <p className="text-[#6B7280] text-[0.95rem] leading-relaxed mb-10">
-              PrimeShield isn't a national chain routing calls through a call center. We're a Springfield-based crew that knows these neighborhoods and what Illinois roofs deal with every year.
+              PrimeShield isn't a national chain routing your call through a distant center. We're a Springfield-based crew that knows these neighborhoods and what Illinois roofs deal with every year.
             </p>
 
             <div className="flex flex-col gap-6">

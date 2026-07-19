@@ -4,11 +4,11 @@ import { Plus, Minus } from "lucide-react";
 const FAQS = [
   {
     q: "How quickly can you respond to an emergency?",
-    a: "For active leaks or storm damage, we dispatch same-day — often within the hour in the Springfield area. We keep crews available specifically for emergencies, with no extra charge for after-hours response.",
+    a: "For active leaks or storm damage, we dispatch the same day — often within the hour in the Springfield area. We keep crews available specifically for emergencies, with no extra charge for after-hours response.",
   },
   {
     q: "Do you offer free estimates?",
-    a: "Yes. Every estimate is free, written, and itemized. We come to your property, assess the full situation, and deliver a quote within 24 hours. No obligation to proceed.",
+    a: "Yes. Every estimate is free, written, and itemized. We come out to your property, assess the full situation, and deliver a quote within 24 hours, with no obligation to move forward.",
   },
   {
     q: "How long does a full roof replacement take?",
@@ -20,7 +20,7 @@ const FAQS = [
   },
   {
     q: "Will you work directly with my insurance company?",
-    a: "Yes. We document all storm damage with photos, write detailed reports, and can communicate directly with your adjuster if needed.",
+    a: "Yes. We document all storm damage with photos, write up detailed reports, and can communicate directly with your adjuster if needed.",
   },
   {
     q: "What does your 10-year warranty actually cover?",
@@ -83,7 +83,7 @@ export default function ServicesFAQ() {
             Common Questions
           </h2>
           <p className="text-[#6B7280] text-[0.95rem] leading-relaxed max-w-lg">
-            Answers to questions we hear often. If yours isn't here, just call us.
+            Answers to questions we hear often. If yours isn't here, just give us a call.
           </p>
         </div>
 

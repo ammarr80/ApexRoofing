@@ -7,7 +7,7 @@ const SERVICES = [
   {
     icon: <Wrench size={26} />,
     title: "Roof Repair",
-    desc: "We find the root cause of leaks and damage, then fix it properly — no quick patch jobs.",
+    desc: "We track down the root cause of leaks and damage, then fix it properly — not a quick patch job that fails in the next storm.",
     benefits: ["Storm damage", "Leak detection", "Missing shingles"],
     badge: "Insurance Claims Welcome",
     cta: "View Service",
@@ -15,7 +15,7 @@ const SERVICES = [
   {
     icon: <Home size={26} />,
     title: "Roof Replacement",
-    desc: "Full tear-off and installation with premium materials rated for Illinois weather.",
+    desc: "Full tear-off and installation using premium materials rated to hold up against Illinois weather.",
     benefits: ["Free estimates", "Financing available", "10-year warranty"],
     badge: "Most Popular",
     cta: "Explore Service",
@@ -23,7 +23,7 @@ const SERVICES = [
   {
     icon: <Zap size={26} />,
     title: "Emergency Roofing",
-    desc: "Active leak or sudden storm damage? We dispatch same day across Springfield and surrounding areas — after-hours included, with no emergency surcharge.",
+    desc: "Active leak or sudden storm damage? We dispatch same-day across Springfield and the surrounding area — after-hours included, with no emergency surcharge.",
     benefits: ["Same-day dispatch", "After-hours service", "No surcharge"],
     badge: "Same-Day Service",
     cta: "Get Help Now",
@@ -32,7 +32,7 @@ const SERVICES = [
   {
     icon: <Search size={26} />,
     title: "Roof Inspections",
-    desc: "Detailed written reports with photos — for insurance claims, home sales, or maintenance.",
+    desc: "Detailed written reports with photos — useful for insurance claims, home sales, or routine maintenance checks.",
     benefits: ["Written report", "Photo documentation", "Claim support"],
     badge: "Residential & Commercial",
     cta: "See Details",
@@ -40,7 +40,7 @@ const SERVICES = [
   {
     icon: <Settings size={26} />,
     title: "Roof Maintenance",
-    desc: "Preventative care that extends roof life — we catch small problems before they get costly.",
+    desc: "Preventative care that extends the life of your roof — we catch small problems before they turn into costly ones.",
     benefits: ["Debris clearing", "Resealing", "Annual checkups"],
     badge: "10-Year Warranty",
     cta: "View Service",
@@ -67,7 +67,7 @@ export default function WhatWeDo() {
               </h2>
               <p className="text-[#6B7280] text-[0.95rem] leading-relaxed max-w-xl">
                 PrimeShield handles every aspect of residential and commercial roofing — from a single
-                repair call to a full replacement. Every service is backed by a 10-year workmanship warranty.
+                repair call to a complete replacement. Every service is backed by a 10-year workmanship warranty.
               </p>
             </div>
             <Link to="/services"

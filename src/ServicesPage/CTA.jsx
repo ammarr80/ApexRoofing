@@ -28,7 +28,7 @@ export default function ServicesCTA() {
             </h2>
             <p className="text-white/45 text-[0.88rem] leading-relaxed mb-6">
               A small leak turns into decking rot. Storm damage gets worse with every rain.
-              Call us today — free estimate, same-day inspection available.
+              Call today for a free estimate — same-day inspections are available.
             </p>
 
             <div className="flex flex-wrap gap-5">
@@ -59,7 +59,7 @@ export default function ServicesCTA() {
                 text-white/55 hover:text-white/80 font-semibold text-[0.88rem]
                 px-7 py-3 rounded-xl transition-all"
             >
-              Request Estimate <ArrowRight size={13} />
+              Request Your Free Estimate <ArrowRight size={13} />
             </Link>
           </div>
 

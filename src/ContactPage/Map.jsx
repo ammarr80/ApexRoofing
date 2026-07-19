@@ -23,7 +23,7 @@ export default function ContactMap() {
               Roofing Services Across<br />Springfield & Central Illinois
             </h2>
             <p className="text-[#6B7280] text-[0.95rem] leading-relaxed mb-8">
-              PrimeShield provides residential and commercial roofing throughout Springfield and the surrounding area. Same-day response available across all listed areas.
+              PrimeShield provides residential and commercial roofing throughout Springfield and the surrounding area, with same-day response available across every area listed.
             </p>
 
             {/* Area pills */}
@@ -40,7 +40,7 @@ export default function ContactMap() {
             </div>
 
             <p className="text-[#9CA3AF] text-[0.78rem] mt-5">
-              Not on the list? Call us — we may still cover your area.
+              Don't see your area listed? Call us — there's a good chance we cover it too.
             </p>
           </div>
 

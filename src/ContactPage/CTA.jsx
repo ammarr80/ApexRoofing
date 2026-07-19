@@ -17,7 +17,7 @@ export default function ContactCTA() {
               Still Have Questions?
             </h2>
             <p className="text-[#6B7280] text-[0.88rem]">
-              Call us directly or request a free estimate — we'll get back to you quickly.
+              Call us directly or request a free estimate — we'll get back to you fast.
             </p>
           </div>
         </div>
@@ -39,7 +39,7 @@ export default function ContactCTA() {
               text-[#374151] hover:text-[#1A3C6E] font-semibold text-[0.85rem]
               px-6 py-3 rounded-xl transition-all"
           >
-            Free Estimate <ArrowRight size={13} />
+            Get a Free Estimate <ArrowRight size={13} />
           </Link>
         </div>
 

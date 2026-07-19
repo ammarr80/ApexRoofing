@@ -2,11 +2,11 @@ import {Link} from "react-router-dom"
 import { MapPin, ArrowRight } from "lucide-react";
 
 const AREAS = [
-  { name: "Springfield",  tag: "Main Office",   primary: true,  desc: "Our home base. Full roofing services across all Springfield zip codes." },
+  { name: "Springfield",  tag: "Main Office",   primary: true,  desc: "Our home base — full roofing services across every Springfield zip code." },
   { name: "Lincoln",      tag: "Full Coverage", primary: false, desc: "Residential and commercial roofing with same-day availability." },
-  { name: "Decatur",      tag: "Full Coverage", primary: false, desc: "Repairs, replacements, and inspections for Decatur homeowners." },
-  { name: "Champaign",    tag: "Full Coverage", primary: false, desc: "Fast response roofing services for the Champaign area." },
-  { name: "Bloomington",  tag: "Full Coverage", primary: false, desc: "Full roofing coverage including emergency storm damage repair." },
+  { name: "Decatur",      tag: "Full Coverage", primary: false, desc: "Roof repairs, replacements, and inspections for Decatur homeowners." },
+  { name: "Champaign",    tag: "Full Coverage", primary: false, desc: "Fast-response roofing services for the Champaign area." },
+  { name: "Bloomington",  tag: "Full Coverage", primary: false, desc: "Full roofing coverage, including emergency storm damage repair." },
 ];
 
 const TAG_COLOR = {
@@ -32,7 +32,7 @@ export default function AreasGrid() {
             Cities & Communities We Cover
           </h2>
           <p className="text-[#6B7280] text-[0.95rem] leading-relaxed max-w-xl">
-            PrimeShield serves Springfield and Central Illinois. Every area below gets the same crew, the same standards, and the same warranty.
+            PrimeShield Roofing serves Springfield and the surrounding Central Illinois area. Every location below gets the same crew, the same standards, and the same warranty.
           </p>
         </div>
 
@@ -89,7 +89,7 @@ export default function AreasGrid() {
         </div>
 
         <p className="text-[#9CA3AF] text-[0.8rem] mt-6">
-          Don't see your area? Call us — we may still cover you.
+          Don't see your area listed? Call us — there's a good chance we cover it too.
         </p>
 
       </div>

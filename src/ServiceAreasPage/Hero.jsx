@@ -49,12 +49,12 @@ export default function ServiceAreasHero() {
 
             <h1 className="font-display font-extrabold text-white leading-[1.1]
               text-[clamp(2.1rem,4.4vw,3.3rem)] mb-4">
-              Roofing Springfield &{" "}
+              Roofing Contractor Serving Springfield &{" "}
               <span className="text-[#F97316]">Central Illinois.</span>
             </h1>
 
             <p className="text-white/55 text-[0.92rem] leading-relaxed mb-8 max-w-md">
-              Same crew, same standards, same 10-year warranty — across Springfield and surrounding communities.
+              The same crew, the same standards, and the same 10-year workmanship warranty across Springfield and every surrounding community we serve.
             </p>
 
             <div className="flex flex-wrap gap-3 mb-8">
@@ -69,7 +69,7 @@ export default function ServiceAreasHero() {
                 className="flex items-center gap-2 border border-white/25 hover:border-white/50
                   text-white font-semibold text-[0.85rem] px-5 py-3 rounded-xl
                   transition-all hover:bg-white/8">
-                Free Estimate <ArrowRight size={13} />
+                Get a Free Estimate <ArrowRight size={13} />
               </Link>
             </div>
 

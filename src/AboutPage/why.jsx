@@ -7,17 +7,17 @@ const REASONS = [
   {
     icon: <Clock size={20} />,
     title: "Fast Response Times",
-    desc: "Same-day service available in most Springfield zip codes. Emergency calls dispatched within the hour.",
+    desc: "Same-day service is available across most Springfield zip codes, with emergency calls dispatched within the hour.",
   },
   {
     icon: <DollarSign size={20} />,
     title: "Honest, Upfront Pricing",
-    desc: "Written quotes before work starts. No mid-job surprises, no upsells you didn't ask for.",
+    desc: "You get a written quote before any work starts — no mid-job surprises and no upsells you didn't ask for.",
   },
   {
     icon: <ShieldCheck size={20} />,
     title: "10-Year Workmanship Warranty",
-    desc: "Every job is backed by our warranty. If our work fails, we come back and fix it.",
+    desc: "Every job we complete is backed by our warranty. If our work fails, we come back and fix it.",
   },
   {
     icon: <BadgeCheck size={20} />,
@@ -27,22 +27,22 @@ const REASONS = [
   {
     icon: <FileText size={20} />,
     title: "Insurance Claim Support",
-    desc: "We handle storm damage documentation and work directly with your adjuster throughout the process.",
+    desc: "We handle storm damage documentation and work directly with your adjuster throughout the claims process.",
   },
   {
     icon: <Wrench size={20} />,
     title: "Quality Materials",
-    desc: "We use GAF, Owens Corning, and Firestone products — materials rated for Midwest conditions.",
+    desc: "We install GAF, Owens Corning, and Firestone products — materials rated to handle Midwest conditions.",
   },
   {
     icon: <ThumbsUp size={20} />,
     title: "Clean Job Sites",
-    desc: "Full cleanup before we leave. No nails in the driveway, no debris left in your yard.",
+    desc: "We do a full cleanup before leaving — no nails in the driveway, no debris left in your yard.",
   },
   {
     icon: <Headphones size={20} />,
     title: "Direct Communication",
-    desc: "Talk to the same person from first call to final walkthrough. No handoffs, no confusion.",
+    desc: "You'll talk to the same person from your first call through the final walkthrough — no handoffs, no confusion.",
   },
 ];
 
@@ -63,7 +63,7 @@ export default function WhyChooseUs() {
             Why Springfield Homeowners<br />Choose PrimeShield Roofing
           </h2>
           <p className="text-white/50 text-[0.95rem] leading-relaxed max-w-xl">
-            There's no shortage of roofing companies in Central Illinois. Here's what we put in writing on every job.
+            There's no shortage of roofing companies in Central Illinois — here's what we put in writing on every job.
           </p>
         </div>
 
